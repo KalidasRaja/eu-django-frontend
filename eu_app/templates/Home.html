@@ -1,0 +1,1038 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <!-- Home Banner design goes here -->
+        <section class=" w-full py-6 pt-10 lg:py-10">
+            <div class=" lg:max-w-7xl mx-auto px-7 lg:px-10 xl:px-8">
+                <div class=" flex flex-wrap" id="six_Storage_LLC_tabs_id">
+                    <div class=" w-full rounded-lg rounded-bl-xl rounded-br-xl py-1 home_banner" id="home_banner">
+                        <!-- tabs goes here -->
+                        <ul class=" flex mb-0 list-none flex-wrap pt-3 pb-0 flex-row lg:pr-6">
+                            <li class=" -mb-px mr-2 last:mr-0 flex-auto text-left border-r-4 border-gray lg:flex-none">
+                                <a class=" text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-lg sm:text-xl lg:text-2xl xl:text-3xl font-medium capitalize px-5 lg:px-9 py-3 rounded-lg md:rounded-bl-none md:rounded-br-none block text-white cursor-pointer border_b transition-all transform ease-linear duration-75 hover:text-white focus:text-white" onclick="changeAtiveTab(event,'six_Storage_LLC_tab_all_solution'); cyan(this)">All in One solutions</a>
+                            </li>
+                            <li class=" -mb-px mr-2 last:mr-0 flex-auto text-left border-r-4 border-gray lg:flex-initial lg:w-auto">
+                                <a class=" text-lg sm:text-xl lg:text-2xl xl:text-3xl font-medium capitalize px-5 py-3 rounded-lg md:rounded-bl-none md:rounded-br-none block text-light-gray-50 cursor-pointer transition-all transform ease-linear duration-75  hover:text-white focus:text-white" onclick="changeAtiveTab(event,'six_Storage_LLC_tab_six_storage'); blue(this)">6Storage</a>
+                            </li>
+                            <li class=" -mb-px mr-2 last:mr-0 flex-auto text-left border-r-4 border-gray lg:flex-initial lg:w-auto">
+                                <a class=" text-lg sm:text-xl lg:text-2xl xl:text-3xl font-medium capitalize px-5 py-3 rounded-lg md:rounded-bl-none md:rounded-br-none block  text-light-gray-50 cursor-pointer transition-all transform ease-linear duration-75  hover:text-white focus:text-white" onclick="changeAtiveTab(event,'six_Storage_LLC_tab_six_security'); pink(this)">6Security</a>
+                            </li>
+                            <li class=" -mb-px mr-2 flex-auto text-left lg:flex-initial lg:w-auto">
+                                <a class=" text-lg sm:text-xl lg:text-2xl xl:text-3xl font-medium capitalize px-5 py-3 rounded-lg md:rounded-bl-none md:rounded-br-none block  text-light-gray-50 cursor-pointer transition-all transform ease-linear duration-75  hover:text-white focus:text-white" onclick="changeAtiveTab(event,'six_Storage_LLC_tab_six_reckoner'); green(this)">6Reckoner</a>
+                            </li>
+                        </ul>
+                        <!-- tabs contents goes here -->
+                        <div class=" relative flex flex-col min-w-0 break-words bg-transparent w-full">
+                            <div class="flex-auto">
+                                <div class="six_Storage_LLC_tab_content six_Storage_LLC_tab_space">
+                                    <div class=" block" id="six_Storage_LLC_tab_all_solution">
+                                        <div class="  grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 xl:gap-10 items-center justify-center py-5 lg:py-3.5 px-5 lg:px-8 last:mr-3">
+                                            <div class="py-5 lg:py-8">
+                                                <img src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/bee61a57-bab3-4b0c-9168-9199cf82f300/6Storage" alt="All_in_one_Solution">
+                                            </div>
+                                            <div class=" lg:px-9 xl:pr-20">
+                                                <h2 class=" text-xl md:text-2xl lg:text-3xl font-medium text-white py-1 lg:py-3">
+                                                    Self storage management software
+                                                </h2>
+                                                <p class=" text-base lg:text-sm text-justify break-words flex-wrap text-white py-1 pt-2 lg:py-2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                                <div class=" flex flex-auto flex-wrap py-4 lg:py-6 items-center justify-center lg:justify-start">
+                                                    <a  href="/schedule-demo/" class=" outline-none py-3 px-6 text-gray-600 hover:text-gray-900 bg-gray-100 hover:shadow-xl duration-200 transition-all font-medium text-base lg:text-sm rounded-3xl items-center justify-center flex flex-row m-2 sm:m-0">Schedule Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" hidden" id="six_Storage_LLC_tab_six_storage">
+                                        <div class="  grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 xl:gap-10 items-center justify-center  py-5 lg:py-4 px-5 lg:px-8 last:mr-3">
+                                            <div class="py-5 lg:py-7">
+                                                <img src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/bee61a57-bab3-4b0c-9168-9199cf82f300/6Storage" alt="All_in_one_Solution">
+                                            </div>
+                                            <div class=" lg:px-9 xl:pr-20">
+                                                <h2 class=" text-xl md:text-2xl lg:text-3xl font-medium text-white py-1 lg:py-3">
+                                                    Self storage management software 6Storage
+                                                </h2>
+                                                <p class=" text-base lg:text-sm text-justify break-words flex-wrap text-white py-1 pt-2 lg:py-2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                                <div class=" flex flex-auto flex-wrap py-4 lg:py-6 items-center justify-center lg:justify-start">
+                                                    <a  href="/schedule-demo/" class=" outline-none py-3 px-6 text-gray-600 hover:text-gray-900 bg-gray-100 hover:shadow-xl duration-200 transition-all font-medium text-base lg:text-sm rounded-3xl items-center justify-center flex flex-row m-2 sm:m-0">Schedule Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" hidden" id="six_Storage_LLC_tab_six_security">
+                                        <div class="  grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 xl:gap-10 items-center justify-center  py-5 lg:py-5 px-5 lg:px-8 last:mr-3">
+                                            <div class="py-5 lg:py-6">
+                                                <img src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/bee61a57-bab3-4b0c-9168-9199cf82f300/6Storage" alt="All_in_one_Solution">
+                                            </div>
+                                            <div class=" lg:px-9 xl:pr-20">
+                                                <h2 class=" text-xl md:text-2xl lg:text-3xl font-medium text-white py-1 lg:py-3">
+                                                    Self storage management software 6Security
+                                                </h2>
+                                                <p class=" text-base lg:text-sm text-justify break-words flex-wrap text-white py-1 pt-2 lg:py-2">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                                <div class=" flex flex-auto flex-wrap py-4 lg:py-6 items-center justify-center lg:justify-start">
+                                                    <a  href="/schedule-demo/" class=" outline-none py-3 px-6 text-gray-600 hover:text-gray-900 bg-gray-100 hover:shadow-xl duration-200 transition-all font-medium text-base lg:text-sm rounded-3xl items-center justify-center flex flex-row m-2 sm:m-0">Schedule Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" hidden" id="six_Storage_LLC_tab_six_reckoner">
+                                        <div class="  grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 xl:gap-10 items-center justify-center  py-5 lg:py-5 px-5 lg:px-8 last:mr-3">
+                                            <div class="py-5 lg:py-6">
+                                                <img src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/bee61a57-bab3-4b0c-9168-9199cf82f300/6Storage" alt="All_in_one_Solution">
+                                            </div>
+                                            <div class=" lg:px-9 xl:pr-20">
+                                                <h2 class=" text-xl md:text-2xl lg:text-3xl font-medium text-white py-1 lg:py-3">
+                                                    Self storage management software 6Reckoner
+                                                </h2>
+                                                <p class=" text-base lg:text-sm text-justify break-words flex-wrap text-white py-1 pt-2 lg:py-2 ">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                                <div class=" flex flex-auto flex-wrap py-4 lg:py-6 items-center justify-center lg:justify-start">
+                                                    <a  href="/schedule-demo/" class=" outline-none py-3 px-6 text-gray-600 hover:text-gray-900 bg-gray-100 hover:shadow-xl duration-200 transition-all font-medium text-base lg:text-sm rounded-3xl items-center justify-center flex flex-row m-2 sm:m-0">Schedule Demo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews of Our Clients design here.. -->
+        <section class=" w-full py-14 bg-white">
+            <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+                <div class="py-10 px-5 bg-white rounded-xl md:rounded-3xl shadow-xl md:shadow-md">
+                    <div class=" pb-3 md:pb-8">
+                        <h2 class=" text-xl md:text-2xl text-black font-bold text-center">Review of Self Storage Software by our Clients</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-7">
+                        <div class=" transform hover:-translate-y-2 duration-500 delay-100">
+                            <a href="https://www.getapp.com/industries-software/a/6storage/" target="_blank">
+                                <div class=" py-4 px-6 m-2.5 sm:m-0 md:py-7 bg-white rounded-xl md:rounded-3xl shadow-xl md:shadow-md h-32 md:h-40 lg:h-36 xl:h-44 flex items-center justify-center"><img class=" h-20 w-auto md:w-auto md:h-20" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c5265a85-d7b6-499b-c013-7a07fc0cc300/6Storage" alt="Reviews_getapp"></div>
+                            </a>
+                        </div>
+                        <div class=" transform hover:-translate-y-2 duration-500 delay-100">
+                            <a href="https://www.capterra.com/p/150577/6Storage/" target="_blank">
+                                <div class=" py-4 px-6 m-2.5 sm:m-0 md:py-7 bg-white rounded-xl md:rounded-3xl shadow-xl md:shadow-md h-32 md:h-40 lg:h-36 xl:h-44 flex items-center justify-center"><img class=" h-20 w-auto md:w-auto md:h-20" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/ad20baa4-e75a-4391-25f1-eb2990977e00/6Storage" alt="Reviews-capterra"></div>
+                            </a>
+                        </div>
+                        <div class=" transform hover:-translate-y-2 duration-500 delay-100">
+                            <a href="https://www.softwareadvice.com/property/6storage-profile/" target="_blank">
+                                <div class=" py-4 px-6 m-2.5 sm:m-0 md:py-7 bg-white rounded-xl md:rounded-3xl shadow-xl md:shadow-md h-32 md:h-40 lg:h-36 xl:h-44 flex items-center justify-center"><img class=" h-20 w-auto md:w-auto md:h-24" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/59d5b5e5-0872-401f-15cd-457ee2127500/6Storage" alt="Reviews_software"></div>
+                            </a>
+                        </div>
+                        <div class=" transform hover:-translate-y-2 duration-500 delay-100">
+                            <a href="https://quality.livechatinc.com/9165215" target="_blank">
+                                <div class=" py-4 px-6 m-2.5 sm:m-0 md:py-7 bg-white rounded-xl md:rounded-3xl shadow-xl md:shadow-md h-32 md:h-40 lg:h-36 xl:h-44 flex items-center justify-center"><img class=" h-20 w-auto md:w-auto md:h-28" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c7cc9991-76ff-48a4-feae-5d94df3cfa00/6Storage" alt="Reviews-livechat"></div>
+                            </a>
+                        </div>
+                        <div class=" transform hover:-translate-y-2 duration-500 delay-100">
+                            <a href="https://quality.livechatinc.com/9165215" target="_blank">
+                                <div class=" py-4 px-6 m-2.5 sm:m-0 md:py-7 bg-white rounded-xl md:rounded-3xl shadow-xl md:shadow-md h-32 md:h-40 lg:h-36 xl:h-44 flex items-center justify-center"><img class=" h-20 w-auto md:w-auto md:h-28" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0c79c631-647f-44c3-2f2f-7f7889c12c00/6Storage" alt="6storage-live-chat"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Storage Facility Management Software and Services Design here.. -->
+        <section class=" w-full py-14 lg:pb-24 xl:py-14 bg-blue-50">
+            <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+                <div class=" py-5 text-center text-gray-700">
+                    <h4 class=" text-xl sm:text-2xl lg:text-4xl font-bold">Storage Facility Management Software and Services</h4>
+                    <hr class=" border-t-4 border-blue-800 mt-4 mx-auto w-2/12 md:w-1/12 rounded-md">
+                </div>
+                <div class=" pt-5 hidden md:block">
+                    <ul class=" flex flex-col md:flex-row md:justify-center">
+                        <li class="text-left md:text-center text-base lg:text-lg text-gray-700 font-semibold cursor-pointer active:bg-white">
+                            <div onclick="tabstorage(event, 'Software')" class="tablinks px-7 pt-5 border-blue-700 md:border-b-4 pb-2 bg-white rounded-tl-md rounded-tr-md">
+                                <img class=" w-auto md:mx-auto h-20 md:py-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b78b27ca-cdbc-4a2c-61ac-d71381a17400/6Storage" alt="software-icon"><span class=" py-4">Software</span>
+                            </div>
+                        </li>
+                        <li class="text-left md:text-center text-base lg:text-lg text-gray-700 font-semibold cursor-pointer active:bg-white">
+                            <div onclick="tabstorage(event, 'Gate_Access')" class="tablinks px-7 pt-5">
+                                <img class=" w-auto md:mx-auto h-20 md:py-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c76801f4-0818-4446-728b-f10a893c3900/6Storage" alt="security-icon"><span class=" py-4">Gate Access</span>
+                            </div>
+                        </li>
+                        <li class="text-left md:text-center text-base lg:text-lg text-gray-700 font-semibold cursor-pointer active:bg-white">
+                            <div onclick="tabstorage(event, 'Calculator')" class="tablinks px-7 pt-5">
+                                <img class=" w-auto md:mx-auto h-20 md:py-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/fdc2de1e-0c10-4e4f-ab76-b54bf0eb0800/6Storage" alt="reckoner-icon"><span class=" py-4">Calculator</span>
+                            </div>
+                        </li>
+                        <li class="text-left md:text-center text-base lg:text-lg text-gray-700 font-semibold cursor-pointer active:bg-white">
+                            <div onclick="tabstorage(event, 'Website')" class="tablinks px-7 pt-5">
+                                <img class=" w-auto md:mx-auto h-20 md:py-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2634016d-e00f-46d0-84be-d9564f5d2700/6Storage" alt="website-icon"><span class=" py-4">Website</span>
+                            </div>
+                        </li>
+                        <li class="text-left md:text-center text-base lg:text-lg text-gray-700 font-semibold cursor-pointer active:bg-white">
+                            <div onclick="tabstorage(event, 'Marketing')" class="tablinks px-7 pt-5">
+                                <img class=" w-auto md:mx-auto h-20 md:py-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/8160e681-e192-4a77-2ce5-ef1c7a5b3a00/6Storage" alt="marketing-icon"><span class=" py-4">Marketing</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                <div onclick="tabstorage(event, 'Software')" class="tablinks py-2 px-3 border-blue-700 md:border-b-4 pb-2 bg-white rounded-tl-md rounded-tr-md">
+                                    <h3>1. Software</h3>
+                                </div>
+                        </div>
+                        <div id="Software" class="tabcontent  bg-white p-5">
+                            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-y-0">
+                                <div class=" flex flex-col justify-center items-center">
+                                    <img class="py-2 px-3 md:py-5 md:px-10 w-10/12 mx-auto lg:w-full" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/71ad78d8-73fa-41ee-396c-845b94d4f800/6Storage" alt="self-storage-software">
+                                </div>
+                                <div class=" lg:order-first">
+                                    <div class=" py-5 text-gray-700">
+                                        <h4 class=" text-xl sm:text-2xl font-bold">Self storage management software</h4>
+                                        <hr class=" border-t-4 border-blue-800 mt-4 w-2/12 md:w-2/12 rounded-md">
+                                    </div>
+                                    <div class=" py-3 text-sm md:text-base text-black">
+                                        <p class=" text-gray-600">Tired of handling all the operations by yourself? Our self storage software helps facilitate storage operations with advanced features that are easy to use during peak business hours.</p>
+                                    </div>
+                                    <div class=" pb-7">
+                                        <ul>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Working Harder is exhaustive and unproductive, 6Storage helps you to work smarter</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>There is no one size fits all.Customize 6Storage Facility Management Software the way you want to run your business</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Extend your business with lots of integrations</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Make renting easier with tenant portal API</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-9">
+                                        <a href="/self-storage-software/" class="  outline-none py-4 px-8 text-blue-800 bg-purple-100 hover:text-white hover:bg-blue-800 font-bold text-sm md:text-base rounded">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                            <div onclick="tabstorage(event, 'Gate_Access')" class="tablinks py-2 px-3">
+                                <h3>2. Gate Access</h3>
+                            </div>
+                        </div>
+                        <div id="Gate_Access" class="tabcontent hidden  bg-white p-5 ">
+                            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-y-0">
+                                <div class=" flex flex-col justify-center items-center">
+                                    <img class="py-2 px-3 md:py-5 md:px-10 w-10/12 mx-auto lg:w-full" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/62c35eee-1488-4ad9-aa82-a3e478a9e200/6Storage" alt="gate-access-control-system">
+                                </div>
+                                <div class=" lg:order-first">
+                                    <div class=" py-5 text-gray-700">
+                                        <h4 class=" text-xl sm:text-2xl font-bold">Cloud based access control system</h4>
+                                        <hr class=" border-t-4 border-blue-800 mt-4 w-2/12 md:w-2/12 rounded-md">
+                                    </div>
+                                    <div class=" py-3 text-sm md:text-base text-black">
+                                        <p class=" text-gray-600">Our cloud based gate access system has been tested in our own unmanned facilities in Iceland and Italy, overcoming any security issues in any small to big facilities.</p>
+                                    </div>
+                                    <div class=" pb-7">
+                                        <ul>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>6Security comes with enhanced security features like flood detectors, sensors, no-contact keypads which can work in extreme temperatures and weather conditions</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Avail top notch security in an affordable price</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Utilize new revenue streams like Amazon delivery box</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-9">
+                                        <a href="/gate-access-control-system/" class="  outline-none py-4 px-8 text-blue-800 bg-purple-100 hover:text-white hover:bg-blue-800 font-bold text-sm md:text-base rounded">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                            <div onclick="tabstorage(event, 'Calculator')" class="tablinks py-2 px-3">
+                                <h3>3. Calculator</h3>
+                            </div>
+                        </div>
+                        <div id="Calculator" class="tabcontent hidden  bg-white p-5 ">
+                            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-y-0">
+                                <div class=" flex flex-col justify-center items-center">
+                                    <img class="py-2 px-3 md:py-5 md:px-10 w-10/12 mx-auto lg:w-full" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/01d7bcfa-3496-461e-43a2-b5e05e171000/6Storage" alt="self-storage-calculator-6storage">
+                                </div>
+                                <div class=" lg:order-first">
+                                    <div class=" py-5 text-gray-700">
+                                        <h4 class=" text-xl sm:text-2xl font-bold">Storage calculator for Self Storage Units</h4>
+                                        <hr class=" border-t-4 border-blue-800 mt-4 w-2/12 md:w-2/12 rounded-md">
+                                    </div>
+                                    <div class=" py-3 text-sm md:text-base text-black">
+                                        <p class=" text-gray-600">Are your tenants stuck with finding the right units? Our space calculator runs with a one liner code and is easy to embed to your website.</p>
+                                    </div>
+                                    <div class=" pb-7">
+                                        <ul>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Let your tenants see the added items in 3D preview – helps with items arrangement</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Bookmark the preview and use it for arranging the items in the actual unit.</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Enable local language to make it friendly for the customers to interact.</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Options provided for the tenants to book unit right after the unit calculation.</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Build on Geometric algorithms</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-9">
+                                        <a href="/self-storage-calculator/" class="  outline-none py-4 px-8 text-blue-800 bg-purple-100 hover:text-white hover:bg-blue-800 font-bold text-sm md:text-base rounded">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                            <div onclick="tabstorage(event, 'Website')" class="tablinks py-2 px-3">
+                                <h3>4. Website</h3>
+                            </div>
+                        </div>
+                        <div id="Website" class="tabcontent hidden  bg-white p-5">
+                            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-y-0">
+                                <div class=" flex flex-col justify-center items-center">
+                                    <img class="py-2 px-3 md:py-5 md:px-10 w-10/12 mx-auto lg:w-full" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/ea37f8a5-17ae-4302-0669-ae9d8f2f3600/6Storage" alt="website-development">
+                                </div>
+                                <div class=" lg:order-first">
+                                    <div class=" py-5 text-gray-700">
+                                        <h4 class=" text-xl sm:text-2xl font-bold">Managed Website for Self Storage Owners</h4>
+                                        <hr class=" border-t-4 border-blue-800 mt-4 w-2/12 md:w-2/12 rounded-md">
+                                    </div>
+                                    <div class=" py-3 text-sm md:text-base text-black">
+                                        <p class=" text-gray-600">Pick a readymade template to launch your website quickly with prebuilt integration with 6storage software and 3rd party business extensions</p>
+                                    </div>
+                                    <div class=" pb-7">
+                                        <ul>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Your website integrates with tenant portal API</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>PWA websites work like an app and triggers mobile notifications</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Avail our tailor made marketing services to increase your website performance</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-9">
+                                        <a href="/self-storage-website/" class="  outline-none py-4 px-8 text-blue-800 bg-purple-100 hover:text-white hover:bg-blue-800 font-bold text-sm md:text-base rounded">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                            <div onclick="tabstorage(event, 'Marketing')" class="tablinks py-2 px-3">
+                                <h3>5. Marketing</h3>
+                            </div>
+                        </div>
+                        <div id="Marketing" class="tabcontent hidden  bg-white p-5">
+                            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-y-0">
+                                <div class=" flex flex-col justify-center items-center">
+                                    <img class="py-2 px-3 md:py-5 md:px-10 w-10/12 mx-auto lg:w-full" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5e5c4a78-7227-43c0-642d-010f67851f00/6Storage" alt="digital-marketing-service">
+                                </div>
+                                <div class=" lg:order-first">
+                                    <div class=" py-5 text-gray-700">
+                                        <h4 class=" text-xl sm:text-2xl font-bold">Managed Digital Marketing Services for Self Storage Owners</h4>
+                                        <hr class=" border-t-4 border-blue-800 mt-4 w-2/12 md:w-2/12 rounded-md">
+                                    </div>
+                                    <div class=" py-3 text-sm md:text-base text-black">
+                                        <p class=" text-gray-600">Your local neighborhood has a pool of potential customers and online marketing campaigns bring them to your facility on a regular basis.</p>
+                                    </div>
+                                    <div class=" pb-7">
+                                        <ul>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Target your audience with SEO, Facebook / Google ads</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Optimize your website visibility with SEO and backlinks</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class=" flex flex-row py-1">
+                                                    <img class=" w-6 h-6 mr-3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/837a1f4f-281b-4d35-cf67-438178b1f100/6Storage" alt="tik-mark"><span>Detailed marketing reports on monthly/weekly performance</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-9">
+                                        <a href="/self-storage-marketing/" class="  outline-none py-4 px-8 text-blue-800 bg-purple-100 hover:text-white hover:bg-blue-800 font-bold text-sm md:text-base rounded">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 6Storage software Design here -->
+        <section class=" w-full py-14 bg-blue-50">
+            <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+                <div class=" py-8 text-center text-gray-700">
+                    <h4 class=" text-xl sm:text-2xl lg:text-4xl font-bold">6Storage software – integrated with all your preferred apps to manage all operations</h4>
+                    <hr class=" border-t-4 border-blue-800 mt-4 mx-auto w-2/12 md:w-1/12 rounded-md">
+                </div>
+                <div class="bg-blue-50 pt-5 pb-2 my-1 grid grid-cols-1 gap-5 text-right mr-4 md:mr-6">
+                    <div class=" ">
+                        <form action="/">
+                            <select onchange="countrySelect(event)" name="Global" id="Global" class="text-black px-3 py-2 border-2 rounded-lg text-left bg-white outline-none cursor-pointer">
+                                <option value="Global" class=" rounded-xl">GLOBAL</option>
+                                <option value="USA">USA</option>
+                                <option value="EU">EU</option>
+                                <option value="AUSTRALIA">AUSTRALIA</option>
+                                <option value="MENA">MENA</option>
+                                <option value="ASIA">ASIA</option>
+                                <option value="AFRICA">AFRICA</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class=" grid grid-cols-1 md:grid-cols-6 gap-3">
+                    <div class=" md:col-span-2">
+                        <div class=" pt-5 pb-2 hidden md:block w-full h-auto">
+                            <ul class=" flex flex-col gap-2">
+                                <li class=" rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                                    <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200 bg-white md:border-2 border-dotted border-blue-300" onclick="part_tabstorage(event, 'Payment_Processing')">
+                                        <span class=" flex flex-row items-center justify-start"><svg class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="3" y="5" width="18" height="14" rx="3"></rect><line x1="3" y1="10" x2="21" y2="10"></line><line x1="7" y1="15" x2="7.01" y2="15"></line><line x1="11" y1="15" x2="13" y2="15"></line></svg>Payment Processing</span>
+                                    </div>
+                                </li>
+                                <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                                    <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200" onclick="part_tabstorage(event, 'Gate_Access_Controls')">
+                                        <span class=" flex flex-row items-center justify-start"><svg class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <circle cx="12" cy="12" r="9"></circle>  <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1"></path>  <circle cx="12" cy="7.5" r=".5" fill="currentColor"></circle></svg>Gate Access Controls</span>
+                                    </div>
+                                </li>
+                                <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                                    <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200" onclick="part_tabstorage(event, 'Operations_Accounting_Partners')">
+                                        <span class=" flex flex-row items-center justify-start"><svg class="h-8 w-8 text-blue-800 mr-2 rounded-full p-1 bg-purple-100" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <path d="M3.5 5.5l1.5 1.5l2.5 -2.5"></path>  <path d="M3.5 11.5l1.5 1.5l2.5 -2.5"></path>  <path d="M3.5 17.5l1.5 1.5l2.5 -2.5"></path>  <line x1="11" y1="6" x2="20" y2="6"></line>  <line x1="11" y1="12" x2="20" y2="12"></line>  <line x1="11" y1="18" x2="20" y2="18"></line></svg>Operations &amp; Accounting Partners</span>
+                                    </div>
+                                </li>
+                                <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                                    <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200" onclick="part_tabstorage(event, 'Email_Text_Solutions')">
+                                        <span class=" flex flex-row items-center justify-start"><svg class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Email/Text Solutions</span>
+                                    </div>
+                                </li>
+                                <li class="rounded  text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                                    <div class="part_tablinks global eu bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200" onclick="part_tabstorage(event, 'Reseller_Partner')">
+                                        <span class=" flex flex-row items-center justify-start"><svg class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>Reseller Partner</span>
+                                    </div>
+                                </li>
+                                <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                                    <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200" onclick="part_tabstorage(event, 'Digital_Marketing_Partner')">
+                                        <span class=" flex flex-row items-center justify-start"><svg class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <line x1="18" y1="20" x2="18" y2="10"></line>  <line x1="12" y1="20" x2="12" y2="4"></line>  <line x1="6" y1="20" x2="6" y2="14"></line></svg>Digital Marketing Partner</span>
+                                    </div>
+                                </li>
+                                <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                                    <div class="part_tablinks global bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200" onclick="part_tabstorage(event, 'Call_Centre')">
+                                        <span class=" flex flex-row items-center justify-start"><svg class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <rect x="4" y="13" rx="2" width="5" height="7"></rect>  <rect x="15" y="13" rx="2" width="5" height="7"></rect>  <path d="M4 15v-3a8 8 0 0 1 16 0v3"></path></svg>Call Centre</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" md:col-span-4">
+                        <div class=" pt-5 pb-2 w-full h-auto">
+                            <!--  Payment Processing design is here-->
+                            <div class=" ">
+                                <!-- mobile Accordion option -->
+                                <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                    <div onclick="part_tabstorage(event, 'Payment_Processing')" class="part_tablinks global usa eu australia mena asia africa py-2 px-3 bg-white md:border-2 border-dotted border-blue-300">
+                                        <h3>1. Payment Processing</h3>
+                                    </div>
+                                </div>
+                                <div id="Payment_Processing" class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto">
+                                    <div class=" grid grid-cols-2 md:grid-cols-3 gap-6">
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <a href="https://www.6storage.com/payment-gateway-vendors/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c8ac2932-2810-4fbe-4058-17d82fed7100/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c8ac2932-2810-4fbe-4058-17d82fed7100/6Storage" alt="Braintree">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs">Scale your business with Braintree.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e9b97d45-cd69-48ab-9236-2bcdecf89000/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e9b97d45-cd69-48ab-9236-2bcdecf89000/6Storage" alt="E-merchant">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Online payments technology for efficiency driven businesses.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global mena">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/4a6310d9-9dba-42d6-42d3-5c19faf63600/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/4a6310d9-9dba-42d6-42d3-5c19faf63600/6Storage" alt="Hper_Pay">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">HyperPay is a robust online payment gateway driving the future of cashless payments in the MENA region.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2f891b90-4adf-43c7-6eeb-8843c4afac00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2f891b90-4adf-43c7-6eeb-8843c4afac00/6Storage" alt="Nets">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">With Nets, switching between the major card processing issuers is easier</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa">
+                                            <div>
+                                                <a href="https://offers.paya.com/6storage/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img class=" w-32 mx-auto md:w-36 xl:w-auto" data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/746d28a2-cfc4-45fa-6d8d-2b6abf898a00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/746d28a2-cfc4-45fa-6d8d-2b6abf898a00/6Storage" alt="Paya">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs">Paya, POS integrated payments solutions will provide a simple way to deliver valuable experiences to your tenants anywhere, at any time.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="global eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/51c5b34a-f01e-47fa-93c5-ca2b4e083500/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/51c5b34a-f01e-47fa-93c5-ca2b4e083500/6Storage" alt="P24">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">P24-Use Przelewy24 for BLIK and online transfers from 350 banks in Poland regions.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img class=" w-32 mx-auto md:w-36 xl:w-auto" data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/fa38d962-f946-4122-ff3b-bae035454100/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/fa38d962-f946-4122-ff3b-bae035454100/6Storage" alt="Rapyd">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">RapydRaypd-World's Largest Local Payments Network with an all-in-one POS solution.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/8e421d7d-5bbc-4a0e-eec3-eb940bee0800/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/8e421d7d-5bbc-4a0e-eec3-eb940bee0800/6Storage" alt="SMS">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">ISS BEST PAYMENT SERVICE 2014 . 2015 . 2016.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b4044843-fb86-41d6-ae2c-239eb3417f00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b4044843-fb86-41d6-ae2c-239eb3417f00/6Storage" alt="Sepa">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">The Single Euro Payments Area (SEPA) is an initiative of the European Union to simplify payments within and across member countries.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e7e7a8bf-b5fe-44bf-f167-9468b2b71200/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e7e7a8bf-b5fe-44bf-f167-9468b2b71200/6Storage" alt="Stripe">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Stripe is the best software platform for running an internet business. Handle billions of dollars every year for forward thinking businesses the world.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/ff2736ec-1676-4396-ec76-e6bc37dae300/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/ff2736ec-1676-4396-ec76-e6bc37dae300/6Storage" alt="Swedbank">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Swedbank Gateway is a convenient account management solution for linking your accounting software with banking services.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7f2a389e-5961-42d8-0508-f61f16b01700/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7f2a389e-5961-42d8-0508-f61f16b01700/6Storage" alt="World_Pay">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">The smarter, faster, easier, credit card processor.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gate Access Controls design is here -->
+                            <div class=" ">
+                                <!-- mobile Accordion option -->
+                                <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                    <div onclick="part_tabstorage(event, 'Gate_Access_Controls')" class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                        <h3>2. Gate Access Controls</h3>
+                                    </div>
+                                </div>
+                                <div id="Gate_Access_Controls" class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                                    <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <a href="https://www.6storage.com/6security/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/9636c390-9606-4ccb-489b-1516bb0f9b00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/9636c390-9606-4ccb-489b-1516bb0f9b00/6Storage" alt="6Security">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs">6security is highly flexible and affordable. It’s developed entirely for 6Storage users and lets you provide additional services like ecommerce drop off points.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <a href="https://www.6storage.com/marketplace/noke-gate-system/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/60d7b3e6-d4a9-462c-bf92-4154061cd600/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/60d7b3e6-d4a9-462c-bf92-4154061cd600/6Storage" alt="Noke-logo">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs">The new Bluetooth enabled gate access system lets you lock the unit with an electronic lock, all from your mobile. No more keypads required.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="global">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/69ee6b72-435a-4191-0fe6-3a7979623700/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/69ee6b72-435a-4191-0fe6-3a7979623700/6Storage" alt="PTI">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">PTI is the most trusted name in security and new technology for the self storage industry.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2eaf7be0-5629-451d-70b0-aa2411c30500/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2eaf7be0-5629-451d-70b0-aa2411c30500/6Storage" alt="Quikstor">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Video, wireless, Alarms and Gate Keypad Access Control for a comprehensive solution for facility security.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img class=" w-32 mx-auto md:w-36 xl:w-auto" data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7e639c6d-585c-40b1-d435-54d7c3ac2000/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7e639c6d-585c-40b1-d435-54d7c3ac2000/6Storage" alt="Salto_Partner">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">A access control platform combines electronic door components and software providing tailor-made wire-free networked access control solutions.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img class=" w-32 mx-auto md:w-36 xl:w-auto" data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5d556e61-7111-4cc8-a5bd-299b0c114a00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5d556e61-7111-4cc8-a5bd-299b0c114a00/6Storage" alt="Sentinel_System">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Secure your facility with WinSen, the 1st windows based security in self storage.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/52cb7528-52aa-4eb0-41ef-dea829a27c00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/52cb7528-52aa-4eb0-41ef-dea829a27c00/6Storage" alt="SCSolution">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">SC Solutions is the only European company that offers personalized access control and security systems.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/944cf9bd-fde3-405e-b89f-e656d4476a00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/944cf9bd-fde3-405e-b89f-e656d4476a00/6Storage" alt="Suprema">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">An intelligent door controller which provides the advantages of a biometric-enabled security</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Operations & Accounting Partners design is here -->
+                            <div class=" ">
+                                <!-- mobile Accordion option -->
+                                <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                    <div onclick="part_tabstorage(event, 'Operations_Accounting_Partners')" class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                        <h3>3. Operations &amp; Accounting Partners</h3>
+                                    </div>
+                                </div>
+                                <div id="Operations_Accounting_Partners" class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                                    <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                        <div class="global usa">
+                                            <div>
+                                                <a href="https://www.6storage.com/marketplace/getpayroll-partner/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b9c0a1ae-828e-4e9a-eb15-387127cde100/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b9c0a1ae-828e-4e9a-eb15-387127cde100/6Storage" alt="Getpay">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs">GetPayroll is a 30-year-old nationwide payroll service bureau which provides the most compliant, affordable and reliable payroll service for small and medium-sized businesses. 100% error-free processing guarantee.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="global eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/6e308129-917e-4fe6-9f6a-22cc6857cf00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/6e308129-917e-4fe6-9f6a-22cc6857cf00/6Storage" alt="Hogia">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center">
+                                                            <p class=" p-2 text-xs">Get started with accounting, payroll and see a clear overview of your accounting practices.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global eu">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/a81c859a-0184-4065-6c9d-5d316cc47d00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/a81c859a-0184-4065-6c9d-5d316cc47d00/6Storage" alt="SevDesk">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Creates invoices and estimates, takes care of accounting, customer and self storage management.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <a href="https://www.6storage.com/marketplace/intuit-quickbooks/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/740176a9-9e41-4dca-5c0f-08d58d639800/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/740176a9-9e41-4dca-5c0f-08d58d639800/6Storage" alt="Quick_book">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs">Manage all financial transactions of your storage business effortlessly with QuickBooks.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Email/Text Solutions design is here -->
+                            <div class=" ">
+                                <!-- mobile Accordion option -->
+                                <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                    <div onclick="part_tabstorage(event, 'Email_Text_Solutions')" class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                        <h3>4. Email/Text Solutions</h3>
+                                    </div>
+                                </div>
+                                <div id="Email_Text_Solutions" class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                                    <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0f7f2ab7-12c9-4bf8-97c5-afb72cf9d700/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0f7f2ab7-12c9-4bf8-97c5-afb72cf9d700/6Storage" alt="SendGrid">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Automate and send transactional and reminder emails to all your tenants.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/1180f2a1-ea57-4ab2-2800-c7c1d23dad00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/1180f2a1-ea57-4ab2-2800-c7c1d23dad00/6Storage" alt="Twilio">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Send two way SMS and reach your tenants faster.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Reseller Partner design is here  -->
+                            <div class=" ">
+                                <!-- mobile Accordion option -->
+                                <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                    <div onclick="part_tabstorage(event, 'Reseller_Partner')" class="part_tablinks global eu py-2 px-3">
+                                        <h3>5. Reseller Partner</h3>
+                                    </div>
+                                </div>
+                                <div id="Reseller_Partner" class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                                    <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                        <div class="global eu">
+                                            <div>
+                                                <a href="https://www.6storage.com/marketplace/german-self-storage-partner/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img class=" w-32 mx-auto md:w-36 xl:w-auto" data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0aef9865-8a23-46b5-da43-2387f5083f00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0aef9865-8a23-46b5-da43-2387f5083f00/6Storage" alt="Store and Park">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs">Store and Park – The Authorized Reseller and Support Agent for 6Strorage, helping German Self Storage Facilities with German customer support and onsite training.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Digital Marketing Partner design is here -->
+                            <div class=" ">
+                                <!-- mobile Accordion option -->
+                                <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                    <div onclick="part_tabstorage(event, 'Digital_Marketing_Partner')" class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                        <h3>6. Digital Marketing Partner</h3>
+                                    </div>
+                                </div>
+                                <div id="Digital_Marketing_Partner" class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                                    <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                        <div class="global usa eu australia mena asia africa">
+                                            <div>
+                                                <a href="https://www.6storage.com/marketplace/egnitemarketing/" target="_blank">
+                                                    <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                        <img class=" w-32 mx-auto md:w-36 xl:w-auto" data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e66d7909-65bd-4b73-5016-4e6b58c6a900/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e66d7909-65bd-4b73-5016-4e6b58c6a900/6Storage" alt="Marketpartner">
+                                                        <div class=" hidden md:block">
+                                                            <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-auto w-full h-0 text-white flex flex-col justify-center ">
+                                                                <p class=" p-2 text-xs pb-5 mt-20">An Experienced storage professional with a proven track record for developing and executing digital marketing strategies for small and medium-sized companies with a single focus – to drive and improve sales/rentals by offering  a detailed execution plan tailored to each specific client.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Call Centre design is here -->
+                            <div class=" ">
+                                <!-- mobile Accordion option -->
+                                <div class=" block md:hidden text-base text-blue-700 font-bold " >
+                                    <div onclick="part_tabstorage(event, 'Call_Centre')" class="part_tablinks global py-2 px-3">
+                                        <h3>7. Call Centre</h3>
+                                    </div>
+                                </div>
+                                <div id="Call_Centre" class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                                    <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                        <div class="global">
+                                            <div>
+                                                <div class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                    <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/043fc5de-df0d-4e3a-87bb-11077aa78e00/6Storage" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/043fc5de-df0d-4e3a-87bb-11077aa78e00/6Storage" alt="TeleStor">
+                                                    <div class=" hidden md:block">
+                                                        <div class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                            <p class=" p-2 text-xs">Telstory Self Storage Call Center <br> more than an " ANSWERING SERVICE "
+                                                                <br> more than a " CALL CENTER " <br> more than a " SALES AGENT "</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Design is here -->
+        <section class=" w-full py-14 bg-white">
+            <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+                <div class=" py-8 text-center text-gray-700">
+                    <h4 class=" text-xl sm:text-2xl lg:text-4xl font-bold">What Our Customers Are Saying</h4>
+                    <hr class=" border-t-4 border-blue-800 mt-4 mx-auto w-2/12 md:w-1/12 rounded-md">
+                </div>
+                <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-stretch">
+                    <div class=" bg-white rounded-lg shadow-2xl text-justify text-base text-black px-6 py-8 border-b-2 border-blue-500 flex flex-col justify-between">
+                        <div>
+                            <img class=" w-10 h-10" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5866a789-4726-4d00-70d0-b9aefbc91c00/6Storage" alt="quotes">
+                            <p>6Storage has an incredible customer service - available 24/7 by chat. They keep improving their software with new updates/new functions quite often. They have even implemented a few functions for us that we asked them to include - at no cost. We are looking forward to using 6storage for many years to come.</p>
+                        </div>
+                        <div class=" grid grid-cols-2 gap-6 lg:gap-y-0 items-center mt-7 lg:mt-12">
+                            <div class=" border-r border-gray-300">
+                                <h6 class=" text-base text-black font-bold">Dag S</h6>
+                                <p class=" text-xs">CEO</p>
+                            </div>
+                            <div class>
+                                <img class=" w-full h-auto" src="https://www.6storage.com/img/reviewcapterra-logo.svg" alt="reviewcapterra-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow-2xl text-justify text-base text-black px-6 py-8 border-b-2 border-blue-500 flex flex-col justify-between">
+                        <div>
+                            <img class=" w-10 h-10" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5866a789-4726-4d00-70d0-b9aefbc91c00/6Storage" alt="quotes">
+                            <p>By using 6Storage I now have a up to date view of everything going on in the facility and where all my tenants are at. It's easy to manage payments and keep track of debt levels. Automatic invoicing and late fee application are highlights. The ability to email/sms clients from within the software makes debt management more efficient.</p>
+                        </div>
+                        <div class=" grid grid-cols-2 gap-6 lg:gap-y-0 items-center mt-7 lg:mt-12">
+                            <div class=" border-r border-gray-300">
+                                <h6 class=" text-base text-black font-bold">Chris O	</h6>
+                                <p class=" text-xs">Facility Manager</p>
+                            </div>
+                            <div class>
+                                <img class=" w-full h-auto" src="https://www.6storage.com/img/reviewcapterra-logo.svg" alt="reviewcapterra-logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg shadow-2xl text-justify text-base text-black px-6 py-8 border-b-2 border-blue-500 flex flex-col justify-between">
+                        <div>
+                            <img class=" w-10 h-10" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5866a789-4726-4d00-70d0-b9aefbc91c00/6Storage" alt="quotes">
+                            <p>When we found this software on Google used it for 30days on trial, the difference in software was like day and night. Any suggestions made on a support ticket will be incorporated to make your software an individual experience. Nothing is too much trouble for the support team. Extremely happy with this software. Can highly recommend it to others in the self-storage business.</p>
+                        </div>
+                        <div class=" grid grid-cols-2 gap-6 lg:gap-y-0 items-center mt-7 lg:mt-12">
+                            <div class=" border-r border-gray-300">
+                                <h6 class=" text-base text-black font-bold">Elean</h6>
+                                <p class=" text-xs">Facility Manager</p>
+                            </div>
+                            <div class>
+                                <img class=" w-full h-auto" src="https://www.6storage.com/img/reviewcapterra-logo.svg" alt="reviewcapterra-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action design here -->
+        <section class=" w-full py-14 bg-white">
+            <div class=" bg-cover bg-right-top bg-no-repeat bg-blend-darken visible " style="background-image: url(https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/a861f645-9b2e-4e62-a7e5-d70e14314600/6Storage);">
+                <div class=" bg-blue-500 opacity-90">
+                    <div class=" container sm:max-w-xl lg:max-w-4xl mx-auto py-14 text-center flex justify-center items-center flex-row flex-wrap text-white px-4 md:px-0">
+                        <h2 class=" text-2xl lg:text-3xl font-bold py-3">Explore all the other 6Storage features & ask your questions on a live demo</h2>
+                        <p class=" text-base md:text-lg lg:text-xl py-2">We got you covered on managing multiple locations, following up with new leads and many more functions</p>
+                        <div class=" grid grid-cols-1 md:grid-cols-2 py-7 gap-5">
+                            <div>
+                                <a href="/schedule-demo/" class="  outline-none py-4 px-8 text-blue-800 bg-purple-100 hover:shadow-inner shadow-2xl font-medium text-sm md:text-base rounded">Book Demo</a>
+                            </div>
+                            <div class=" pt-5 md:pt-0">
+                                <a href="#" class="  outline-none py-4 px-8 text-blue-800 bg-purple-100 hover:shadow-inner shadow-2xl font-medium text-sm md:text-base rounded">Start Free Trial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}

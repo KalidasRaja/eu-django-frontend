@@ -1,65 +1,1114 @@
-<header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between">
-      <div class="px-6 w-full flex flex-wrap items-center justify-between">
-        <div class="flex items-center">
-          <button
-            class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
-            type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentY"
-            aria-controls="navbarSupportedContentY" aria-expanded="false" aria-label="Toggle navigation">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-5" role="img"
-              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path fill="currentColor"
-                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-              </path>
-            </svg>
-          </button>
+<header class=" sticky top-0 z-50 w-full bg-white" id="Nav_Sticky">
+        <div class=" h-8">
+            <div class="flex flex-row items-center justify-end float-right  h-9">
+                <div class=" float-right mr-5 flex flex-auto flex-row items-center justify-center">
+                    <div class=" px-2 lg:px-3">
+                        <h6 class=" text-xs font-normal text-gray-700">
+                            <span class=" font-semibold text-gray-900">
+                                Contact :
+                            </span>
+                            <a href="tel:+13143901191" class=" hover:underline">314-390-1191</a>
+                        </h6>
+                    </div>
+                    <div class=" px-2 lg:px-3">
+                        <a href="mailto:michelle@6storage.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                        </a>
+                    </div>
+                    <div class=" px-2 lg:px-3 mr-1 border-r border-gray-600">
+                        <a href="https://www.6storage.com/scheduledemo/">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                              </svg>
+                        </a>
+                    </div>
+                    <div class=" px-2 lg:px-3">
+                        <a href="https://www.6storage.com/login/">
+                            <h6 class=" text-xs font-normal text-gray-700">
+                                <span class=" font-semibold text-gray-900">
+                                    Login
+                                </span>
+                            </h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
-          <ul class="navbar-nav mr-auto lg:flex lg:flex-row">
-            <li class="nav-item">
-              <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-                href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-                href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-                href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">Pricing</a>
-            </li>
-            <li class="nav-item mb-2 lg:mb-0">
-              <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
-                href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar -->
+        <nav class=" lg:max-w-7xl mx-auto relative text-gray-900">
+            <div class=" w-full mx-auto lg:flex lg:justify-between">
+                <div class=" w-full flex flex-row items-center justify-between">
+                    <!-- Mobile toggle menu -->
+                    <div class="lg:hidden flex items-center mr-5 float-right">
+                        <button class="mobile-menu-button hover:border focus:border p-1.5 hover:border-gray-500  focus:border-gray-500  rounded">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-    <!-- Background image -->
-    <div class="relative overflow-hidden bg-no-repeat bg-cover" style="
-      background-position: 50%;
-      background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp');
-      height: 350px;
-      margin-bottom: 700px;
-    ">
-      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-        style="background-color: rgba(0, 0, 0, 0.75)">
-        <div class="flex justify-center items-center h-full">
-          <div class="text-center text-white px-6 md:px-12">
-            <h1 class="text-5xl font-bold mt-0 mb-6">Heading</h1>
-            <h3 class="text-3xl font-bold mb-8">Subeading</h3>
-            <button type="button"
-              class="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-              data-mdb-ripple="true" data-mdb-ripple-color="light">
-              Get started
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Background image -->
-  </header>
+                <ul class="mobile-menu hidden lg:flex text-gray-900 flex-col lg:flex-row justify-center items-center bg-gray-100 lg:bg-transparent lg:pr-5" data-name="check">
+
+                    <!-- Toggleable link -->
+                    <li class=" toggleable hover:bg-white hover:text-gray-600 rounded-md lg:mx-1">
+                        <input type="checkbox" value="selected" id="toggle-one" class="toggle-input">
+                        <label for="toggle-one" class=" block cursor-pointer py-3 px-4 lg:p-3 text-base lg:text-sm font-medium relative z-50 lg:flex lg:flex-row lg:items-center ">Products</label>
+                        <div role="toggle" class=" mega-menu ">
+                            <div class="mb-16 sm:mb-0 shadow-xl bg-white mx-auto w-full xl:w-11/12 xl:rounded-lg rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-2xl xl:rounded-bl-2xl xl:rounded-br-2xl border-b-4  border-blue-500">
+                                <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-5 sm:gap-0 lg:gap-5 justify-start items-start xl:rounded-lg rounded-bl-2xl rounded-br-2xl relative z-0 drop-shadow-black">
+                                    <div class=" lg:col-span-3 py-1.5 px-2 md:py-5 md:px-2 xl:rounded-md rounded-bl-2xl  xl:rounded-bl-2xl bg-light-gray-50">
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 lg:gap-1.5 justify-start items-start text-gray-700">
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/self-storage-software/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Self Storage</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Manage multiple locations, accounting, online payments & automated access.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/movable-container-storage-software/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.804 24.184">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_5" data-name="Rectangle 5" width="37.804" height="24.184" fill="#ffcd18"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_6" data-name="Group 6" transform="translate(0)">
+                                                                <g id="Group_5" data-name="Group 5" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_15" data-name="Path 15" d="M33.33,24.184H4.474A4.479,4.479,0,0,1,0,19.71V4.474A4.479,4.479,0,0,1,4.474,0H33.33A4.479,4.479,0,0,1,37.8,4.474V19.71a4.479,4.479,0,0,1-4.474,4.474M4.474,1.539A2.938,2.938,0,0,0,1.539,4.474V19.71a2.938,2.938,0,0,0,2.935,2.935H33.33a2.938,2.938,0,0,0,2.935-2.935V4.474A2.938,2.938,0,0,0,33.33,1.539Z" fill="#ffcd18"/>
+                                                                    <path id="Path_16" data-name="Path 16" d="M54.063,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-46.985 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_17" data-name="Path 17" d="M104,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-91.014 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_18" data-name="Path 18" d="M153.946,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-135.044 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_19" data-name="Path 19" d="M203.887,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-179.073 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_20" data-name="Path 20" d="M253.828,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,0,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-223.103 -36.82)" fill="#ffcd18"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Container Storage</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Affordable software to organize your storage container rentals.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/boat-marina-management-software/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.967 16.252">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_6" data-name="Rectangle 6" width="37.967" height="16.252" fill="#00b888"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_9" data-name="Group 9" transform="translate(0)">
+                                                                <g id="Group_8" data-name="Group 8" transform="translate(0)">
+                                                                    <g id="Group_7" data-name="Group 7" clip-path="url(#clip-path)">
+                                                                    <path id="Path_21" data-name="Path 21" d="M37.967,11.789c-.243.135-.484.382-.728.387a7.881,7.881,0,0,0-2.949.736,7.292,7.292,0,0,1-6.043-.006,7.2,7.2,0,0,0-4.79-.519c-.719.178-1.4.549-2.111.774A7.323,7.323,0,0,1,16,12.93a7.023,7.023,0,0,0-3.8-.7,7.516,7.516,0,0,0-2.081.535,7.931,7.931,0,0,1-6.853-.012A5.783,5.783,0,0,0,.89,12.2c-.623-.008-.907-.244-.89-.685s.288-.594.9-.588a6.878,6.878,0,0,1,2.571.548c.066.027.135.043.284.089-.119-.184-.187-.294-.26-.4C2.865,10.258,2.225,9.358,1.6,8.444a2.181,2.181,0,0,1,.433-3.109c.51-.4,1.035-.773,1.539-1.18a6.4,6.4,0,0,1,3.154-1.1c1.562-.271,3.125-.539,4.685-.828a1.786,1.786,0,0,1,1.961.653,1.3,1.3,0,0,0,1.479.494c0-.514,0-1.032,0-1.55,0-1.4.368-1.812,1.6-1.812,1.335,0,2.67.013,4-.005A2.807,2.807,0,0,1,22.39.7c.992.842,2,1.658,3.017,2.462a1.1,1.1,0,0,0,.64.236c3.46.014,6.92.01,10.381.01.932,0,1.193.2,1.539,1.16v.255a18.581,18.581,0,0,1-.594,2.034,8.967,8.967,0,0,1-3.379,3.993c-.7.48-1.445.889-2.229,1.366a4.818,4.818,0,0,0,2.094-.477,8.051,8.051,0,0,1,3.344-.828.733.733,0,0,1,.766.45Zm-1.1-7.1h-.547q-10.956,0-21.912.006a1.861,1.861,0,0,1-1.656-.756,1.09,1.09,0,0,0-1.224-.448c-1.876.349-3.754.692-5.637.994A6.32,6.32,0,0,0,3.059,6.1c.172.018.254.034.336.034.4,0,.791-.007,1.186,0a.617.617,0,0,1,.678.65.607.607,0,0,1-.665.618c-.309.01-.618,0-.927,0H2.356a1.288,1.288,0,0,0,.074.179c1.032,1.482,2.063,2.965,3.106,4.437a.567.567,0,0,0,.379.181,7.519,7.519,0,0,0,3.947-.693,7.445,7.445,0,0,1,5.944-.018,10.981,10.981,0,0,0,1.766.615,7.341,7.341,0,0,0,4.573-.584,8.223,8.223,0,0,1,2.3-.571,7.5,7.5,0,0,1,4.267.8.755.755,0,0,0,.528.065,15.646,15.646,0,0,0,4.078-1.975,9.064,9.064,0,0,0,2.453-2.434H7.5a2.967,2.967,0,0,1-.517-.031.547.547,0,0,1-.438-.592.549.549,0,0,1,.421-.607,2.722,2.722,0,0,1,.553-.041q14.2,0,28.4,0a1.578,1.578,0,0,0,.369-.009.325.325,0,0,0,.216-.168c.125-.392.226-.794.358-1.274M23.64,3.383l.03-.077q-1.179-.933-2.36-1.863a.371.371,0,0,0-.2-.091c-.906-.006-1.812,0-2.727,0V3.383Zm-6.43-2.1c-.363,0-.705-.013-1.045.011a.3.3,0,0,0-.19.224c-.016.616-.009,1.233-.009,1.862H17.21Z" transform="translate(0.001 -0.001)" fill="#00b888"/>
+                                                                    <path id="Path_22" data-name="Path 22" d="M76.691,127.262a7.225,7.225,0,0,1,3.325.71,6.643,6.643,0,0,0,5.669,0,7.934,7.934,0,0,1,6.614-.02,16.274,16.274,0,0,0,2.218.608,1.059,1.059,0,0,0,.11.015c.466.071.707.333.664.72s-.314.567-.786.547a7.721,7.721,0,0,1-2.762-.74,6.527,6.527,0,0,0-5.495,0,7.965,7.965,0,0,1-6.818-.008,6.5,6.5,0,0,0-5.46,0,7.8,7.8,0,0,1-2.835.749c-.418.015-.671-.162-.718-.541A.6.6,0,0,1,71,128.6a11.011,11.011,0,0,0,3-.856,23.154,23.154,0,0,1,2.669-.617l.019.137" transform="translate(-63.873 -113.612)" fill="#00b888"/>
+                                                                    <path id="Path_23" data-name="Path 23" d="M354.4,135.048c-.081.1-.195.347-.37.438a7.748,7.748,0,0,1-1.221.482.522.522,0,0,1-.672-.416.614.614,0,0,1,.324-.76,12.251,12.251,0,0,1,1.259-.493c.35-.114.685.207.68.748" transform="translate(-319.41 -120.003)" fill="#00b888"/>
+                                                                    <path id="Path_24" data-name="Path 24" d="M35.268,135.6c0,.514-.281.841-.6.752a7.769,7.769,0,0,1-1.287-.494.587.587,0,0,1-.259-.747c.094-.325.322-.487.606-.4a7.718,7.718,0,0,1,1.248.494c.15.077.238.314.3.4" transform="translate(-30.009 -120.371)" fill="#00b888"/>
+                                                                    </g>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Boat Storage</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                The key to freedom is automating your perfect Boat storage business with 6Storage.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/rv-vehicle-storage-software/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg id="Group_14" data-name="Group 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 33.393 22.051">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_8" data-name="Rectangle 8" width="33.393" height="22.051" fill="#52bdd9"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_13" data-name="Group 13" clip-path="url(#clip-path)">
+                                                                <path id="Path_30" data-name="Path 30" d="M9.6,19.943c-1.43,0-2.83-.014-4.229.006a6.768,6.768,0,0,1-2.085-.271c-.852-.258-1.721-.46-2.581-.689-.518-.138-.692-.34-.693-.861C0,14-.011,9.876.015,5.751A3.172,3.172,0,0,1,3.307,2.5c.556-.012,1.112,0,1.683,0,.034-.241.053-.46.1-.674A2.287,2.287,0,0,1,7.209.01C7.332,0,7.456,0,7.58,0Q15.238,0,22.9,0a2.326,2.326,0,0,1,2.467,1.77c.055.226.067.462.1.732h.559c.991,0,1.983,0,2.974,0a1.05,1.05,0,0,1,.826.342c.695.741,1.417,1.457,2.1,2.211a1.3,1.3,0,0,1,.3.722c.043.554.008,1.114.015,1.672a.807.807,0,0,1-.579.849c-.847.311-1.691.633-2.535.952-.137.052-.272.111-.431.176.277.966.542,1.917.833,2.86.035.114.193.213.317.273.981.471,1.964.941,2.956,1.389a.9.9,0,0,1,.6.922c-.013,1.2,0,2.4-.006,3.605,0,.553-.147.773-.678.916a7.342,7.342,0,0,1-2.406.565c-.066,0-.17.117-.207.2a2.862,2.862,0,0,1-5.383,0,.42.42,0,0,0-.317-.2c-3-.011-6-.008-9-.011a.313.313,0,0,0-.357.226,2.8,2.8,0,0,1-2.711,1.884A2.833,2.833,0,0,1,9.662,20.1c-.018-.046-.037-.091-.066-.16M1.464,14.265H16.2V13.8q0-3.1,0-6.207c0-.743.233-.971.982-.972h3.829c.131,0,.262-.012.394-.018V3.97H3.417A1.775,1.775,0,0,0,1.464,5.932q0,3.958,0,7.916v.416m16.213,4.179h3.73V8.1h-3.73Zm5.23.027c.375,0,.733-.028,1.085.007a.747.747,0,0,0,.882-.518,2.628,2.628,0,0,1,2.666-1.583,2.7,2.7,0,0,1,2.506,1.785c.108.256.233.361.482.306.384-.086.76-.2,1.145-.285.219-.047.262-.166.26-.367-.009-.78-.012-1.56,0-2.339a.412.412,0,0,0-.282-.448,22.921,22.921,0,0,1-2.141-1.02,4.4,4.4,0,0,0-2.3-.316c-.107.727-.308.992-.763.978a.627.627,0,0,1-.438-.146,5.786,5.786,0,0,1-.435-.816H22.908Zm0-14.5V8.2a2.1,2.1,0,0,0,.238.029q2.171,0,4.343,0a1.072,1.072,0,0,0,.36-.068q1.339-.493,2.672-1a.456.456,0,0,0,.213-.128,2.294,2.294,0,0,0-.124-1.242c-.529-.555-1.057-1.112-1.595-1.658a.5.5,0,0,0-.312-.15c-1.917-.009-3.834-.006-5.794-.006M16.175,15.777H1.466c0,.6-.006,1.181.008,1.759,0,.064.1.15.178.183.134.059.285.079.426.126a12.731,12.731,0,0,0,4.783.635c.912-.051,1.829-.009,2.728-.009.022-.041.029-.051.033-.062A2.765,2.765,0,0,1,12.3,16.379a2.741,2.741,0,0,1,2.765,1.905c.03.075.122.173.191.177.3.019.609.008.918.008ZM6.527,2.475H23.954c.02-.693-.316-1.018-1.038-1.018q-7.688,0-15.377,0c-.062,0-.124,0-.186,0a.842.842,0,0,0-.827,1.016M22.908,9.706v2.486h2.778c.059-.824.235-1.131.688-1.151.161-.007.407.031.473.137a8.108,8.108,0,0,1,.469,1.019h.646l-.721-2.492Zm-9.164,9.5a1.375,1.375,0,0,0-1.364-1.378A1.386,1.386,0,1,0,13.745,19.2M27.416,20.6a1.386,1.386,0,1,0-.014-2.772,1.386,1.386,0,0,0,.014,2.772" transform="translate(0 0)" fill="#52bdd9"/>
+                                                                <path id="Path_31" data-name="Path 31" d="M36.97,66.69q2.564,0,5.128,0c.681,0,.92.238.921.911q0,1.914,0,3.827c0,.626-.251.885-.876.886q-5.2.005-10.405,0c-.605,0-.861-.259-.863-.86q-.008-1.932,0-3.864c0-.657.243-.9.894-.9q2.6,0,5.2,0m-.781,1.477H32.356v2.679h3.832Zm1.5,2.673h3.831V68.158H37.693Z" transform="translate(-27.805 -60.067)" fill="#52bdd9"/>
+                                                                <path id="Path_32" data-name="Path 32" d="M184.427,126.609a.721.721,0,1,1-.746-.7.706.706,0,0,1,.746.7" transform="translate(-164.813 -113.402)" fill="#52bdd9"/>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">RV & Vehicle Storage</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Automate vehicle storage operations, right from move in to move out and get payments on time.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" lg:col-span-4 py-1.5 px-2 md:py-5 md:px-1 xl:rounded-md  rounded-br-2xl xl:rounded-br-2xl">
+                                        <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-0 lg:gap-1 justify-start items-start">
+                                            <div class="border-gray-200 border-b border-solid sm:border-r-0 lg:border-b-0">
+                                                <ul class="py-1.5 px-2 md:px-4 lg:px-2.5 w-full  md:py-0.5 text-sm font-normal text-gray-500">
+                                                    <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2">
+                                                        <img class="py-2 lg:py-3 h-16 sm:h-14 lg:h-12" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/6f250ca2-05da-45d8-9b79-6f4ac98c6300/6Storage" alt="6Storage_Menu_Icon">
+                                                        Self Storage Software
+                                                    </h6>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/self-storage-software/'; ?>" class=" block p-1  lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Management Software</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/self-storage-software/features/'; ?>" class=" block p-1  lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Features</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/self-storage-software/detailed-plans/'; ?>" class=" block p-1  lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Pricing</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="py-1.5 px-2 md:px-4 lg:px-2.5 w-full border-gray-200 border-b border-solid lg:border-r-0 lg:border-b-0 md:py-0.5 text-sm font-normal text-gray-500">
+                                                    <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2">
+                                                        <img class="py-2 lg:py-3 h-16 sm:h-14 lg:h-12" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/f849bfd3-1876-46bf-1257-9b9fdf68ad00/6Storage" alt="6Security_Menu_Icon">
+                                                        Gate Access Controls
+                                                    </h6>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/gate-access-control-system/'; ?>" class=" block p-1 lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Cloud based Access controls</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/gate-access-control-system/#Software_Features'; ?>" class=" block p-1 lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Software Features</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/gate-access-control-system/#Instant-Quote'; ?>" class=" block p-1 lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Instant Quote</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="py-1.5 px-2 md:px-4 lg:px-2.5 w-full border-gray-200 border-b border-solid lg:border-r-0 lg:border-b-0 md:py-0.5 text-sm font-normal text-gray-500">
+                                                    <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2">
+                                                        <img class="py-2 lg:py-3 h-16 sm:h-14 lg:h-12" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/f5152b60-08f9-4fd4-c844-620c4cd7ba00/6Storage" alt="6Reckoner_Menu_Icon">
+                                                        Storage Space Calculator
+                                                    </h6>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/self-storage-calculator/'; ?>" class=" block p-1 lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Preview Calculator</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="<?php echo get_site_url().'/self-storage-calculator/#Pricing'; ?>" class=" block p-1 lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Pricing</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://calculator.6storage.com/sign-up" class=" block p-1 lg:pl-0.5 hover:bg-blue-100 text-gray-500 hover:text-gray-700 rounded">Sign Up</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End toggleable link -->
+                    <!-- Toggleable link -->
+                    <li class=" toggleable hover:bg-white hover:text-gray-600 rounded-md lg:mx-1">
+                        <input type="checkbox" value="selected" id="toggle-two" class="toggle-input">
+                        <label for="toggle-two" class=" block cursor-pointer py-3 px-4 lg:p-3 text-base lg:text-sm font-medium relative z-50 lg:flex lg:flex-row lg:items-center">Services</label>
+                        <div role="toggle" class=" mega-menu">
+                            <div class=" mb-16 sm:mb-0 shadow-xl bg-light-gray-50 mx-auto w-full lg:w-10/12 lg:rounded-md rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-2xl xl:rounded-bl-2xl xl:rounded-br-2xl border-b-4  border-blue-500 relative z-0 drop-shadow-black">
+                                <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-0 lg:gap-5 justify-start items-start divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+                                    <div class=" lg:col-span-2 py-1.5 px-2 md:py-5 md:px-2 lg:rounded-md rounded-bl-2xl  lg:rounded-bl-2xl bg-light-gray-50">
+                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2  md:pl-5">
+                                            Website Services
+                                        </h6>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 lg:gap-1.5 justify-start items-start text-gray-700">
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/self-storage-website/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Overview</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Take a look at all templates & pick yours.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/self-storage-website/templates/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Templates</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Take a look at all templates & pick yours.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/self-storage-website/website-registration'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 32.315 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_4" data-name="Rectangle 4" width="32.315" height="32.148" fill="#57f"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_4" data-name="Group 4" transform="translate(0)">
+                                                                <g id="Group_3" data-name="Group 3" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_9" data-name="Path 9" d="M32.315,7.386V10.73c-.414,1.4-1.512,1.486-2.723,1.363,0,.109,0,.169,0,.23q.03,4.511.059,9.022c0,.263-.011.527.008.788a.3.3,0,0,0,.152.218,2.015,2.015,0,0,1,.947,3.016,3.586,3.586,0,0,1-1.631,1.44c-.617.273-1.276.454-1.988.7v3.379h1.613c.594,0,.905.226.895.646s-.3.616-.888.616H3.582c-.084,0-.169,0-.252,0a.625.625,0,1,1-.007-1.25c.483-.019.967-.007,1.451-.009h.3v-3.42c-.593-.185-1.149-.309-1.665-.53a3.617,3.617,0,0,1-2.093-1.984,1.945,1.945,0,0,1,1.051-2.543.412.412,0,0,0,.312-.475q.019-4.842.053-9.684a.928.928,0,0,0-.021-.135c-.357,0-.7.009-1.047,0A1.668,1.668,0,0,1,.018,10.519q-.036-1.466,0-2.934A1.63,1.63,0,0,1,1.509,6.013,2.655,2.655,0,0,1,3.558,6.4c.065-.267.118-.488.174-.708A11.428,11.428,0,0,1,5.074,2.207,3.583,3.583,0,0,1,7.77.491C8.229.438,8.691.408,9.151.365A59.03,59.03,0,0,1,16.614.019C19.144.1,21.672.3,24.2.444a3.785,3.785,0,0,1,2.862,1.511,6.833,6.833,0,0,1,1.155,2.363c.2.672.368,1.351.564,2.072a2.521,2.521,0,0,1,2-.377,1.69,1.69,0,0,1,1.534,1.373M3.958,12.927c1.028,0,1.984-.022,2.938,0a8.825,8.825,0,0,1,8.046,5,16.707,16.707,0,0,1,.693,1.654.652.652,0,0,0,1.25,0c.136-.353.266-.708.417-1.053a8.764,8.764,0,0,1,7.254-5.527,30.269,30.269,0,0,1,3.4-.082c.122,0,.245,0,.362,0a.982.982,0,0,0,.023-.135c0-.137,0-.273-.012-.41a32.248,32.248,0,0,0-1.057-6.711A15.041,15.041,0,0,0,26.4,3.254,2.593,2.593,0,0,0,24.023,1.7c-.273-.011-.545-.044-.817-.07a62.34,62.34,0,0,0-8.281-.342c-2.236.086-4.467.284-6.7.418A2.423,2.423,0,0,0,6.07,3.013a11.77,11.77,0,0,0-.815,1.938,30.428,30.428,0,0,0-1.128,5.8c-.076.708-.111,1.42-.168,2.172m-.006,9.342h.385c1.041,0,2.082,0,3.123,0a.626.626,0,0,1,.685.622.647.647,0,0,1-.652.635c-.094.007-.189,0-.284,0-1.346,0-2.693.026-4.037-.012a.7.7,0,0,0-.659,1.019,2.424,2.424,0,0,0,.509.671,3.525,3.525,0,0,0,2.447.92q10.662-.006,21.324,0c.105,0,.211.005.315-.005a3.394,3.394,0,0,0,2.531-1.353.811.811,0,0,0,.1-.917c-.168-.313-.453-.322-.76-.322q-7.76.006-15.52,0c-.564,0-.875-.226-.877-.636s.3-.626.875-.626H28.37V14.206c-.11-.006-.2-.016-.294-.016-.841,0-1.682-.006-2.524,0A7.7,7.7,0,0,0,18.5,18.946c-.157.378-.3.763-.453,1.141a1.907,1.907,0,0,1-3.565.008c-.161-.388-.3-.785-.467-1.17a7.6,7.6,0,0,0-5.136-4.478A19.152,19.152,0,0,0,4.016,14.2c-.017,0-.034.02-.063.038ZM20.6,27.408H11.619v3.455H20.6ZM1.272,9.059c0,.43,0,.861,0,1.291,0,.342.16.494.5.5.21.005.42.007.63,0,.311-.011.476-.156.48-.464q.016-1.338,0-2.676c0-.306-.172-.444-.488-.453q-.315-.009-.63,0c-.341.009-.491.16-.495.509,0,.43,0,.861,0,1.291m29.781,0c0-.441.006-.882,0-1.322a.427.427,0,0,0-.466-.472c-.22-.008-.441-.007-.661,0-.315.009-.48.148-.484.457q-.016,1.338,0,2.676c0,.307.17.449.483.46.21.007.42.006.63,0a.445.445,0,0,0,.5-.507c.006-.43,0-.861,0-1.291M8.986,30.885c.24,0,.449,0,.658,0,.526-.006.725-.2.727-.722,0-.841,0-1.681,0-2.522a2.055,2.055,0,0,0-.024-.228H8.986ZM21.839,27.4c0,1-.006,1.98,0,2.956a.476.476,0,0,0,.411.493,7.31,7.31,0,0,0,.957.01V27.4ZM24.5,30.885c.258,0,.487,0,.716,0a.594.594,0,0,0,.669-.685c0-.788,0-1.576,0-2.365v-.424H24.5ZM7.689,30.871v-3.46H6.318c0,.979,0,1.934,0,2.889a.535.535,0,0,0,.486.565c.289.025.581.006.882.006" transform="translate(0 0)" fill="#57f"/>
+                                                                    <path id="Path_10" data-name="Path 10" d="M53.575,22.48c-.179-.868-.319-1.685-.519-2.486-.182-.731-.422-1.448-.651-2.167a.645.645,0,0,0-.643-.475,68.222,68.222,0,0,0-13.347-.112c-.554.055-1.109.108-1.665.131a.438.438,0,0,0-.427.291,13.647,13.647,0,0,0-.9,3.009c-.127.582-.226,1.17-.348,1.807H45.988a3.343,3.343,0,0,1,.378.01.62.62,0,0,1,.1,1.209,1.426,1.426,0,0,1-.374.041q-5.771,0-11.543,0c-.657,0-.883-.276-.788-.933a26.122,26.122,0,0,1,1.093-4.878,9.533,9.533,0,0,1,.5-1.118,1.2,1.2,0,0,1,1.059-.68c1.037-.077,2.073-.18,3.111-.252a57.548,57.548,0,0,1,7.184-.131c1.846.1,3.69.254,5.535.385a1.2,1.2,0,0,1,1.031.684,7.906,7.906,0,0,1,.68,1.649c.353,1.479.638,2.974.936,4.466a.629.629,0,0,1-.651.8q-1.119.023-2.239,0a.627.627,0,1,1,.014-1.252c.492-.009.985,0,1.558,0" transform="translate(-28.156 -13.09)" fill="#57f"/>
+                                                                    <path id="Path_11" data-name="Path 11" d="M123.476,57.356a.609.609,0,0,1,.626-.607.622.622,0,0,1,.621.619.631.631,0,0,1-.647.629.622.622,0,0,1-.6-.641" transform="translate(-103.036 -47.355)" fill="#57f"/>
+                                                                    <path id="Path_12" data-name="Path 12" d="M34.228,96.684a2.661,2.661,0,1,1,2.683,2.648,2.652,2.652,0,0,1-2.683-2.648m4.06-.022a1.4,1.4,0,1,0-1.4,1.408,1.4,1.4,0,0,0,1.4-1.408" transform="translate(-28.562 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_13" data-name="Path 13" d="M133.78,96.677a2.658,2.658,0,1,1-2.657-2.669,2.659,2.659,0,0,1,2.657,2.669m-1.262.016A1.4,1.4,0,1,0,131.1,98.07a1.386,1.386,0,0,0,1.421-1.377" transform="translate(-107.198 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_14" data-name="Path 14" d="M60.109,134.536a.632.632,0,0,1,.643.6.648.648,0,0,1-.633.65.635.635,0,0,1-.62-.625.614.614,0,0,1,.61-.627" transform="translate(-49.65 -112.265)" fill="#57f"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Buy Website</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Shop for your self storage websites templates here.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" lg:col-span-2 py-1.5 px-2 md:py-5 md:px-2  lg:rounded-br-2xl lg:rounded-tr-lg bg-light-gray-50">
+                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2 md:pl-5">
+                                            Marketing Services
+                                        </h6>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 lg:gap-1.5 justify-start items-start text-gray-700">
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/self-storage-marketing/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Overview</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Take a look at all templates & pick yours.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">SEO Services</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Let's optimize your website organically.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 32.315 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_4" data-name="Rectangle 4" width="32.315" height="32.148" fill="#57f"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_4" data-name="Group 4" transform="translate(0)">
+                                                                <g id="Group_3" data-name="Group 3" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_9" data-name="Path 9" d="M32.315,7.386V10.73c-.414,1.4-1.512,1.486-2.723,1.363,0,.109,0,.169,0,.23q.03,4.511.059,9.022c0,.263-.011.527.008.788a.3.3,0,0,0,.152.218,2.015,2.015,0,0,1,.947,3.016,3.586,3.586,0,0,1-1.631,1.44c-.617.273-1.276.454-1.988.7v3.379h1.613c.594,0,.905.226.895.646s-.3.616-.888.616H3.582c-.084,0-.169,0-.252,0a.625.625,0,1,1-.007-1.25c.483-.019.967-.007,1.451-.009h.3v-3.42c-.593-.185-1.149-.309-1.665-.53a3.617,3.617,0,0,1-2.093-1.984,1.945,1.945,0,0,1,1.051-2.543.412.412,0,0,0,.312-.475q.019-4.842.053-9.684a.928.928,0,0,0-.021-.135c-.357,0-.7.009-1.047,0A1.668,1.668,0,0,1,.018,10.519q-.036-1.466,0-2.934A1.63,1.63,0,0,1,1.509,6.013,2.655,2.655,0,0,1,3.558,6.4c.065-.267.118-.488.174-.708A11.428,11.428,0,0,1,5.074,2.207,3.583,3.583,0,0,1,7.77.491C8.229.438,8.691.408,9.151.365A59.03,59.03,0,0,1,16.614.019C19.144.1,21.672.3,24.2.444a3.785,3.785,0,0,1,2.862,1.511,6.833,6.833,0,0,1,1.155,2.363c.2.672.368,1.351.564,2.072a2.521,2.521,0,0,1,2-.377,1.69,1.69,0,0,1,1.534,1.373M3.958,12.927c1.028,0,1.984-.022,2.938,0a8.825,8.825,0,0,1,8.046,5,16.707,16.707,0,0,1,.693,1.654.652.652,0,0,0,1.25,0c.136-.353.266-.708.417-1.053a8.764,8.764,0,0,1,7.254-5.527,30.269,30.269,0,0,1,3.4-.082c.122,0,.245,0,.362,0a.982.982,0,0,0,.023-.135c0-.137,0-.273-.012-.41a32.248,32.248,0,0,0-1.057-6.711A15.041,15.041,0,0,0,26.4,3.254,2.593,2.593,0,0,0,24.023,1.7c-.273-.011-.545-.044-.817-.07a62.34,62.34,0,0,0-8.281-.342c-2.236.086-4.467.284-6.7.418A2.423,2.423,0,0,0,6.07,3.013a11.77,11.77,0,0,0-.815,1.938,30.428,30.428,0,0,0-1.128,5.8c-.076.708-.111,1.42-.168,2.172m-.006,9.342h.385c1.041,0,2.082,0,3.123,0a.626.626,0,0,1,.685.622.647.647,0,0,1-.652.635c-.094.007-.189,0-.284,0-1.346,0-2.693.026-4.037-.012a.7.7,0,0,0-.659,1.019,2.424,2.424,0,0,0,.509.671,3.525,3.525,0,0,0,2.447.92q10.662-.006,21.324,0c.105,0,.211.005.315-.005a3.394,3.394,0,0,0,2.531-1.353.811.811,0,0,0,.1-.917c-.168-.313-.453-.322-.76-.322q-7.76.006-15.52,0c-.564,0-.875-.226-.877-.636s.3-.626.875-.626H28.37V14.206c-.11-.006-.2-.016-.294-.016-.841,0-1.682-.006-2.524,0A7.7,7.7,0,0,0,18.5,18.946c-.157.378-.3.763-.453,1.141a1.907,1.907,0,0,1-3.565.008c-.161-.388-.3-.785-.467-1.17a7.6,7.6,0,0,0-5.136-4.478A19.152,19.152,0,0,0,4.016,14.2c-.017,0-.034.02-.063.038ZM20.6,27.408H11.619v3.455H20.6ZM1.272,9.059c0,.43,0,.861,0,1.291,0,.342.16.494.5.5.21.005.42.007.63,0,.311-.011.476-.156.48-.464q.016-1.338,0-2.676c0-.306-.172-.444-.488-.453q-.315-.009-.63,0c-.341.009-.491.16-.495.509,0,.43,0,.861,0,1.291m29.781,0c0-.441.006-.882,0-1.322a.427.427,0,0,0-.466-.472c-.22-.008-.441-.007-.661,0-.315.009-.48.148-.484.457q-.016,1.338,0,2.676c0,.307.17.449.483.46.21.007.42.006.63,0a.445.445,0,0,0,.5-.507c.006-.43,0-.861,0-1.291M8.986,30.885c.24,0,.449,0,.658,0,.526-.006.725-.2.727-.722,0-.841,0-1.681,0-2.522a2.055,2.055,0,0,0-.024-.228H8.986ZM21.839,27.4c0,1-.006,1.98,0,2.956a.476.476,0,0,0,.411.493,7.31,7.31,0,0,0,.957.01V27.4ZM24.5,30.885c.258,0,.487,0,.716,0a.594.594,0,0,0,.669-.685c0-.788,0-1.576,0-2.365v-.424H24.5ZM7.689,30.871v-3.46H6.318c0,.979,0,1.934,0,2.889a.535.535,0,0,0,.486.565c.289.025.581.006.882.006" transform="translate(0 0)" fill="#57f"/>
+                                                                    <path id="Path_10" data-name="Path 10" d="M53.575,22.48c-.179-.868-.319-1.685-.519-2.486-.182-.731-.422-1.448-.651-2.167a.645.645,0,0,0-.643-.475,68.222,68.222,0,0,0-13.347-.112c-.554.055-1.109.108-1.665.131a.438.438,0,0,0-.427.291,13.647,13.647,0,0,0-.9,3.009c-.127.582-.226,1.17-.348,1.807H45.988a3.343,3.343,0,0,1,.378.01.62.62,0,0,1,.1,1.209,1.426,1.426,0,0,1-.374.041q-5.771,0-11.543,0c-.657,0-.883-.276-.788-.933a26.122,26.122,0,0,1,1.093-4.878,9.533,9.533,0,0,1,.5-1.118,1.2,1.2,0,0,1,1.059-.68c1.037-.077,2.073-.18,3.111-.252a57.548,57.548,0,0,1,7.184-.131c1.846.1,3.69.254,5.535.385a1.2,1.2,0,0,1,1.031.684,7.906,7.906,0,0,1,.68,1.649c.353,1.479.638,2.974.936,4.466a.629.629,0,0,1-.651.8q-1.119.023-2.239,0a.627.627,0,1,1,.014-1.252c.492-.009.985,0,1.558,0" transform="translate(-28.156 -13.09)" fill="#57f"/>
+                                                                    <path id="Path_11" data-name="Path 11" d="M123.476,57.356a.609.609,0,0,1,.626-.607.622.622,0,0,1,.621.619.631.631,0,0,1-.647.629.622.622,0,0,1-.6-.641" transform="translate(-103.036 -47.355)" fill="#57f"/>
+                                                                    <path id="Path_12" data-name="Path 12" d="M34.228,96.684a2.661,2.661,0,1,1,2.683,2.648,2.652,2.652,0,0,1-2.683-2.648m4.06-.022a1.4,1.4,0,1,0-1.4,1.408,1.4,1.4,0,0,0,1.4-1.408" transform="translate(-28.562 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_13" data-name="Path 13" d="M133.78,96.677a2.658,2.658,0,1,1-2.657-2.669,2.659,2.659,0,0,1,2.657,2.669m-1.262.016A1.4,1.4,0,1,0,131.1,98.07a1.386,1.386,0,0,0,1.421-1.377" transform="translate(-107.198 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_14" data-name="Path 14" d="M60.109,134.536a.632.632,0,0,1,.643.6.648.648,0,0,1-.633.65.635.635,0,0,1-.62-.625.614.614,0,0,1,.61-.627" transform="translate(-49.65 -112.265)" fill="#57f"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Google Ads</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Drive traffic to your website, pay Google only on ads clicked.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.804 24.184">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_5" data-name="Rectangle 5" width="37.804" height="24.184" fill="#ffcd18"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_6" data-name="Group 6" transform="translate(0)">
+                                                                <g id="Group_5" data-name="Group 5" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_15" data-name="Path 15" d="M33.33,24.184H4.474A4.479,4.479,0,0,1,0,19.71V4.474A4.479,4.479,0,0,1,4.474,0H33.33A4.479,4.479,0,0,1,37.8,4.474V19.71a4.479,4.479,0,0,1-4.474,4.474M4.474,1.539A2.938,2.938,0,0,0,1.539,4.474V19.71a2.938,2.938,0,0,0,2.935,2.935H33.33a2.938,2.938,0,0,0,2.935-2.935V4.474A2.938,2.938,0,0,0,33.33,1.539Z" fill="#ffcd18"/>
+                                                                    <path id="Path_16" data-name="Path 16" d="M54.063,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-46.985 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_17" data-name="Path 17" d="M104,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-91.014 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_18" data-name="Path 18" d="M153.946,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-135.044 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_19" data-name="Path 19" d="M203.887,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-179.073 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_20" data-name="Path 20" d="M253.828,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,0,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-223.103 -36.82)" fill="#ffcd18"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Facebook Ads</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Acquire new customers from Facebook.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End toggleable link -->
+                    <!-- Toggleable link -->
+                    <li class=" toggleable hover:bg-white hover:text-gray-600 rounded-md lg:mx-1">
+                        <input type="checkbox" value="selected" id="toggle-three" class="toggle-input">
+                        <label for="toggle-three" class=" block cursor-pointer py-3 px-4 lg:p-3 text-base lg:text-sm font-medium relative z-50 lg:flex lg:flex-row lg:items-center">Community</label>
+                        <div role="toggle" class=" mega-menu">
+                            <div class=" mb-16 sm:mb-0 shadow-xl bg-light-gray-50 mx-auto w-full lg:w-11/12 lg:rounded-md rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-2xl xl:rounded-bl-2xl xl:rounded-br-2xl border-b-4  border-blue-500 relative z-0 drop-shadow-black">
+                                <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 sm:gap-0 lg:gap-0 justify-start items-start divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+                                    <div class=" md:col-span-2 lg:col-span-4 py-1.5 px-2 md:py-5 md:px-2 lg:rounded-md rounded-bl-2xl  lg:rounded-bl-2xl bg-light-gray-50">
+                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2  md:pl-5">
+                                            General
+                                        </h6>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-0 lg:gap-1.5 justify-start items-start text-gray-700">
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/community/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.804 24.184">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_5" data-name="Rectangle 5" width="37.804" height="24.184" fill="#ffcd18"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_6" data-name="Group 6" transform="translate(0)">
+                                                                <g id="Group_5" data-name="Group 5" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_15" data-name="Path 15" d="M33.33,24.184H4.474A4.479,4.479,0,0,1,0,19.71V4.474A4.479,4.479,0,0,1,4.474,0H33.33A4.479,4.479,0,0,1,37.8,4.474V19.71a4.479,4.479,0,0,1-4.474,4.474M4.474,1.539A2.938,2.938,0,0,0,1.539,4.474V19.71a2.938,2.938,0,0,0,2.935,2.935H33.33a2.938,2.938,0,0,0,2.935-2.935V4.474A2.938,2.938,0,0,0,33.33,1.539Z" fill="#ffcd18"/>
+                                                                    <path id="Path_16" data-name="Path 16" d="M54.063,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-46.985 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_17" data-name="Path 17" d="M104,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-91.014 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_18" data-name="Path 18" d="M153.946,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-135.044 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_19" data-name="Path 19" d="M203.887,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-179.073 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_20" data-name="Path 20" d="M253.828,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,0,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-223.103 -36.82)" fill="#ffcd18"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Community</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Here is where we experiment great ideas to real life discoveries!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/community/blog/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Blog</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Get latest updates, tips & trending self storage articles from the team.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/community/case-study/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Case Study</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Read to know more about why our clients choose us to manage their facility.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="https://techsupport.6storage.com/support/discussions/forums/19000173220)" target="_blank">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 32.315 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_4" data-name="Rectangle 4" width="32.315" height="32.148" fill="#57f"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_4" data-name="Group 4" transform="translate(0)">
+                                                                <g id="Group_3" data-name="Group 3" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_9" data-name="Path 9" d="M32.315,7.386V10.73c-.414,1.4-1.512,1.486-2.723,1.363,0,.109,0,.169,0,.23q.03,4.511.059,9.022c0,.263-.011.527.008.788a.3.3,0,0,0,.152.218,2.015,2.015,0,0,1,.947,3.016,3.586,3.586,0,0,1-1.631,1.44c-.617.273-1.276.454-1.988.7v3.379h1.613c.594,0,.905.226.895.646s-.3.616-.888.616H3.582c-.084,0-.169,0-.252,0a.625.625,0,1,1-.007-1.25c.483-.019.967-.007,1.451-.009h.3v-3.42c-.593-.185-1.149-.309-1.665-.53a3.617,3.617,0,0,1-2.093-1.984,1.945,1.945,0,0,1,1.051-2.543.412.412,0,0,0,.312-.475q.019-4.842.053-9.684a.928.928,0,0,0-.021-.135c-.357,0-.7.009-1.047,0A1.668,1.668,0,0,1,.018,10.519q-.036-1.466,0-2.934A1.63,1.63,0,0,1,1.509,6.013,2.655,2.655,0,0,1,3.558,6.4c.065-.267.118-.488.174-.708A11.428,11.428,0,0,1,5.074,2.207,3.583,3.583,0,0,1,7.77.491C8.229.438,8.691.408,9.151.365A59.03,59.03,0,0,1,16.614.019C19.144.1,21.672.3,24.2.444a3.785,3.785,0,0,1,2.862,1.511,6.833,6.833,0,0,1,1.155,2.363c.2.672.368,1.351.564,2.072a2.521,2.521,0,0,1,2-.377,1.69,1.69,0,0,1,1.534,1.373M3.958,12.927c1.028,0,1.984-.022,2.938,0a8.825,8.825,0,0,1,8.046,5,16.707,16.707,0,0,1,.693,1.654.652.652,0,0,0,1.25,0c.136-.353.266-.708.417-1.053a8.764,8.764,0,0,1,7.254-5.527,30.269,30.269,0,0,1,3.4-.082c.122,0,.245,0,.362,0a.982.982,0,0,0,.023-.135c0-.137,0-.273-.012-.41a32.248,32.248,0,0,0-1.057-6.711A15.041,15.041,0,0,0,26.4,3.254,2.593,2.593,0,0,0,24.023,1.7c-.273-.011-.545-.044-.817-.07a62.34,62.34,0,0,0-8.281-.342c-2.236.086-4.467.284-6.7.418A2.423,2.423,0,0,0,6.07,3.013a11.77,11.77,0,0,0-.815,1.938,30.428,30.428,0,0,0-1.128,5.8c-.076.708-.111,1.42-.168,2.172m-.006,9.342h.385c1.041,0,2.082,0,3.123,0a.626.626,0,0,1,.685.622.647.647,0,0,1-.652.635c-.094.007-.189,0-.284,0-1.346,0-2.693.026-4.037-.012a.7.7,0,0,0-.659,1.019,2.424,2.424,0,0,0,.509.671,3.525,3.525,0,0,0,2.447.92q10.662-.006,21.324,0c.105,0,.211.005.315-.005a3.394,3.394,0,0,0,2.531-1.353.811.811,0,0,0,.1-.917c-.168-.313-.453-.322-.76-.322q-7.76.006-15.52,0c-.564,0-.875-.226-.877-.636s.3-.626.875-.626H28.37V14.206c-.11-.006-.2-.016-.294-.016-.841,0-1.682-.006-2.524,0A7.7,7.7,0,0,0,18.5,18.946c-.157.378-.3.763-.453,1.141a1.907,1.907,0,0,1-3.565.008c-.161-.388-.3-.785-.467-1.17a7.6,7.6,0,0,0-5.136-4.478A19.152,19.152,0,0,0,4.016,14.2c-.017,0-.034.02-.063.038ZM20.6,27.408H11.619v3.455H20.6ZM1.272,9.059c0,.43,0,.861,0,1.291,0,.342.16.494.5.5.21.005.42.007.63,0,.311-.011.476-.156.48-.464q.016-1.338,0-2.676c0-.306-.172-.444-.488-.453q-.315-.009-.63,0c-.341.009-.491.16-.495.509,0,.43,0,.861,0,1.291m29.781,0c0-.441.006-.882,0-1.322a.427.427,0,0,0-.466-.472c-.22-.008-.441-.007-.661,0-.315.009-.48.148-.484.457q-.016,1.338,0,2.676c0,.307.17.449.483.46.21.007.42.006.63,0a.445.445,0,0,0,.5-.507c.006-.43,0-.861,0-1.291M8.986,30.885c.24,0,.449,0,.658,0,.526-.006.725-.2.727-.722,0-.841,0-1.681,0-2.522a2.055,2.055,0,0,0-.024-.228H8.986ZM21.839,27.4c0,1-.006,1.98,0,2.956a.476.476,0,0,0,.411.493,7.31,7.31,0,0,0,.957.01V27.4ZM24.5,30.885c.258,0,.487,0,.716,0a.594.594,0,0,0,.669-.685c0-.788,0-1.576,0-2.365v-.424H24.5ZM7.689,30.871v-3.46H6.318c0,.979,0,1.934,0,2.889a.535.535,0,0,0,.486.565c.289.025.581.006.882.006" transform="translate(0 0)" fill="#57f"/>
+                                                                    <path id="Path_10" data-name="Path 10" d="M53.575,22.48c-.179-.868-.319-1.685-.519-2.486-.182-.731-.422-1.448-.651-2.167a.645.645,0,0,0-.643-.475,68.222,68.222,0,0,0-13.347-.112c-.554.055-1.109.108-1.665.131a.438.438,0,0,0-.427.291,13.647,13.647,0,0,0-.9,3.009c-.127.582-.226,1.17-.348,1.807H45.988a3.343,3.343,0,0,1,.378.01.62.62,0,0,1,.1,1.209,1.426,1.426,0,0,1-.374.041q-5.771,0-11.543,0c-.657,0-.883-.276-.788-.933a26.122,26.122,0,0,1,1.093-4.878,9.533,9.533,0,0,1,.5-1.118,1.2,1.2,0,0,1,1.059-.68c1.037-.077,2.073-.18,3.111-.252a57.548,57.548,0,0,1,7.184-.131c1.846.1,3.69.254,5.535.385a1.2,1.2,0,0,1,1.031.684,7.906,7.906,0,0,1,.68,1.649c.353,1.479.638,2.974.936,4.466a.629.629,0,0,1-.651.8q-1.119.023-2.239,0a.627.627,0,1,1,.014-1.252c.492-.009.985,0,1.558,0" transform="translate(-28.156 -13.09)" fill="#57f"/>
+                                                                    <path id="Path_11" data-name="Path 11" d="M123.476,57.356a.609.609,0,0,1,.626-.607.622.622,0,0,1,.621.619.631.631,0,0,1-.647.629.622.622,0,0,1-.6-.641" transform="translate(-103.036 -47.355)" fill="#57f"/>
+                                                                    <path id="Path_12" data-name="Path 12" d="M34.228,96.684a2.661,2.661,0,1,1,2.683,2.648,2.652,2.652,0,0,1-2.683-2.648m4.06-.022a1.4,1.4,0,1,0-1.4,1.408,1.4,1.4,0,0,0,1.4-1.408" transform="translate(-28.562 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_13" data-name="Path 13" d="M133.78,96.677a2.658,2.658,0,1,1-2.657-2.669,2.659,2.659,0,0,1,2.657,2.669m-1.262.016A1.4,1.4,0,1,0,131.1,98.07a1.386,1.386,0,0,0,1.421-1.377" transform="translate(-107.198 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_14" data-name="Path 14" d="M60.109,134.536a.632.632,0,0,1,.643.6.648.648,0,0,1-.633.65.635.635,0,0,1-.62-.625.614.614,0,0,1,.61-.627" transform="translate(-49.65 -112.265)" fill="#57f"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Support Articles</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Here we help you address your problems/ question/ suggestion.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/community/self-storage-associations/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.804 24.184">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_5" data-name="Rectangle 5" width="37.804" height="24.184" fill="#ffcd18"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_6" data-name="Group 6" transform="translate(0)">
+                                                                <g id="Group_5" data-name="Group 5" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_15" data-name="Path 15" d="M33.33,24.184H4.474A4.479,4.479,0,0,1,0,19.71V4.474A4.479,4.479,0,0,1,4.474,0H33.33A4.479,4.479,0,0,1,37.8,4.474V19.71a4.479,4.479,0,0,1-4.474,4.474M4.474,1.539A2.938,2.938,0,0,0,1.539,4.474V19.71a2.938,2.938,0,0,0,2.935,2.935H33.33a2.938,2.938,0,0,0,2.935-2.935V4.474A2.938,2.938,0,0,0,33.33,1.539Z" fill="#ffcd18"/>
+                                                                    <path id="Path_16" data-name="Path 16" d="M54.063,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-46.985 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_17" data-name="Path 17" d="M104,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-91.014 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_18" data-name="Path 18" d="M153.946,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-135.044 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_19" data-name="Path 19" d="M203.887,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-179.073 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_20" data-name="Path 20" d="M253.828,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,0,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-223.103 -36.82)" fill="#ffcd18"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Self Storage Association</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                We registered a lobbying entity representing the self storage industry.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="<?php echo get_site_url().'/community/self-storage-us-events/'; ?>">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.804 24.184">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_5" data-name="Rectangle 5" width="37.804" height="24.184" fill="#ffcd18"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_6" data-name="Group 6" transform="translate(0)">
+                                                                <g id="Group_5" data-name="Group 5" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_15" data-name="Path 15" d="M33.33,24.184H4.474A4.479,4.479,0,0,1,0,19.71V4.474A4.479,4.479,0,0,1,4.474,0H33.33A4.479,4.479,0,0,1,37.8,4.474V19.71a4.479,4.479,0,0,1-4.474,4.474M4.474,1.539A2.938,2.938,0,0,0,1.539,4.474V19.71a2.938,2.938,0,0,0,2.935,2.935H33.33a2.938,2.938,0,0,0,2.935-2.935V4.474A2.938,2.938,0,0,0,33.33,1.539Z" fill="#ffcd18"/>
+                                                                    <path id="Path_16" data-name="Path 16" d="M54.063,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-46.985 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_17" data-name="Path 17" d="M104,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-91.014 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_18" data-name="Path 18" d="M153.946,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-135.044 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_19" data-name="Path 19" d="M203.887,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,1,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-179.073 -36.82)" fill="#ffcd18"/>
+                                                                    <path id="Path_20" data-name="Path 20" d="M253.828,56.06a.769.769,0,0,1-.769-.769V42.533a.769.769,0,0,1,1.539,0V55.29a.769.769,0,0,1-.769.769" transform="translate(-223.103 -36.82)" fill="#ffcd18"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Self Storage US Events</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                We registered a lobbying entity representing the self storage industry.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" lg:col-span-2 py-1.5 px-2 md:py-5 md:px-2 lg:pb-12 lg:rounded-br-2xl lg:rounded-tr-lg bg-light-gray-50">
+                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2 md:pl-5">
+                                            Developers
+                                        </h6>
+                                        <div class="grid grid-cols-1 gap-5 sm:gap-0 lg:gap-1.5 justify-start items-start text-gray-700">
+                                            <div>
+                                                <a href="https://developer.6storage.com/" target="_blank">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 37.226 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_3" data-name="Rectangle 3" width="37.226" height="32.148" fill="#7f6cee"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_2" data-name="Group 2" transform="translate(0)">
+                                                                <g id="Group_1" data-name="Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_3" data-name="Path 3" d="M69.317,95.768h4.272c.389,0,.546.424.546.8q0,3.032,0,6.064a1.6,1.6,0,0,1-1.621,1.7q-4.081,0-8.161,0c-.226,0-.417-.031-.455-.326a1.668,1.668,0,0,1-1.157.327q-4-.006-8,0a.8.8,0,0,1-.848-.7q0-3.546,0-7.092a.89.89,0,0,1,.848-.777l3.9-.01h.23c0-.093-.051.15-.051.07q0-3.382,0-6.763a.688.688,0,0,1,.649-.667h9.292a.7.7,0,0,1,.655.654c0,2.049.006,4.1-.006,6.147a2.337,2.337,0,0,1-.1.569m-2,.925H64.46v6.856H72.5a.823.823,0,0,0,.927-.922q0-2.866,0-5.733c0-.072-.008-.144-.012-.217h-2.94v.231q0,1.5,0,3c0,.149-.006.319-.169.359a.567.567,0,0,1-.374-.066c-.34-.19-.669-.4-1-.612a.19.19,0,0,0-.254.008c-.275.2-.559.4-.838.593-.114.08-.223.165-.374.088s-.162-.22-.162-.369q0-1.49,0-2.98Zm-12.49,6.856h.186q3.957,0,7.913,0a.8.8,0,0,0,.864-.877q0-2.888,0-5.776v-.2H60.819v.238q0,1.459,0,2.919c0,.152.011.309-.145.4s-.3,0-.434-.085c-.315-.193-.632-.383-.944-.582a.191.191,0,0,0-.255.008c-.269.2-.546.39-.821.582-.117.082-.23.183-.391.1s-.168-.232-.168-.388q0-1.49,0-2.98v-.232h-2.84ZM65.64,89.222c0,.093,0,.167,0,.241,0,1.007,0,2.014-.006,3.02a.426.426,0,0,1-.147.323.436.436,0,0,1-.352-.043c-.341-.189-.671-.4-1-.61a.216.216,0,0,0-.29.006q-.436.325-.889.628a.284.284,0,0,1-.472-.227,1.759,1.759,0,0,1,0-.185q0-1.459,0-2.918v-.232H59.645c0,2.29.031,4.24.031,6.515a.721.721,0,0,0,.076.01q4.078,0,8.157,0a.7.7,0,0,0,.329-.092.792.792,0,0,0,.4-.757c0-1.931-.033-3.537-.033-5.468,0-.066-.006-.133-.01-.208Zm-2.57,0v2.789a5.215,5.215,0,0,0,.52-.372.524.524,0,0,1,.764-.024c.213.161.456.284.7.43V89.22ZM58.252,96.7v2.763c.218-.152.423-.277.605-.429a.429.429,0,0,1,.591-.015c.25.172.515.321.79.489V96.7Zm11.629.006H67.9v2.753l.593-.421c.265-.189.31-.19.588-.02l.8.49Z" transform="translate(-45.804 -75.124)" fill="#7f6cee"/>
+                                                                    <path id="Path_4" data-name="Path 4" d="M131.969,178.987c-.26,0-.521,0-.781,0-.207,0-.329-.112-.33-.285s.121-.286.328-.288q.8-.005,1.6,0c.205,0,.332.117.332.286s-.127.284-.331.287c-.274,0-.548,0-.822,0" transform="translate(-111.209 -151.62)" fill="#7f6cee"/>
+                                                                    <path id="Path_5" data-name="Path 5" d="M67.732,178.988c-.267,0-.534,0-.8,0-.213,0-.331-.1-.335-.278s.118-.294.34-.3q.791,0,1.581,0c.2,0,.335.114.34.279s-.13.292-.344.294c-.26,0-.52,0-.78,0" transform="translate(-56.596 -151.621)" fill="#7f6cee"/>
+                                                                    <path id="Path_6" data-name="Path 6" d="M100.834,129.071c.274,0,.548,0,.821,0,.2,0,.33.117.327.287a.289.289,0,0,1-.316.282q-.842.008-1.684,0a.284.284,0,0,1-.313-.3c.008-.166.121-.264.323-.267.281,0,.561,0,.842,0" transform="translate(-84.702 -109.689)" fill="#7f6cee"/>
+                                                                    <path id="Path_7" data-name="Path 7" d="M36.4,18.691a.823.823,0,0,1-.584-.242L19.45,2.083a1.491,1.491,0,0,0-2.1,0L1.41,18.024A.826.826,0,0,1,.242,16.856L16.183.915a3.142,3.142,0,0,1,4.434,0L36.984,17.281a.826.826,0,0,1-.584,1.41" transform="translate(0 0.001)" fill="#7f6cee"/>
+                                                                    <path id="Path_8" data-name="Path 8" d="M49.547,131.2H29.819a5.032,5.032,0,0,1-5.026-5.026v-8.794a.826.826,0,1,1,1.652,0v8.794a3.378,3.378,0,0,0,3.374,3.374H49.547a3.378,3.378,0,0,0,3.374-3.374v-8.794a.826.826,0,1,1,1.652,0v8.794a5.032,5.032,0,0,1-5.026,5.026" transform="translate(-21.07 -99.049)" fill="#7f6cee"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">APIs Documentation</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Build your Applications on 6Storage Rest API, It's too easy to access & deploy.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="https://developer.6storage.com/webhooks.html" target="_blank">
+                                                    <div class=" flex flex-row items-start justify-center py-3 px-2 rounded-md hover:bg-blue-100">
+                                                        <div class=" rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class=" w-7" viewBox="0 0 32.315 32.148">
+                                                                <defs>
+                                                                <clipPath id="clip-path">
+                                                                    <rect id="Rectangle_4" data-name="Rectangle 4" width="32.315" height="32.148" fill="#57f"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                                <g id="Group_4" data-name="Group 4" transform="translate(0)">
+                                                                <g id="Group_3" data-name="Group 3" transform="translate(0)" clip-path="url(#clip-path)">
+                                                                    <path id="Path_9" data-name="Path 9" d="M32.315,7.386V10.73c-.414,1.4-1.512,1.486-2.723,1.363,0,.109,0,.169,0,.23q.03,4.511.059,9.022c0,.263-.011.527.008.788a.3.3,0,0,0,.152.218,2.015,2.015,0,0,1,.947,3.016,3.586,3.586,0,0,1-1.631,1.44c-.617.273-1.276.454-1.988.7v3.379h1.613c.594,0,.905.226.895.646s-.3.616-.888.616H3.582c-.084,0-.169,0-.252,0a.625.625,0,1,1-.007-1.25c.483-.019.967-.007,1.451-.009h.3v-3.42c-.593-.185-1.149-.309-1.665-.53a3.617,3.617,0,0,1-2.093-1.984,1.945,1.945,0,0,1,1.051-2.543.412.412,0,0,0,.312-.475q.019-4.842.053-9.684a.928.928,0,0,0-.021-.135c-.357,0-.7.009-1.047,0A1.668,1.668,0,0,1,.018,10.519q-.036-1.466,0-2.934A1.63,1.63,0,0,1,1.509,6.013,2.655,2.655,0,0,1,3.558,6.4c.065-.267.118-.488.174-.708A11.428,11.428,0,0,1,5.074,2.207,3.583,3.583,0,0,1,7.77.491C8.229.438,8.691.408,9.151.365A59.03,59.03,0,0,1,16.614.019C19.144.1,21.672.3,24.2.444a3.785,3.785,0,0,1,2.862,1.511,6.833,6.833,0,0,1,1.155,2.363c.2.672.368,1.351.564,2.072a2.521,2.521,0,0,1,2-.377,1.69,1.69,0,0,1,1.534,1.373M3.958,12.927c1.028,0,1.984-.022,2.938,0a8.825,8.825,0,0,1,8.046,5,16.707,16.707,0,0,1,.693,1.654.652.652,0,0,0,1.25,0c.136-.353.266-.708.417-1.053a8.764,8.764,0,0,1,7.254-5.527,30.269,30.269,0,0,1,3.4-.082c.122,0,.245,0,.362,0a.982.982,0,0,0,.023-.135c0-.137,0-.273-.012-.41a32.248,32.248,0,0,0-1.057-6.711A15.041,15.041,0,0,0,26.4,3.254,2.593,2.593,0,0,0,24.023,1.7c-.273-.011-.545-.044-.817-.07a62.34,62.34,0,0,0-8.281-.342c-2.236.086-4.467.284-6.7.418A2.423,2.423,0,0,0,6.07,3.013a11.77,11.77,0,0,0-.815,1.938,30.428,30.428,0,0,0-1.128,5.8c-.076.708-.111,1.42-.168,2.172m-.006,9.342h.385c1.041,0,2.082,0,3.123,0a.626.626,0,0,1,.685.622.647.647,0,0,1-.652.635c-.094.007-.189,0-.284,0-1.346,0-2.693.026-4.037-.012a.7.7,0,0,0-.659,1.019,2.424,2.424,0,0,0,.509.671,3.525,3.525,0,0,0,2.447.92q10.662-.006,21.324,0c.105,0,.211.005.315-.005a3.394,3.394,0,0,0,2.531-1.353.811.811,0,0,0,.1-.917c-.168-.313-.453-.322-.76-.322q-7.76.006-15.52,0c-.564,0-.875-.226-.877-.636s.3-.626.875-.626H28.37V14.206c-.11-.006-.2-.016-.294-.016-.841,0-1.682-.006-2.524,0A7.7,7.7,0,0,0,18.5,18.946c-.157.378-.3.763-.453,1.141a1.907,1.907,0,0,1-3.565.008c-.161-.388-.3-.785-.467-1.17a7.6,7.6,0,0,0-5.136-4.478A19.152,19.152,0,0,0,4.016,14.2c-.017,0-.034.02-.063.038ZM20.6,27.408H11.619v3.455H20.6ZM1.272,9.059c0,.43,0,.861,0,1.291,0,.342.16.494.5.5.21.005.42.007.63,0,.311-.011.476-.156.48-.464q.016-1.338,0-2.676c0-.306-.172-.444-.488-.453q-.315-.009-.63,0c-.341.009-.491.16-.495.509,0,.43,0,.861,0,1.291m29.781,0c0-.441.006-.882,0-1.322a.427.427,0,0,0-.466-.472c-.22-.008-.441-.007-.661,0-.315.009-.48.148-.484.457q-.016,1.338,0,2.676c0,.307.17.449.483.46.21.007.42.006.63,0a.445.445,0,0,0,.5-.507c.006-.43,0-.861,0-1.291M8.986,30.885c.24,0,.449,0,.658,0,.526-.006.725-.2.727-.722,0-.841,0-1.681,0-2.522a2.055,2.055,0,0,0-.024-.228H8.986ZM21.839,27.4c0,1-.006,1.98,0,2.956a.476.476,0,0,0,.411.493,7.31,7.31,0,0,0,.957.01V27.4ZM24.5,30.885c.258,0,.487,0,.716,0a.594.594,0,0,0,.669-.685c0-.788,0-1.576,0-2.365v-.424H24.5ZM7.689,30.871v-3.46H6.318c0,.979,0,1.934,0,2.889a.535.535,0,0,0,.486.565c.289.025.581.006.882.006" transform="translate(0 0)" fill="#57f"/>
+                                                                    <path id="Path_10" data-name="Path 10" d="M53.575,22.48c-.179-.868-.319-1.685-.519-2.486-.182-.731-.422-1.448-.651-2.167a.645.645,0,0,0-.643-.475,68.222,68.222,0,0,0-13.347-.112c-.554.055-1.109.108-1.665.131a.438.438,0,0,0-.427.291,13.647,13.647,0,0,0-.9,3.009c-.127.582-.226,1.17-.348,1.807H45.988a3.343,3.343,0,0,1,.378.01.62.62,0,0,1,.1,1.209,1.426,1.426,0,0,1-.374.041q-5.771,0-11.543,0c-.657,0-.883-.276-.788-.933a26.122,26.122,0,0,1,1.093-4.878,9.533,9.533,0,0,1,.5-1.118,1.2,1.2,0,0,1,1.059-.68c1.037-.077,2.073-.18,3.111-.252a57.548,57.548,0,0,1,7.184-.131c1.846.1,3.69.254,5.535.385a1.2,1.2,0,0,1,1.031.684,7.906,7.906,0,0,1,.68,1.649c.353,1.479.638,2.974.936,4.466a.629.629,0,0,1-.651.8q-1.119.023-2.239,0a.627.627,0,1,1,.014-1.252c.492-.009.985,0,1.558,0" transform="translate(-28.156 -13.09)" fill="#57f"/>
+                                                                    <path id="Path_11" data-name="Path 11" d="M123.476,57.356a.609.609,0,0,1,.626-.607.622.622,0,0,1,.621.619.631.631,0,0,1-.647.629.622.622,0,0,1-.6-.641" transform="translate(-103.036 -47.355)" fill="#57f"/>
+                                                                    <path id="Path_12" data-name="Path 12" d="M34.228,96.684a2.661,2.661,0,1,1,2.683,2.648,2.652,2.652,0,0,1-2.683-2.648m4.06-.022a1.4,1.4,0,1,0-1.4,1.408,1.4,1.4,0,0,0,1.4-1.408" transform="translate(-28.562 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_13" data-name="Path 13" d="M133.78,96.677a2.658,2.658,0,1,1-2.657-2.669,2.659,2.659,0,0,1,2.657,2.669m-1.262.016A1.4,1.4,0,1,0,131.1,98.07a1.386,1.386,0,0,0,1.421-1.377" transform="translate(-107.198 -78.446)" fill="#57f"/>
+                                                                    <path id="Path_14" data-name="Path 14" d="M60.109,134.536a.632.632,0,0,1,.643.6.648.648,0,0,1-.633.65.635.635,0,0,1-.62-.625.614.614,0,0,1,.61-.627" transform="translate(-49.65 -112.265)" fill="#57f"/>
+                                                                </g>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                        <div class=" flex-grow">
+                                                            <h4 class=" text-sm font-medium text-gray-900">Webhooks Documentation</h4>
+                                                            <p class=" text-xs font-normal pt-1 text-gray-500">
+                                                                Get real-time information using our Webhooks v1.1 Documentation.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End toggleable link -->
+                    <!-- Toggleable link -->
+                    <li class=" toggleable hover:bg-white hover:text-gray-600 rounded-md lg:mx-1">
+                        <input type="checkbox" value="selected" id="toggle-four" class="toggle-input">
+                        <label for="toggle-four" class="block cursor-pointer py-3 px-4 lg:p-3 text-base lg:text-sm font-medium relative z-50 lg:flex lg:flex-row lg:items-center">Company</label>
+                        <div role="toggle" class=" mega-menu">
+                            <div class=" py-1.5 px-2 md:p-5 mb-16 sm:mb-0 shadow-xl bg-white mx-auto xl:mr-0 w-full lg:w-11/12 lg:rounded-md rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-2xl xl:rounded-bl-2xl xl:rounded-br-2xl border-b-4  border-blue-500 relative z-0 drop-shadow-black">
+                                <div class="mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-5 px-2 justify-start items-start">
+                                    <div class=" lg:col-span-2">
+                                        <div class=" border-b border-solid border-gray-200 md:border-b-0 ">
+                                            <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2 text-center">
+                                                About Us
+                                            </h6>
+                                            <div class=" grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-0">
+                                                <div class="">
+                                                    <img class=" mx-auto mt-5 " src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/1ee20816-c54f-48bb-36a1-ffca67025f00/6Storage" alt="Halli">
+                                                </div>
+                                                <div class=" md:col-span-2 text-xs">
+                                                    <p class="  leading-5 font-normal text-gray-500 py-3 px-5 md:px-2.5 text-justify">
+                                                        We believe storage owners deserve to live life with freedom and worry less about storage operations. We have removed the barriers that demand your constant attention. When Hallgrimur started his self-storage business, the available facility management solutions were expensive and didn’t meet his business needs. That’s when 6Storage evolved in the year 2007 to facilitate storage management.
+                                                    </p>
+                                                    <div class=" flex flex-row items-center justify-center py-3">
+                                                        <a href="<?php echo get_site_url().'/aboutus/'; ?>" class=" outline-none bg-blue-700 py-2 px-2 md:py-2 md:px-6 xl:py-3 xl:px-8 text-white rounded text-sm font-medium my-3 md:my-0 shadow-xl hover:shadow-inner hover:bg-blue-500 hover:delay-150 hover:duration-200">
+                                                            Read More
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" lg:col-span-3">
+                                        <div class=" ">
+                                            <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2 text-center">
+                                                Team
+                                            </h6>
+                                            <div class=" grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 gap-3 lg:gap-1 lg:gap-y-2.5 py-2 lg:py-2.5">
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c062fccb-6d1b-4afa-7fc2-5cc9ac3b3e00/6Storage" alt="Michelle">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Michelle
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Sales Director
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c5f7dc27-b47c-435a-0c03-8c3b3c7f6400/6Storage" alt="Jessika_Director">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Jessika Selsor
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1">
+                                                                Director of Business Development
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c062fccb-6d1b-4afa-7fc2-5cc9ac3b3e00/6Storage" alt="Michelle">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Michelle
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Sales Director
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c5f7dc27-b47c-435a-0c03-8c3b3c7f6400/6Storage" alt="Jessika_Director">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Jessika Selsor
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Director of Business Development
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c062fccb-6d1b-4afa-7fc2-5cc9ac3b3e00/6Storage" alt="Michelle">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Michelle
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Sales Director
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c5f7dc27-b47c-435a-0c03-8c3b3c7f6400/6Storage" alt="Jessika_Director">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Jessika Selsor
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Director of Business Development
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <!-- End toggleable link -->
+                    <!-- Toggleable link -->
+                    <li class=" toggleable hover:bg-white hover:text-gray-600 rounded-md lg:mx-1">
+                        <input type="checkbox" value="selected" id="toggle-five" class="toggle-input">
+                        <label for="toggle-five" class="block cursor-pointer py-3 px-4 lg:p-3 text-base lg:text-sm font-medium relative z-50 lg:flex lg:flex-row lg:items-center">Marketplace</label>
+                        <div role="toggle" class=" mega-menu">
+                            <div class=" py-1.5 px-2 md:p-5 mb-16 sm:mb-0 shadow-xl bg-light-gray-50 mx-auto xl:mr-0 w-full lg:w-11/12 lg:rounded-md rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-2xl xl:rounded-bl-2xl xl:rounded-br-2xl border-b-4 border-blue-500 relative z-0 drop-shadow-black">
+                                <div class=" mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 px-2 justify-start items-start divide-y sm:divide-y-0 sm:divide-x divide-gray-200">
+                                    <div>
+                                        <div class=" flex flex-auto flex-row flex-wrap items-center  py-1 lg:py-1.5">
+                                            <svg class="h-8 w-8 text-blue-500 mr-2 rounded-full p-1 " width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="3" y="5" width="18" height="14" rx="3"></rect> 	 	 	 	 	<line x1="3" y1="10" x2="21" y2="10"></line> 	 	 	 	 	<line x1="7" y1="15" x2="7.01" y2="15"></line><line x1="11" y1="15" x2="13" y2="15"></line></svg>
+                                            <h6 class=" text-sm font-medium text-gray-900 text-left">
+                                                Payment Processing
+                                            </h6>
+                                        </div>
+                                        <div class=" p-1 lg:p-1.5 text-xs leading-5 font-normal text-gray-500">
+                                            It allows tenants to complete online transactions securely and provides option to automatically charge them on a recurring basis.
+                                        </div>
+                                        <div>
+                                            <a href="<?php echo get_site_url().'/marketplace/'; ?>">
+                                                <div class=" flex flex-auto flex-row flex-wrap items-center p-1 lg:p-1.5 ">
+                                                    <h6 class=" text-xs font-normal text-center  text-blue-500 hover:text-blue-600 hover:underline">
+                                                        See Integration
+                                                    </h6>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class=" md:pl-5">
+                                        <div class=" flex flex-auto flex-row flex-wrap items-center  py-1 lg:py-1.5">
+                                            <svg class="h-8 w-8 text-blue-500 mr-2 p-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <circle cx="12" cy="12" r="9"></circle>  <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1"></path>  <circle cx="12" cy="7.5" r=".5" fill="currentColor"></circle></svg>
+                                            <h6 class=" text-sm font-medium text-gray-900 text-left">
+                                                Gate Access Controls
+                                            </h6>
+                                        </div>
+                                        <div class=" p-1 lg:p-1.5 text-xs leading-5 font-normal text-gray-500 lg:pb-6">
+                                            Allows you to overlock units, automate facility entry/exit points and restrict unit access to delinquent tenants.
+                                        </div>
+                                        <div>
+                                            <a href="<?php echo get_site_url().'/marketplace/'; ?>">
+                                                <div class=" flex flex-auto flex-row flex-wrap items-center p-1 lg:p-1.5 ">
+                                                    <h6 class=" text-xs font-normal text-center  text-blue-500 hover:text-blue-600 hover:underline">
+                                                        See Integration
+                                                    </h6>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class=" md:pl-5">
+                                        <div class=" flex flex-auto flex-row  items-center lg:items-start py-1 lg:py-1.5">
+                                            <svg class="h-8 w-8 text-blue-500 mr-2 p-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <path d="M3.5 5.5l1.5 1.5l2.5 -2.5"></path>  <path d="M3.5 11.5l1.5 1.5l2.5 -2.5"></path>  <path d="M3.5 17.5l1.5 1.5l2.5 -2.5"></path><line x1="11" y1="6" x2="20" y2="6"></line><line x1="11" y1="12" x2="20" y2="12"></line><line x1="11" y1="18" x2="20" y2="18"></line></svg>
+                                            <h6 class=" text-sm font-medium text-gray-900 text-left">
+                                                Operations & Accounting Partners
+                                            </h6>
+                                        </div>
+                                        <div class=" p-1 lg:p-1.5 text-xs leading-5 font-normal text-gray-500 lg:pb-5">
+                                            Accounting platforms help with online payroll services and workforce management.
+                                        </div>
+                                        <div>
+                                            <a href="<?php echo get_site_url().'/marketplace/'; ?>">
+                                                <div class=" flex flex-auto flex-row flex-wrap items-center p-1 lg:p-1.5 ">
+                                                    <h6 class=" text-xs font-normal text-center  text-blue-500 hover:text-blue-600 hover:underline">
+                                                        See Integration
+                                                    </h6>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class=" md:pl-5">
+                                        <div class=" flex flex-auto flex-row flex-wrap items-center  py-1 lg:py-1.5">
+                                            <svg class="h-8 w-8 text-blue-500 mr-2 p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                            <h6 class=" text-sm font-medium text-gray-900 text-left">
+                                                Email/Text Solutions
+                                            </h6>
+                                        </div>
+                                        <div class=" p-1 lg:p-1.5 text-xs leading-5 font-normal text-gray-500">
+                                            It allows tenants to complete online transactions securely and provides option to automatically charge them on a recurring basis.
+                                        </div>
+                                        <div>
+                                            <a href="<?php echo get_site_url().'/marketplace/'; ?>">
+                                                <div class=" flex flex-auto flex-row flex-wrap items-center p-1 lg:p-1.5 ">
+                                                    <h6 class=" text-xs font-normal text-center  text-blue-500 hover:text-blue-600 hover:underline">
+                                                        See Integration
+                                                    </h6>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-500 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End toggleable link -->
+                    <!-- Toggleable link -->
+                    <li class=" toggleable hover:bg-white hover:text-gray-600 rounded-md lg:mx-1">
+                        <input type="checkbox" value="selected" id="toggle-six" class="toggle-input">
+                        <label for="toggle-six" class=" block cursor-pointer py-3 px-4 lg:p-3 text-base lg:text-sm font-medium relative z-50  lg:flex lg:flex-row lg:items-center">Support</label>
+                        <div role="toggle" class="mega-menu">
+                            <div class=" py-1.5 px-2 md:p-5 mb-16 sm:mb-0 shadow-xl bg-white mx-auto xl:mr-0 w-full lg:w-11/12 lg:rounded-md rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-2xl xl:rounded-bl-2xl xl:rounded-br-2xl border-b-4 border-blue-500 relative z-0 drop-shadow-black">
+                                <div class="mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-5 px-2 justify-start items-start">
+                                    <div class=" lg:col-span-2">
+                                        <div class=" border-b border-solid border-gray-200 md:border-b-0 ">
+                                            <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2 text-center">
+                                                About Us
+                                            </h6>
+                                            <div class=" grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-0">
+                                                <div class="">
+                                                    <img class=" mx-auto mt-5 " src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/1ee20816-c54f-48bb-36a1-ffca67025f00/6Storage" alt="Halli">
+                                                </div>
+                                                <div class=" md:col-span-2 text-xs">
+                                                    <p class="  leading-5 font-normal text-gray-500 py-3 px-5 md:px-2.5 text-justify">
+                                                        We believe storage owners deserve to live life with freedom and worry less about storage operations. We have removed the barriers that demand your constant attention. When Hallgrimur started his self-storage business, the available facility management solutions were expensive and didn’t meet his business needs. That’s when 6Storage evolved in the year 2007 to facilitate storage management.
+                                                    </p>
+                                                    <div class=" flex flex-row items-center justify-center py-3">
+                                                        <a href="<?php echo get_site_url().'/aboutus/'; ?>" class=" outline-none bg-blue-700 py-2 px-2 md:py-2 md:px-6 xl:py-3 xl:px-8 text-white rounded text-sm font-medium my-3 md:my-0 shadow-xl hover:shadow-inner hover:bg-blue-500 hover:delay-150 hover:duration-200">
+                                                            Read More
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" lg:col-span-3">
+                                        <div class=" ">
+                                            <h6 class=" text-sm font-medium text-gray-900 mb-0.5 lg:mb-2 text-center">
+                                                Team
+                                            </h6>
+                                            <div class=" grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 gap-3 lg:gap-1 lg:gap-y-2.5 py-2 lg:py-2.5">
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c062fccb-6d1b-4afa-7fc2-5cc9ac3b3e00/6Storage" alt="Michelle">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Michelle
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Sales Director
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c5f7dc27-b47c-435a-0c03-8c3b3c7f6400/6Storage" alt="Jessika_Director">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Jessika Selsor
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Director of Business Development
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c062fccb-6d1b-4afa-7fc2-5cc9ac3b3e00/6Storage" alt="Michelle">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Michelle
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Sales Director
+                                                            </p>
+                                                            <a href="" class=" text-blue-500 hover:text-blue-600 hover:underline">Book Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c5f7dc27-b47c-435a-0c03-8c3b3c7f6400/6Storage" alt="Jessika_Director">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Jessika Selsor
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Director of Business Development
+                                                            </p>
+                                                            <a href="" class=" text-blue-500 hover:text-blue-600 hover:underline">Book Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c062fccb-6d1b-4afa-7fc2-5cc9ac3b3e00/6Storage" alt="Michelle">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Michelle
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Sales Director
+                                                            </p>
+                                                            <a href="" class=" text-blue-500 hover:text-blue-600 hover:underline">Book Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class=" flex flex-col items-center justify-center text-center lg:justify-start">
+                                                    <img class=" rounded-full border-4 border-blue-100 w-1/2 md:w-1/3" src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c5f7dc27-b47c-435a-0c03-8c3b3c7f6400/6Storage" alt="Jessika_Director">
+                                                    <div class=" flex flex-col items-center justify-center py-1.5">
+                                                        <h6 class=" text-sm font-medium text-gray-900 mb-0.5">
+                                                            Jessika Selsor
+                                                        </h6>
+                                                        <div class="text-xs text-gray-500">
+                                                            <p class=" py-0.5 lg:py-1 ">
+                                                                Director of Business Development
+                                                            </p>
+                                                            <a href="" class=" text-blue-500 hover:text-blue-600 hover:underline">Book Demo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
