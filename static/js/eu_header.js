@@ -1,3 +1,7 @@
+//**
+// Eu site migrated script file is here (header.js for header scripts=ing functions)
+//**
+
 document.addEventListener('DOMContentLoaded', () =>{
     window.addEventListener("scroll",function(){
         let Nav_Sticky = document.getElementById("Nav_Sticky");

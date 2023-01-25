@@ -36,11 +36,11 @@
             six_StorageLLC_tabContents = document.getElementById("six_Storage_LLC_tabs_id").querySelectorAll(".six_Storage_LLC_tab_content > div");
             for (let i = 0; i < aElements.length; i++) {
               aElements[i].classList.remove("text-white", "text-xl", "sm:text-2xl", "lg:text-3xl", "xl:text-4xl", "border_b");
-              aElements[i].classList.add("text-light-gray-50", "bg-transparent");
+              aElements[i].classList.add("text-light-gray-50", "bg-transparent", "opacity-30");
               six_StorageLLC_tabContents[i].classList.add("hidden");
               six_StorageLLC_tabContents[i].classList.remove("block");
             }
-            six_StorageLLC_element.classList.remove("text-light-gray-50", "bg-transparent");
+            six_StorageLLC_element.classList.remove("text-light-gray-50", "bg-transparent", "opacity-30");
             six_StorageLLC_element.classList.remove();
             six_StorageLLC_element.classList.add("text-white", "text-xl", "sm:text-2xl", "lg:text-3xl", "xl:text-4xl", "border_b");
             document.getElementById(tabID).classList.remove("hidden");

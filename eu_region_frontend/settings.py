@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'eu_app',
+    'eu_faq_app',
     'tailwind',
     'theme',
     'django_browser_reload'

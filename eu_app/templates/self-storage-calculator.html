@@ -1,0 +1,635 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- **08** Self Storage Calculator page design is here.. --> <!-- Storage Space Calculator design is here -->
+<section class=" bg-reckoner-stripes-blue w-full py-7 md:py-10 lg:py-20 relative">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8 text-center text-white">
+        <div class="mx-auto max-w-4xl relative z-20">
+            <div class=" py-2 md:py-3">
+                <h1 class=" text-2xl md:text-3xl lg:text-4xl font-medium py-2 lg:py-3">Storage Space Calculator for Self
+                    Storage Space Rentals</h1>
+                <h4 class=" text-base md:text-lg font-semibold py-1 lg:py-2">6Reckoner - the storage unit size
+                    calculator, helps with handling unit size queries by giving your tenants a 3D view of added items.
+                </h4>
+            </div>
+            <div class=" flex flex-col sm:flex-row items-center justify-center py-2 md:py-3 text-gray-700">
+                <a href="https://calculator.8storage.com/sign-up"
+                    class=" outline-none bg-white py-3 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 rounded text-base font-medium my-3 md:my-0 sm:mr-5 shadow-xl hover:shadow-inner hover:bg-green-400 hover:text-white transform duration-300"
+                    target="_blank">Sign up</a>
+                <a href="#!"
+                    class=" outline-none bg-white py-3 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 rounded text-base font-medium my-3 md:my-0  shadow-xl hover:shadow-inner hover:bg-green-400 hover:text-white transform duration-300">Schedule
+                    demo</a>
+            </div>
+        </div>
+    </div>
+    <div
+        class="bg-reckoner-stripes-blue h-16 sm:h-32 2xl:h-36 w-full absolute overflow-x-hidden -bottom-16 sm:-bottom-28 lg:-bottom-20 left-0">
+        <div class="wave absolute h-full opacity-100" style="animation: wave 10s -3s linear infinite;"></div>
+        <div class="wave bottom-0 opacity-100 md:opacity-50 h-full"
+            style="animation: wave 40s linear reverse infinite;"></div>
+    </div>
+</section>
+<!-- Calculator IFrame is here -->
+<section class=" w-full py-16 md:py-24 pb-5 md:pb-6 bg-white mt-8 lg:mt-14">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+        <iframe id="six-reckoner-widget-iframe" class=" border-none w-full" height="850"
+            src="https://calculator-widget.6storage.com/NGJkZjNjYzEtMjYzZi00ZTEwLWEzYWYtNjJjMDMzNDUwYzFi?domainName=www.6storage.com"></iframe>
+    </div>
+</section>
+<!-- A better way ❤ to find your tenants unit size design is here -->
+<section class=" w-full py-10 md:py-14 bg-blue-100">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+        <div class=" grid grid-cols-1 gap-1 text-center py-2 pb-7 md:pb-12 text-gray-700">
+            <h2 class=" text-xl md:text-2xl lg:text-3xl font-medium ">A better way <span class="text-red-500">❤</span>
+                to find your tenants unit sizes than ever</h2>
+            <hr class=" border-t-4 border-green-500 mt-4 lg:mt-1 mx-auto w-2/12 md:w-1/12 z-10 rounded-md">
+        </div>
+        <div class=" lg:w-11/12 xl:w-4/5 mx-auto">
+            <div
+                class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-12 lg:gap-10 items-stretch justify-start py-5 lg:py-8 text-center text-gray-400">
+                <div
+                    class=" bg-white rounded-2xl shadow-2xl px-5 py-7 md:px-4 md:py-5 lg:px-5 lg:py-6 hover:-translate-y-1 duration-500 transform">
+                    <div class=" flex flex-row items-center justify-center">
+                        <div class="bg-reckoner bg_reckoner_animate px-5 py-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff"
+                                class="bi bi-box-seam fill-white" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base md:text-lg font-semibold py-1 lg:py-2 text-black">40+ Inventory types</h4>
+                        <p class=" text-sm md:text-base font-normal">Wide range of most commonly used inventories for
+                            your tenants to choose from.</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-white rounded-2xl shadow-2xl px-5 py-7 md:px-4 md:py-5 lg:px-5 lg:py-6 hover:-translate-y-1 duration-500 transform">
+                    <div class=" flex flex-row items-center justify-center">
+                        <div class="bg-reckoner bg_reckoner_animate px-5 py-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff"
+                                class="bi bi-camera fill-white" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z">
+                                </path>
+                                <path
+                                    d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base md:text-lg font-semibold py-1 lg:py-2 text-black">Unit Snapshot</h4>
+                        <p class=" text-sm md:text-base font-normal">Download and instantly share the snapshot of the
+                            unit upon calculating the size for reference</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-white rounded-2xl shadow-2xl px-5 py-7 md:px-4 md:py-5 lg:px-4 lg:py-6 hover:-translate-y-1 duration-500 transform">
+                    <div class=" flex flex-row items-center justify-center">
+                        <div class="bg-reckoner bg_reckoner_animate px-5 py-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff"
+                                class="bi bi-journal-check fill-white white" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z">
+                                </path>
+                                <path
+                                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z">
+                                </path>
+                                <path
+                                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base md:text-lg font-semibold py-1 lg:py-2 text-black">Real time packing</h4>
+                        <p class=" text-sm md:text-base font-normal">Built on packing algorithm which gives the best way
+                            to store maximum items in less space.</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-white rounded-2xl shadow-2xl px-5 py-7 md:px-4 md:py-5 lg:px-5 lg:py-6 hover:-translate-y-1 duration-500 transform">
+                    <div class=" flex flex-row items-center justify-center">
+                        <div class="bg-reckoner bg_reckoner_animate px-5 py-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff"
+                                class="bi bi-palette fill-white white" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                                </path>
+                                <path
+                                    d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base md:text-lg font-semibold py-1 lg:py-2 text-black">Personalized theme</h4>
+                        <p class=" text-sm md:text-base font-normal pb-4">Standout from the crowd by giving a unique
+                            look on your website</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-white rounded-2xl shadow-2xl px-5 py-7 md:px-4 md:py-5 lg:px-3 lg:py-6 hover:-translate-y-1 duration-500 transform">
+                    <div class=" flex flex-row items-center justify-center">
+                        <div class="bg-reckoner bg_reckoner_animate px-5 py-5">
+                            <svg height="30" width="30" fill="white" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-white" viewBox="0 0 24 24">
+                                <path
+                                    d="M21 4H11l-1-3H3c-1.1 0-2 .9-2 2v15c0 1.1.9 2 2 2h8l1 3h9c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7 16c-2.76 0-5-2.24-5-5s2.24-5 5-5c1.35 0 2.48.5 3.35 1.3L9.03 8.57c-.38-.36-1.04-.78-2.03-.78-1.74 0-3.15 1.44-3.15 3.21S5.26 14.21 7 14.21c2.01 0 2.84-1.44 2.92-2.41H7v-1.71h4.68c.07.31.12.61.12 1.02C11.8 13.97 9.89 16 7 16zm6.17-5.42h3.7c-.43 1.25-1.11 2.43-2.05 3.47-.31-.35-.6-.72-.86-1.1l-.79-2.37zm8.33 9.92c0 .55-.45 1-1 1H14l2-2.5-1.04-3.1 3.1 3.1.92-.92-3.3-3.25.02-.02c1.13-1.25 1.93-2.69 2.4-4.22H20v-1.3h-4.53V8h-1.29v1.29h-1.44L11.46 5.5h9.04c.55 0 1 .45 1 1v14z">
+                                </path>
+                                <path d="M0 0h24v24H0zm0 0h24v24H0z" fill="none"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base md:text-lg font-semibold py-1 lg:py-2 text-black">Multi-Language</h4>
+                        <p class=" text-sm md:text-base font-normal">Built on AWS deep learning translation which can be
+                            easily translated to your tenant’s native language</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-white rounded-2xl shadow-2xl px-5 py-7 md:px-4 md:py-5 lg:px-5 lg:py-6 hover:-translate-y-1 duration-500 transform">
+                    <div class=" flex flex-row items-center justify-center">
+                        <div class="bg-reckoner bg_reckoner_animate px-5 py-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff"
+                                class="bi bi-journal-check fill-white white" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z">
+                                </path>
+                                <path
+                                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z">
+                                </path>
+                                <path
+                                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base md:text-lg font-semibold py-1 lg:py-2 text-black">Direct booking</h4>
+                        <p class=" text-sm md:text-base font-normal sm:pb-4 md:pb-0 lg:pb-4 xl:pb-0">Options provided
+                            for the tenants to book directly from the "Size Recommendation"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- How it works design is here -->
+<section class="bg-reckoner-circular w-full py-16 md:py-20">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8 text-white text-center">
+        <div class=" py-3 lg:py-5">
+            <h2 class=" text-xl md:text-2xl lg:text-3xl font-semibold">How it works</h2>
+        </div>
+        <div class=" py-8 md:py-10 lg:py-14 relative">
+            <div
+                class=" grid grid-cols-1 md:grid-cols-4 gap-5 gap-y-20 md:gap-y-10 lg:gap-y-0 lg:gap-10 items-stretch justify-center relative z-20">
+                <div
+                    class="cc-Reckoner-rotate-0 rounded-lg transition-all transform duration-700 delay-75 hover:-translate-y-3">
+                    <div class=" text-center mb-3">
+                        <div
+                            class="cc-Reckoner-box w-28 h-28 z-10 relative flex flex-col items-center justify-center mx-auto rounded-lg text-white">
+                            <svg width="3.5em" height="3.5em" viewBox="0 0 16 16" class=" text-green-400"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z">
+                                </path>
+                                <path
+                                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base lg:text-lg font-semibold py-1 lg:py-2 mt-3">Easy Setup</h4>
+                    </div>
+                </div>
+                <div
+                    class="cc-Reckoner-rotate-0 rounded-lg transition-all transform duration-700 delay-75 hover:-translate-y-3">
+                    <div class=" text-center mb-3">
+                        <div
+                            class="cc-Reckoner-box w-28 h-28 z-10 relative flex flex-col items-center justify-center mx-auto rounded-lg text-white">
+                            <svg width="3.5em" height="3.5em" viewBox="0 0 16 16" class=" text-green-400"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11l.471.242z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base lg:text-lg font-semibold py-1 lg:py-2 mt-3">Customize your 3D object
+                            inventory</h4>
+                    </div>
+                </div>
+                <div
+                    class="cc-Reckoner-rotate-0 rounded-lg transition-all transform duration-700 delay-75 hover:-translate-y-3">
+                    <div class=" text-center mb-3">
+                        <div
+                            class="cc-Reckoner-box w-28 h-28 z-10 relative flex flex-col items-center justify-center mx-auto rounded-lg text-white">
+                            <svg width="3.5em" height="3.5em" viewBox="0 0 16 16" class=" text-green-400"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z">
+                                </path>
+                                <path
+                                    d="M5.712 6.96l.167-.167a1.99 1.99 0 0 1 .896-.518 1.99 1.99 0 0 1 .518-.896l.167-.167A3.004 3.004 0 0 0 6 5.499c-.22.46-.316.963-.288 1.46z">
+                                </path>
+                                <path
+                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z">
+                                </path>
+                                <path
+                                    d="M10 9.5a2.99 2.99 0 0 0 .288-1.46l-.167.167a1.99 1.99 0 0 1-.896.518 1.99 1.99 0 0 1-.518.896l-.167.167A3.004 3.004 0 0 0 10 9.501z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base lg:text-lg font-semibold py-1 lg:py-2 mt-3">Integrate with your booking
+                            engine</h4>
+                    </div>
+                </div>
+                <div
+                    class="cc-Reckoner-rotate-0 rounded-lg transition-all transform duration-700 delay-75 hover:-translate-y-3">
+                    <div class=" text-center mb-3">
+                        <div
+                            class="cc-Reckoner-box w-28 h-28 z-10 relative flex flex-col items-center justify-center mx-auto rounded-lg text-white">
+                            <svg width="3.5em" height="3.5em" viewBox="0 0 16 16" class=" text-green-400"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" text-base lg:text-lg font-semibold py-1 lg:py-2 mt-3">Publish to live</h4>
+                    </div>
+                </div>
+            </div>
+            <hr
+                class="absolute mx-auto z-10 border-l-2 border-dashed border-white md:border-l-0 md:border-t-2 w-auto h-3/4 md:h-auto md:w-3/4 left-1/2 top-20 md:left-28 md:top-24 lg:left-36 lg:top-28">
+        </div>
+
+    </div>
+</section>
+<!-- Pricing to suit all size of business design is here -->
+<section class=" w-full py-10 md:py-14 bg-white">
+    <div class=" container max-w-6xl mx-auto px-4 sm:px-7 lg:px-10 xl:px-8" x-data="{annual: false}">
+        <div id="Pricing" class=" grid grid-cols-1 gap-1 text-center py-4 lg:py-6 text-gray-700">
+            <h2 class=" text-xl md:text-2xl lg:text-3xl font-medium ">Pricing to suit all size of business.</h2>
+            <p class=" text-base font-normal">No Contracts. No Surprise fees. No Credit Cards</p>
+            <hr class=" border-t-4 border-green-500 mt-4 lg:mt-1 mx-auto w-2/12 md:w-1/12 z-10 rounded-md">
+        </div>
+        <div class=" flex flex-row items-center justify-center my-4 lg:my-7">
+            <div
+                class=" inline-flex flex-row items-center justify-center space-x-2 lg:space-x-3 bg-green-50 rounded-full">
+                <button
+                    class="transition-all duration-75 transform w-full block py-2.5 px-4 lg:px-6 rounded-full text-sm md:text-base lg:text-lg focus:border-blue-200 border-2 border-solid border-transparent"
+                    :class="annual == false ? ' shadow-xl bg-reckoner text-white' : 'hover:text-gray-400'"
+                    @click="annual = false" type="button">Monthly</button>
+                <button
+                    class="transition-all duration-75 transform w-full block py-2.5 px-4 lg:px-6 rounded-full text-sm md:text-base lg:text-lg focus:border-blue-200 border-2 border-solid border-transparent"
+                    :class="annual == true ? ' shadow-xl bg-reckoner text-white' : 'hover:text-gray-400'"
+                    @click="annual = true" type="button">Yearly</button>
+            </div>
+        </div>
+        <div
+            class=" bg-green-50 py-3 px-2 sm:px-4 rounded-tl-md rounded-tr-md lg:rounded-tl-lg lg:rounded-tr-lg top-24 sticky">
+            <div
+                class=" grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-7 lg:gap-8 sm:gap-y-0 lg:gap-y-0 items-stretch justify-center text-center text-gray-400 bg-fixed">
+                <div class=" hidden sm:flex items-center justify-center">
+                    <h4 class="text-base md:text-lg font-bold text-gray-900">Pricing Plans</h4>
+                </div>
+                <div class=" space-y-1 lg:space-y-1.5 flex flex-col justify-between items-center">
+                    <h4 class=" text-base md:text-lg font-bold text-green-500 py-1 lg:py-2">Basic</h4>
+                    <p class=" text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 py-1 lg:py-2">$<span
+                            x-text="annual ? '330' : '30'">30</span> <sub
+                            class=" text-xs md:text-sm lg:text-base text-gray-400 font-normal"
+                            x-text="annual ? '/ year' : '/ month'"></sub></p>
+                    <p class=" text-xs md:text-sm font-medium mt-1"
+                        :class=" ' bg-yellow-100 rounded-3xl text-yellow-900' "><span
+                            x-text="annual ? 'Save 10%' : ''"></span></p>
+                    <div class=" py-3 lg:py-6">
+                        <a class=" cc-bg-Pricing bg-white px-3 py-2 md:px-4 md:py-3 lg:px-5 rounded-md text-green-400 font-medium hover:text-white text-sm lg:text-base"
+                            href="https://calculator.6storage.com/sign-up?package=basic" target="_blank">Select <span
+                                class=" hidden md:inline-block">Plan</span></a>
+                    </div>
+                </div>
+                <div class=" space-y-1 lg:space-y-1.5 flex flex-col justify-between items-center">
+                    <h4 class=" text-base md:text-lg font-bold text-blue-700 py-1 lg:py-2">Standard</h4>
+                    <p class=" text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 py-1 lg:py-2">$<span
+                            x-text="annual ? '550' : '50'">50</span><sub
+                            class=" text-xs md:text-sm lg:text-base text-gray-400 font-normal"
+                            x-text="annual ? '/ year' : '/ month'"></sub></p>
+                    <p class=" text-xs md:text-sm font-medium mt-1"
+                        :class=" ' bg-yellow-100 rounded-3xl text-yellow-900' "><span
+                            x-text="annual ? 'Save 10%' : ''"></span></p>
+                    <div class=" py-3 lg:py-6">
+                        <a class="cc-bg-Pricing bg-white px-3 py-2 md:px-4 md:py-3 lg:px-5 rounded-md text-green-400 font-medium hover:text-white text-sm lg:text-base"
+                            href="https://calculator.6storage.com/sign-up?package=standard" target="_blank">Select <span
+                                class=" hidden md:inline-block">Plan</span></a>
+                    </div>
+                </div>
+                <div class=" space-y-1 lg:space-y-1.5 flex flex-col justify-between items-center">
+                    <h4 class=" text-base md:text-lg font-bold text-yellow-400 py-1 lg:py-2">Pro</h4>
+                    <p class=" text-xs md:text-sm lg:text-base font-normal px-1 sm:px-3 md:px-4 lg:px-5">Contact us for
+                        more details.</p>
+                    <div class=" py-3 lg:py-6">
+                        <a class="cc-bg-Pricing bg-white px-3 py-2 md:px-4 md:py-3 lg:px-5 rounded-md text-green-400 font-medium hover:text-white text-sm lg:text-base"
+                            href="https://calculator.6storage.com/sign-up?package=pro" target="_blank">Contact <span
+                                class=" hidden md:inline-block">Us</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-reckoner px-2 py-3 pb-8 sm:pb-3 rounded-bl-lg rounded-br-lg">
+            <div
+                class=" grid grid-cols-1 sm:grid-cols-5 gap-3 sm:gap-0 items-stretch justify-center text-gray-900 text-center md:pl-3">
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-3.5 md:py-5 lg:py-5">
+                        Setup</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white rounded-tl-md rounded-bl-md sm:rounded-bl-none sm:rounded-tl-lg border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-5">$100</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-5">$100</p>
+                        </div>
+                        <div
+                            class=" bg-white rounded-tr-md rounded-br-md sm:rounded-br-none sm:rounded-tr-lg border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-5">Contact Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-5 md:py-7 lg:py-10">
+                        Local Laguage</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">English (Default)</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">English + 2 Local
+                                Languages</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">English + 7 Local
+                                Languages</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-3.5 md:pt-5 md:py-5 lg:py-6">
+                        40+ 3D inventory items</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-6">Yes</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-6">Yes</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-6">Yes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-1 md:py-5 lg:py-4">
+                        Custom Storage Category(Containers, Units, etc)</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Max 7 Category</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Max 12 Category</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Custom Categories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-5 md:py-10 lg:py-10">
+                        Online Move-in Integration</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Redirect to Booking
+                                page</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 sm:pb-3 md:py-5 lg:py-7">Integration
+                                with your Booking System</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Customized booking
+                                integration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-7 md:py-9 md:pb-10 lg:py-12 lg:pb-14">
+                        Feature Customization</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-3 lg:py-7">Only standard upgrades
+                                and customization</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-2 lg:py-7">Custom branding,
+                                custom integration, custom analytics</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-3 lg:py-7">Dedicated Product
+                                Integration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-1 md:py-2 md:pb-3 lg:py-4">
+                        APIs for Property Management Software Synchronization</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">No</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Yes</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Yes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2 sm:border-b border-solid border-gray-100">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-1 md:py-2 md:pb-3 lg:py-7">
+                        Brand Removal (Powered by 6Reckoner)</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">No</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">Yes</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-none">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-7">White label</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-span-2">
+                    <p
+                        class=" text-sm sm:text-xs md:text-sm lg:text-base text-left text-white px-1 py-4 sm:py-4 md:pt-5 md:py-5 lg:py-6">
+                        Support</p>
+                </div>
+                <div class=" col-span-3">
+                    <div class=" grid grid-cols-3">
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tl-md rounded-bl-md sm:rounded-tl-none sm:rounded-bl-lg">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-6">Tickets</p>
+                        </div>
+                        <div class=" bg-white border border-solid border-gray-100">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-6">Tickets, Phone</p>
+                        </div>
+                        <div
+                            class=" bg-white border border-solid border-gray-100 rounded-tr-md rounded-br-md sm:rounded-tr-none sm:rounded-br-lg">
+                            <p class=" text-xs md:text-sm lg:text-base px-1 py-4 md:py-5 lg:py-6">Tickets, Phone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Calculator FAQ design is here -->
+<section class=" w-full py-10 md:py-14 bg-blue-50">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+        <div class=" grid grid-cols-1 gap-1 text-center py-2 pb-7 md:pb-12 text-gray-700">
+            <h2 class=" text-xl md:text-2xl lg:text-3xl font-medium ">FAQs</h2>
+            <hr class=" border-t-4 border-green-500 mt-2 lg:mt-1 mx-auto w-10 md:w-16 z-10 rounded-md">
+        </div>
+        <div class=" py-4 md:py-5 lg:py-8">
+            <div
+                class=" grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-24 lg:gap-y-3 items-center justify-center text-gray-600">
+                <div>
+                    <img class=" w-full h-auto max-w-full"
+                        src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/9bdf06c1-9df1-46c7-58f5-b1278bcb7e00/6Storage"
+                        alt="6Reckoner_Faq">
+                </div>
+                <div class=" bg-white rounded-md shadow-xl">
+                    <div class="Six_Reckoner">
+                        <div class="accordionItem open">
+                            <h2 class="accordionItemHeading">
+                                <div class=" flex flex-row items-center justify-start ">
+                                    <div
+                                        class=" flex-none bg-white w-8 h-8 rounded-full text-sm lg:text-base flex items-center justify-center mr-3 mt-2 border border-solid border-blue-300 text-blue-700">
+                                        1</div>
+                                    <span class=" flex-grow text-sm lg:text-base">Will 6Reckoner work on all major
+                                        platforms (WordPress, WIX, Webflow, , and other modern CMS...)?</span>
+                                </div>
+                            </h2>
+                            <div class="accordionItemContent text-sm lg:text-base text-justify">
+                                <p class="p-3 lg:p-4">So, Yes! 6Reckoner has been designed to work on any platform. You
+                                    can easily achieve this by adding a script to your website and it is optimized for
+                                    mobile as well.</p>
+                            </div>
+                        </div>
+                        <div class="accordionItem close">
+                            <h2 class="accordionItemHeading">
+                                <div class=" flex flex-row items-center justify-start ">
+                                    <div
+                                        class=" flex-none bg-white w-8 h-8 rounded-full text-sm lg:text-base flex items-center justify-center mr-3 mt-2 border border-solid border-blue-300 text-blue-700">
+                                        2</div>
+                                    <span class=" flex-grow text-sm lg:text-base">Does 6Reckoner have language
+                                        customization because our client doesn't understand English much?</span>
+                                </div>
+                            </h2>
+                            <div class="accordionItemContent text-sm lg:text-base text-justify">
+                                <p class="p-3 lg:p-4">Yes, Our 6Reckoner can speak all of your local languages, if you
+                                    see that your language is not available raise a query to support@6storage.com and
+                                    our dev team updates them in minutes.</p>
+                            </div>
+                        </div>
+                        <div class="accordionItem close">
+                            <h2 class="accordionItemHeading">
+                                <div class=" flex flex-row items-center justify-start ">
+                                    <div
+                                        class=" flex-none bg-white w-8 h-8 rounded-full text-sm lg:text-base flex items-center justify-center mr-3 mt-2 border border-solid border-blue-300 text-blue-700">
+                                        3</div>
+                                    <span class=" flex-grow text-sm lg:text-base">Does 6Reconer have an m3 option, We
+                                        are using m3 in our region?</span>
+                                </div>
+                            </h2>
+                            <div class="accordionItemContent text-sm lg:text-base text-justify">
+                                <p class="p-3 lg:p-4">Yes 6Reconer supports m3 dimension and also it supports in
+                                    centimeter & Feet.</p>
+                            </div>
+                        </div>
+                        <div class="accordionItem close" style=" border: none;">
+                            <h2 class="accordionItemHeading">
+                                <div class=" flex flex-row items-center justify-start ">
+                                    <div
+                                        class=" flex-none bg-white w-8 h-8 rounded-full text-sm lg:text-base flex items-center justify-center mr-3 mt-2 border border-solid border-blue-300 text-blue-700">
+                                        4</div>
+                                    <span class=" flex-grow text-sm lg:text-base">Why would I want to use 6Reckoner?
+                                        When I already have a storage calculator?</span>
+                                </div>
+                            </h2>
+                            <div
+                                class="accordionItemContent rounded-bl-md rounded-br-md text-sm lg:text-base text-justify">
+                                <p class="p-3 lg:p-4">6Reckoner gives you the nearest realistic match compared to other
+                                    storage space calculators. The unique feature of 6Reckoner will allow your tenants
+                                    to get a visual representation of how the items can be arranged effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="{% static 'js/accordion.js' %}"></script>
+
+{% endblock %}

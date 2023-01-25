@@ -1,0 +1,292 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+<!-- Here is where we experiment Design is here -->
+<section class=" w-full py-24 pb-40 lg:py-40 bg-transparent relative"
+    style=" transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; background-image: linear-gradient(100deg, #0133e2 0%, #23bcf6 100%)">
+    <div class=" absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-50"
+        style="     transition: background 0.3s, border-radius 0.3s, opacity 0.3s; background-image: url(https://demo.themovation.com/stratus/wp-content/uploads/2019/06/CTA-bg.png);">
+    </div>
+    <div class=" -bottom-1 absolute left-0 w-full overflow-hidden">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            class=" h-28 md:h-20 lg:h-28  block relative left-1/2 cc-resaerch-banner" fill="#fff" viewBox="0 0 1000 100"
+            preserveAspectRatio="none">
+            <path class="elementor-shape-fill"
+                d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z">
+            </path>
+        </svg>
+    </div>
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8 relative">
+        <div class=" grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-16 md:gap-6 lg:gap-12">
+            <div>
+                <h1 class=" text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white text-center md:text-left">
+                    <span class=" leading-snug">Here is where we experiment great ideas to real life discoveries!</span>
+                </h1>
+            </div>
+            <div>
+                <img class=" w-4/5 mx-auto md:ml-auto"
+                    src="https://s3-us-west-2.amazonaws.com/6storage/labs/Lab-Asset1.png" alt="Resaerch-banner">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- What’s so special about Research Room design is here -->
+<section class=" w-full py-7 lg:py-14 mt-10 lg:mt-20 overflow-hidden">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+        <div
+            class=" grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-14 xl:gap-24 md:gap-y-0 xl:gap-y-0 items-center justify-center">
+            <div class=" flex items-center justify-center py-10 md:py-0 xl:pr-16">
+                <img class=" mx-auto" src="https://s3-us-west-2.amazonaws.com/6storage/labs/Lab-Asset2.png"
+                    alt="Research">
+            </div>
+            <div class="space-y-4 lg:space-y-6">
+                <div>
+                    <h3 class=" text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold cc-sky-blue-100">What’s so special
+                        about Research Room?</h3>
+                </div>
+                <div>
+                    <p class=" text-base font-normal cc-sky-blue-100 text-justify ">6Storage Research Room is a crew of
+                        experts committed to scrutinize the self storage industry and exploring the possible solutions
+                        and updates that will make the self storage management process better smooth and also evaluate
+                        the production and performance. We create the stories and explore all kinds of possibilities, by
+                        that we eliminate the errors in the process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- What’s on Research now Design is here -->
+<section class=" w-full py-20 lg:py-48 mt-16 lg:mt-24 bg-blue-50 relative"
+    style="transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;">
+    <div>
+        <div class=" absolute left-0 -top-1 w-full overflow-hidden transform rotate-180">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+                class=" h-16 -z-10 w-full block relative left-1/2 transform -translate-x-1/2" fill="#fff"
+                preserveAspectRatio="none">
+                <path class="elementor-shape-fill"
+                    d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z">
+                </path>
+            </svg>
+        </div>
+        <div class=" absolute left-0 -bottom-1 w-full overflow-hidden transform rotate-180">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
+                class=" h-32 -z-10 block relative left-1/2 transform -translate-x-1/2"
+                style=" width: calc(125% + 1.3px)" fill="#fff">
+                <path class="elementor-shape-fill"
+                    d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7 c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4 c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8 space-y-8 lg:space-y-16 relative">
+        <div>
+            <h2 class=" text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold cc-sky-blue-100 text-center"><span
+                    class=" leading-snug">What’s on Research now?</span></h2>
+        </div>
+        <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+                    loop: true,
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+
+                    breakpoints: {
+                        640: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        },
+                        768: {
+                        slidesPerView: 2,
+                        spaceBetween: 0,
+                        },
+                        1280: {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                        },
+                    },
+                    })" class="relative w-11/12 mx-auto flex flex-row">
+            <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+                <button @click="swiper.slidePrev()"
+                    class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="swiper-container" x-ref="container">
+                <div class="swiper-wrapper items-stretch ">
+                    <!-- Slides -->
+                    <div class="swiper-slide p-4 md:px-9 lg:px-7 flex">
+                        <div
+                            class="flex flex-col justify-center md:justify-start rounded overflow-hidden p-6 md:p-6 lg:py-8 space-y-4 lg:space-y-6 text-center cc-sky-blue-100 bg-white shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 w-16 mx-auto object-cover"
+                                    src="https://6storage.s3.us-west-2.amazonaws.com/labs/AI+for+dynamic+price+modification.png"
+                                    alt="AI">
+                            </div>
+                            <div>
+                                <h4 class=" text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"><span
+                                        class=" leading-snug">AI for dynamic price modification </span></h4>
+                            </div>
+                            <div>
+                                <p class=" text-sm xl:text-base font-normal">Dynamic price modifier is the ability for
+                                    the 6Storage software to change a unit’s standard rate by raising or lowering it
+                                    based on criteria and other market standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4 md:px-9 lg:px-7 flex">
+                        <div
+                            class="flex flex-col justify-center md:justify-start rounded overflow-hidden p-6 md:p-6 lg:py-8 space-y-4 lg:space-y-6 text-center cc-sky-blue-100 bg-white shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 w-16 mx-auto object-cover"
+                                    src="https://s3-us-west-2.amazonaws.com/6storage/labs/3d-sitemap.png"
+                                    alt="3d-Sitemap">
+                            </div>
+                            <div>
+                                <h4 class=" text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"><span
+                                        class=" leading-snug">3D Sitemap</span></h4>
+                            </div>
+                            <div>
+                                <p class=" text-sm xl:text-base font-normal">One of it's kind and our very own
+                                    improvement to many of our users who often use the sitemap for most of their
+                                    operations, be it for rentals or collections. With much efforts put in, we are to
+                                    soon deliver a Sitemap to you that renders 3D rotations helping you with a smooth
+                                    and interactive usage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4 md:px-9 lg:px-7 flex">
+                        <div
+                            class="flex flex-col justify-center md:justify-start rounded overflow-hidden p-6 md:p-6 lg:py-8 space-y-4 lg:space-y-6 text-center cc-sky-blue-100 bg-white shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 w-16 mx-auto object-cover"
+                                    src="https://s3-us-west-2.amazonaws.com/6storage/labs/Lab-Asset5.png" alt="Task">
+                            </div>
+                            <div>
+                                <h4 class=" text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"><span
+                                        class=" leading-snug">Task List</span></h4>
+                            </div>
+                            <div>
+                                <p class=" text-sm xl:text-base font-normal">To forget is human, this new feature could
+                                    just help you get over forgetting things. Allowing you to create events/reminders
+                                    and also occasions where the software notifies you on due tenants, credit card
+                                    payments, message notifications and much more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4 md:px-9 lg:px-7 flex">
+                        <div
+                            class="flex flex-col justify-center md:justify-start rounded overflow-hidden p-6 md:p-6 lg:py-8 space-y-4 lg:space-y-6 text-center cc-sky-blue-100 bg-white shadow-lg">
+                            <div class="flex-shrink-0 h-16 flex items-center">
+                                <img class="h-auto w-auto mx-auto object-cover"
+                                    src="https://6storage.s3-us-west-2.amazonaws.com/Images/sage-50cloud.png"
+                                    alt="Sage">
+                            </div>
+                            <div>
+                                <h4 class=" text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"><span
+                                        class=" leading-snug">Sage 50cloud</span></h4>
+                            </div>
+                            <div>
+                                <p class=" text-sm xl:text-base font-normal">Sage 50cloud has all the features,
+                                    convenience, and ease of use to manage your business. Manage accounting, invoicing,
+                                    cash flow, inventory, taxes, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4 md:px-9 lg:px-7 flex">
+                        <div
+                            class="flex flex-col justify-center md:justify-start rounded overflow-hidden p-6 md:p-6 lg:py-8 space-y-4 lg:space-y-6 text-center cc-sky-blue-100 bg-white shadow-lg">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 w-16 mx-auto object-cover"
+                                    src="https://6storage.s3.us-west-2.amazonaws.com/labs/Generate+Custom+Data+Analytic+reports.png"
+                                    alt="Reports">
+                            </div>
+                            <div>
+                                <h4 class=" text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"><span
+                                        class=" leading-snug">Generate Custom Data Analytic reports</span></h4>
+                            </div>
+                            <div>
+                                <p class=" text-sm xl:text-base font-normal">A Custom Report is a report that you create
+                                    according to your needs. You pick the fields that you want to add to your customized
+                                    report and add conditions to generate the report.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+                <button @click="swiper.slideNext()"
+                    class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                    <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- We welcome Feedbacks & Suggestions design is here -->
+<section class=" w-full py-8 lg:py-20 overflow-hidden">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+        <div
+            class=" grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-14 xl:gap-24 md:gap-y-0 xl:gap-y-0 items-center justify-center ">
+            <div class="space-y-4 lg:space-y-6">
+                <div>
+                    <h3 class=" text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold cc-sky-blue-100">We welcome
+                        Feedbacks & Suggestions!</h3>
+                </div>
+                <div>
+                    <p class=" text-base font-normal cc-sky-blue-100 text-justify ">We welcome your participation in our
+                        Research room experiments. 6Storage is the software for the storage owners like you, like a
+                        recipe advice we welcome your every feedback and advice, by that way our crew can understand
+                        your taste expectations and give you an enhanced experience.</p>
+                </div>
+            </div>
+            <div class=" flex items-center justify-center py-10 md:py-0 xl:pl-16 order-first md:order-none">
+                <img class=" mx-auto" src="https://s3-us-west-2.amazonaws.com/6storage/labs/Lab-Asset3.png"
+                    alt="Feedbacks">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Here is where we experiment Design is here -->
+<section class=" w-full py-24 pt-40 lg:py-24 lg:pt-44 mt-8 lg:mt-28 bg-transparent relative"
+    style=" transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; background-image: linear-gradient(100deg, #016ECC 0%, #19D2FE 100%) ">
+    <div class=" absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-50"
+        style="transition: background 0.3s, border-radius 0.3s, opacity 0.3s; background-image: url(https://demo.themovation.com/stratus/wp-content/uploads/2019/06/CTA-bg.png);">
+    </div>
+    <div class=" -top-1 absolute left-0 w-full overflow-hidden rotate-180 transform">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+            class=" h-20 w-full block relative left-1/2 transform cc-resaerch-banner -translate-x-1/2 -z-10" fill="#fff"
+            preserveAspectRatio="none">
+            <path class="elementor-shape-fill"
+                d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z">
+            </path>
+        </svg>
+    </div>
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8 relative">
+        <div class=" grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-7 lg:gap-12">
+            <div class=" lg:col-span-2">
+                <h2 class=" text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center lg:text-left text-white">
+                    <span class=" leading-snug">Automate your day-to-day storage operations with 6Storage</span></h2>
+            </div>
+            <div>
+                <div class=" py-2 lg:py-3.5 max-w-4xl mx-auto flex flex-col md:flex-row justify-center items-center">
+                    <a href="#"
+                        class=" text-white text-sm sm:text-base xl:text-lg text-center font-extrabold not-italic xl:leading-7 outline-none bg-blue-700 rounded-full py-2.5 px-10 md:px-12 lg:px-14 border-2 border-transparent shadow-2xl hover:shadow-none hover:text-blue-700 hover:bg-white hover:border-blue-700 transition-all duration-300  transform ease-linear uppercase tracking-wider">Get
+                        your 14 days FREE trial Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+{% endblock %}

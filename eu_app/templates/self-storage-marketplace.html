@@ -1,0 +1,800 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- **10**  Self Storage Marketplace Page design is here--> <!-- Our Partners design is here -->
+<section class=" w-full pt-5 md:p-0 bg-white">
+    <div class=" bg-cover bg-center bg-no-repeat visible bg-blend-darken w-full max-w-full h-auto -z-30"
+        style="background-image: url(https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/630d428f-953a-4747-d959-ae759b170900/6Storage);">
+        <div class=" bg-black opacity-70">
+            <div
+                class=" container mx-auto py-14 md:py-24 lg:py-32 text-center flex justify-center items-center flex-col flex-wrap md:max-w-4xl text-white px-5 lg:px-0">
+                <h2 class=" text-2xl md:text-3xl lg:text-4xl font-semibold py-2 md:py-4 z-30">Our Partners</h2>
+                <div class=" flex flex-row items-center justify-center py-1 md:py-3">
+                    <a class=" text-base font-medium" href="/">Home</a><span
+                        class=" text-xl font-  bold">&nbsp;>&nbsp;</span><a class=" text-base font-normal text-gray-300"
+                        href="javascript:void(0)"> Partners</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 6Storage software Design here -->
+<section class=" w-full py-14 bg-blue-50">
+    <div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+        <div class=" py-8 text-center text-gray-700">
+            <h4 class=" text-xl sm:text-2xl lg:text-4xl font-bold">6Storage software – integrated with all your
+                preferred apps to manage all operations</h4>
+            <hr class=" border-t-4 border-blue-800 mt-4 mx-auto w-2/12 md:w-1/12 rounded-md">
+        </div>
+        <div class="bg-blue-50 pt-5 pb-2 my-1 grid grid-cols-1 gap-5 text-right mr-4 md:mr-6">
+            <div class=" ">
+                <form action="/">
+                    <select onchange="countrySelect(event)" name="Global" id="Global"
+                        class="text-black px-3 py-2 border-2 rounded-lg text-left bg-white outline-none cursor-pointer">
+                        <option value="Global" class=" rounded-xl">GLOBAL</option>
+                        <option value="USA">USA</option>
+                        <option value="EU">EU</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="MENA">MENA</option>
+                        <option value="ASIA">ASIA</option>
+                        <option value="AFRICA">AFRICA</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class=" grid grid-cols-1 md:grid-cols-6 gap-3">
+            <div class=" md:col-span-2">
+                <div class=" pt-5 pb-2 hidden md:block w-full h-auto">
+                    <ul class=" flex flex-col gap-2">
+                        <li class=" rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                            <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200 bg-white md:border-2 border-dotted border-blue-300"
+                                onclick="part_tabstorage(event, 'Payment_Processing')">
+                                <span class=" flex flex-row items-center justify-start"><svg
+                                        class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <rect x="3" y="5" width="18" height="14" rx="3"></rect>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        <line x1="7" y1="15" x2="7.01" y2="15"></line>
+                                        <line x1="11" y1="15" x2="13" y2="15"></line>
+                                    </svg>Payment Processing</span>
+                            </div>
+                        </li>
+                        <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                            <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200"
+                                onclick="part_tabstorage(event, 'Gate_Access_Controls')">
+                                <span class=" flex flex-row items-center justify-start"><svg
+                                        class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="12" r="9"></circle>
+                                        <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1"></path>
+                                        <circle cx="12" cy="7.5" r=".5" fill="currentColor"></circle>
+                                    </svg>Gate Access Controls</span>
+                            </div>
+                        </li>
+                        <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                            <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200"
+                                onclick="part_tabstorage(event, 'Operations_Accounting_Partners')">
+                                <span class=" flex flex-row items-center justify-start"><svg
+                                        class="h-8 w-8 text-blue-800 mr-2 rounded-full p-1 bg-purple-100" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <path d="M3.5 5.5l1.5 1.5l2.5 -2.5"></path>
+                                        <path d="M3.5 11.5l1.5 1.5l2.5 -2.5"></path>
+                                        <path d="M3.5 17.5l1.5 1.5l2.5 -2.5"></path>
+                                        <line x1="11" y1="6" x2="20" y2="6"></line>
+                                        <line x1="11" y1="12" x2="20" y2="12"></line>
+                                        <line x1="11" y1="18" x2="20" y2="18"></line>
+                                    </svg>Operations &amp; Accounting Partners</span>
+                            </div>
+                        </li>
+                        <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                            <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200"
+                                onclick="part_tabstorage(event, 'Email_Text_Solutions')">
+                                <span class=" flex flex-row items-center justify-start"><svg
+                                        class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>Email/Text Solutions</span>
+                            </div>
+                        </li>
+                        <li class="rounded  text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                            <div class="part_tablinks global eu bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200"
+                                onclick="part_tabstorage(event, 'Reseller_Partner')">
+                                <span class=" flex flex-row items-center justify-start"><svg
+                                        class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                        </path>
+                                    </svg>Reseller Partner</span>
+                            </div>
+                        </li>
+                        <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                            <div class="part_tablinks global usa eu australia mena asia africa bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200"
+                                onclick="part_tabstorage(event, 'Digital_Marketing_Partner')">
+                                <span class=" flex flex-row items-center justify-start"><svg
+                                        class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                                    </svg>Digital Marketing Partner</span>
+                            </div>
+                        </li>
+                        <li class="rounded text-left text-black cursor-pointer text-xl sm:text-base lg:text-lg">
+                            <div class="part_tablinks global bg-white px-4 py-3 w-full hover:text-gray-500 hover:border-2 hover:border-dotted hover:border-blue-200 focus:border-2 focus:border-dotted focus:border-blue-200"
+                                onclick="part_tabstorage(event, 'Call_Centre')">
+                                <span class=" flex flex-row items-center justify-start"><svg
+                                        class="h-8 w-8 text-blue-800 mr-3 rounded-full p-1 bg-purple-100" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <rect x="4" y="13" rx="2" width="5" height="7"></rect>
+                                        <rect x="15" y="13" rx="2" width="5" height="7"></rect>
+                                        <path d="M4 15v-3a8 8 0 0 1 16 0v3"></path>
+                                    </svg>Call Centre</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" md:col-span-4">
+                <div class=" pt-5 pb-2 w-full h-auto">
+                    <!--  Payment Processing design is here-->
+                    <div class=" ">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold ">
+                            <div onclick="part_tabstorage(event, 'Payment_Processing')"
+                                class="part_tablinks global usa eu australia mena asia africa py-2 px-3 bg-white md:border-2 border-dotted border-blue-300">
+                                <h3>1. Payment Processing</h3>
+                            </div>
+                        </div>
+                        <div id="Payment_Processing"
+                            class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto">
+                            <div class=" grid grid-cols-2 md:grid-cols-3 gap-6">
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <a href="https://www.6storage.com/payment-gateway-vendors/" target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c8ac2932-2810-4fbe-4058-17d82fed7100/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/c8ac2932-2810-4fbe-4058-17d82fed7100/6Storage"
+                                                    alt="Braintree">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs">Scale your business with Braintree.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e9b97d45-cd69-48ab-9236-2bcdecf89000/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e9b97d45-cd69-48ab-9236-2bcdecf89000/6Storage"
+                                                alt="E-merchant">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Online payments technology for efficiency
+                                                        driven businesses.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global mena">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/4a6310d9-9dba-42d6-42d3-5c19faf63600/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/4a6310d9-9dba-42d6-42d3-5c19faf63600/6Storage"
+                                                alt="Hper_Pay">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">HyperPay is a robust online payment gateway
+                                                        driving the future of cashless payments in the MENA region.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2f891b90-4adf-43c7-6eeb-8843c4afac00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2f891b90-4adf-43c7-6eeb-8843c4afac00/6Storage"
+                                                alt="Nets">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">With Nets, switching between the major card
+                                                        processing issuers is easier</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa">
+                                    <div>
+                                        <a href="https://offers.paya.com/6storage/" target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img class=" w-32 mx-auto md:w-36 xl:w-auto"
+                                                    data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/746d28a2-cfc4-45fa-6d8d-2b6abf898a00/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/746d28a2-cfc4-45fa-6d8d-2b6abf898a00/6Storage"
+                                                    alt="Paya">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs">Paya, POS integrated payments solutions
+                                                            will provide a simple way to deliver valuable experiences to
+                                                            your tenants anywhere, at any time.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="global eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/51c5b34a-f01e-47fa-93c5-ca2b4e083500/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/51c5b34a-f01e-47fa-93c5-ca2b4e083500/6Storage"
+                                                alt="P24">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">P24-Use Przelewy24 for BLIK and online
+                                                        transfers from 350 banks in Poland regions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img class=" w-32 mx-auto md:w-36 xl:w-auto"
+                                                data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/fa38d962-f946-4122-ff3b-bae035454100/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/fa38d962-f946-4122-ff3b-bae035454100/6Storage"
+                                                alt="Rapyd">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">RapydRaypd-World's Largest Local Payments
+                                                        Network with an all-in-one POS solution.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/8e421d7d-5bbc-4a0e-eec3-eb940bee0800/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/8e421d7d-5bbc-4a0e-eec3-eb940bee0800/6Storage"
+                                                alt="SMS">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">ISS BEST PAYMENT SERVICE 2014 . 2015 . 2016.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b4044843-fb86-41d6-ae2c-239eb3417f00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b4044843-fb86-41d6-ae2c-239eb3417f00/6Storage"
+                                                alt="Sepa">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">The Single Euro Payments Area (SEPA) is an
+                                                        initiative of the European Union to simplify payments within and
+                                                        across member countries.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e7e7a8bf-b5fe-44bf-f167-9468b2b71200/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e7e7a8bf-b5fe-44bf-f167-9468b2b71200/6Storage"
+                                                alt="Stripe">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Stripe is the best software platform for
+                                                        running an internet business. Handle billions of dollars every
+                                                        year for forward thinking businesses the world.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/ff2736ec-1676-4396-ec76-e6bc37dae300/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/ff2736ec-1676-4396-ec76-e6bc37dae300/6Storage"
+                                                alt="Swedbank">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Swedbank Gateway is a convenient account
+                                                        management solution for linking your accounting software with
+                                                        banking services.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7f2a389e-5961-42d8-0508-f61f16b01700/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7f2a389e-5961-42d8-0508-f61f16b01700/6Storage"
+                                                alt="World_Pay">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">The smarter, faster, easier, credit card
+                                                        processor.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gate Access Controls design is here -->
+                    <div class=" ">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold ">
+                            <div onclick="part_tabstorage(event, 'Gate_Access_Controls')"
+                                class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                <h3>2. Gate Access Controls</h3>
+                            </div>
+                        </div>
+                        <div id="Gate_Access_Controls"
+                            class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                            <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <a href="https://www.6storage.com/6security/" target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/9636c390-9606-4ccb-489b-1516bb0f9b00/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/9636c390-9606-4ccb-489b-1516bb0f9b00/6Storage"
+                                                    alt="6Security">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs">6security is highly flexible and
+                                                            affordable. It’s developed entirely for 6Storage users and
+                                                            lets you provide additional services like ecommerce drop off
+                                                            points.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <a href="https://www.6storage.com/marketplace/noke-gate-system/"
+                                            target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/60d7b3e6-d4a9-462c-bf92-4154061cd600/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/60d7b3e6-d4a9-462c-bf92-4154061cd600/6Storage"
+                                                    alt="Noke-logo">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs">The new Bluetooth enabled gate access
+                                                            system lets you lock the unit with an electronic lock, all
+                                                            from your mobile. No more keypads required.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="global">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/69ee6b72-435a-4191-0fe6-3a7979623700/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/69ee6b72-435a-4191-0fe6-3a7979623700/6Storage"
+                                                alt="PTI">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">PTI is the most trusted name in security and
+                                                        new technology for the self storage industry.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2eaf7be0-5629-451d-70b0-aa2411c30500/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2eaf7be0-5629-451d-70b0-aa2411c30500/6Storage"
+                                                alt="Quikstor">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Video, wireless, Alarms and Gate Keypad
+                                                        Access Control for a comprehensive solution for facility
+                                                        security.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img class=" w-32 mx-auto md:w-36 xl:w-auto"
+                                                data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7e639c6d-585c-40b1-d435-54d7c3ac2000/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/7e639c6d-585c-40b1-d435-54d7c3ac2000/6Storage"
+                                                alt="Salto_Partner">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">A access control platform combines
+                                                        electronic door components and software providing tailor-made
+                                                        wire-free networked access control solutions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img class=" w-32 mx-auto md:w-36 xl:w-auto"
+                                                data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5d556e61-7111-4cc8-a5bd-299b0c114a00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/5d556e61-7111-4cc8-a5bd-299b0c114a00/6Storage"
+                                                alt="Sentinel_System">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Secure your facility with WinSen, the 1st
+                                                        windows based security in self storage.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/52cb7528-52aa-4eb0-41ef-dea829a27c00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/52cb7528-52aa-4eb0-41ef-dea829a27c00/6Storage"
+                                                alt="SCSolution">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">SC Solutions is the only European company
+                                                        that offers personalized access control and security systems.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/944cf9bd-fde3-405e-b89f-e656d4476a00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/944cf9bd-fde3-405e-b89f-e656d4476a00/6Storage"
+                                                alt="Suprema">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">An intelligent door controller which
+                                                        provides the advantages of a biometric-enabled security</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Operations & Accounting Partners design is here -->
+                    <div class=" ">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold ">
+                            <div onclick="part_tabstorage(event, 'Operations_Accounting_Partners')"
+                                class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                <h3>3. Operations &amp; Accounting Partners</h3>
+                            </div>
+                        </div>
+                        <div id="Operations_Accounting_Partners"
+                            class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                            <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                <div class="global usa">
+                                    <div>
+                                        <a href="https://www.6storage.com/marketplace/getpayroll-partner/"
+                                            target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b9c0a1ae-828e-4e9a-eb15-387127cde100/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b9c0a1ae-828e-4e9a-eb15-387127cde100/6Storage"
+                                                    alt="Getpay">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs">GetPayroll is a 30-year-old nationwide
+                                                            payroll service bureau which provides the most compliant,
+                                                            affordable and reliable payroll service for small and
+                                                            medium-sized businesses. 100% error-free processing
+                                                            guarantee.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="global eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/6e308129-917e-4fe6-9f6a-22cc6857cf00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/6e308129-917e-4fe6-9f6a-22cc6857cf00/6Storage"
+                                                alt="Hogia">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center">
+                                                    <p class=" p-2 text-xs">Get started with accounting, payroll and see
+                                                        a clear overview of your accounting practices.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global eu">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/a81c859a-0184-4065-6c9d-5d316cc47d00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/a81c859a-0184-4065-6c9d-5d316cc47d00/6Storage"
+                                                alt="SevDesk">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Creates invoices and estimates, takes care
+                                                        of accounting, customer and self storage management.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <a href="https://www.6storage.com/marketplace/intuit-quickbooks/"
+                                            target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/740176a9-9e41-4dca-5c0f-08d58d639800/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/740176a9-9e41-4dca-5c0f-08d58d639800/6Storage"
+                                                    alt="Quick_book">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs">Manage all financial transactions of
+                                                            your storage business effortlessly with QuickBooks.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Email/Text Solutions design is here -->
+                    <div class=" ">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold ">
+                            <div onclick="part_tabstorage(event, 'Email_Text_Solutions')"
+                                class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                <h3>4. Email/Text Solutions</h3>
+                            </div>
+                        </div>
+                        <div id="Email_Text_Solutions"
+                            class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                            <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0f7f2ab7-12c9-4bf8-97c5-afb72cf9d700/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0f7f2ab7-12c9-4bf8-97c5-afb72cf9d700/6Storage"
+                                                alt="SendGrid">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Automate and send transactional and reminder
+                                                        emails to all your tenants.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/1180f2a1-ea57-4ab2-2800-c7c1d23dad00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/1180f2a1-ea57-4ab2-2800-c7c1d23dad00/6Storage"
+                                                alt="Twilio">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Send two way SMS and reach your tenants
+                                                        faster.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Reseller Partner design is here  -->
+                    <div class=" ">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold ">
+                            <div onclick="part_tabstorage(event, 'Reseller_Partner')"
+                                class="part_tablinks global eu py-2 px-3">
+                                <h3>5. Reseller Partner</h3>
+                            </div>
+                        </div>
+                        <div id="Reseller_Partner"
+                            class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                            <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                <div class="global eu">
+                                    <div>
+                                        <a href="https://www.6storage.com/marketplace/german-self-storage-partner/"
+                                            target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img class=" w-32 mx-auto md:w-36 xl:w-auto"
+                                                    data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0aef9865-8a23-46b5-da43-2387f5083f00/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/0aef9865-8a23-46b5-da43-2387f5083f00/6Storage"
+                                                    alt="Store and Park">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs">Store and Park – The Authorized Reseller
+                                                            and Support Agent for 6Strorage, helping German Self Storage
+                                                            Facilities with German customer support and onsite training.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Digital Marketing Partner design is here -->
+                    <div class=" ">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold ">
+                            <div onclick="part_tabstorage(event, 'Digital_Marketing_Partner')"
+                                class="part_tablinks global usa eu australia mena asia africa py-2 px-3">
+                                <h3>6. Digital Marketing Partner</h3>
+                            </div>
+                        </div>
+                        <div id="Digital_Marketing_Partner"
+                            class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                            <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                <div class="global usa eu australia mena asia africa">
+                                    <div>
+                                        <a href="https://www.6storage.com/marketplace/egnitemarketing/" target="_blank">
+                                            <div
+                                                class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                                <img class=" w-32 mx-auto md:w-36 xl:w-auto"
+                                                    data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e66d7909-65bd-4b73-5016-4e6b58c6a900/6Storage"
+                                                    src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/e66d7909-65bd-4b73-5016-4e6b58c6a900/6Storage"
+                                                    alt="Marketpartner">
+                                                <div class=" hidden md:block">
+                                                    <div
+                                                        class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-auto w-full h-0 text-white flex flex-col justify-center ">
+                                                        <p class=" p-2 text-xs pb-5 mt-20">An Experienced storage
+                                                            professional with a proven track record for developing and
+                                                            executing digital marketing strategies for small and
+                                                            medium-sized companies with a single focus – to drive and
+                                                            improve sales/rentals by offering a detailed execution plan
+                                                            tailored to each specific client.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Call Centre design is here -->
+                    <div class=" ">
+                        <!-- mobile Accordion option -->
+                        <div class=" block md:hidden text-base text-blue-700 font-bold ">
+                            <div onclick="part_tabstorage(event, 'Call_Centre')" class="part_tablinks global py-2 px-3">
+                                <h3>7. Call Centre</h3>
+                            </div>
+                        </div>
+                        <div id="Call_Centre"
+                            class=" part_tabcontent  bg-white p-5 md:cc-h-525 lg:cc-h-470 xl:cc-h-445 overflow-auto hidden">
+                            <div class=" grid grid-cols-2 md:grid-cols-3 gap-6 ">
+                                <div class="global">
+                                    <div>
+                                        <div
+                                            class="container_img flex flex-col justify-center px-3 w-auto h-24 sm:h-36 outline-dashed outline-1 outline-gray-500 border-gray-300 border-dashed border relative">
+                                            <img data-src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/043fc5de-df0d-4e3a-87bb-11077aa78e00/6Storage"
+                                                src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/043fc5de-df0d-4e3a-87bb-11077aa78e00/6Storage"
+                                                alt="TeleStor">
+                                            <div class=" hidden md:block">
+                                                <div
+                                                    class=" Overlay_content absolute bottom-full left-0 right-0 top-0 bg-blue-700 overflow-hidden w-full h-0 text-white flex flex-col justify-center ">
+                                                    <p class=" p-2 text-xs">Telstory Self Storage Call Center <br> more
+                                                        than an " ANSWERING SERVICE "
+                                                        <br> more than a " CALL CENTER " <br> more than a " SALES AGENT
+                                                        "
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

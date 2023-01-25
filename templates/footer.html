@@ -1,5 +1,5 @@
-<footer class=" w-full pt-6 lg:pt-8 2xl:pt-12 relative">
-    <section class=" w-full py-3 px-5 xl:px-0 pb-1 bg-gray-100">
+<footer class=" w-full pt-/6 lg:pt-/8 2xl:pt-/12 relative">
+    <section class=" w-full py-5 lg:py-8 px-5 xl:px-0 pb-1 lg:pb-3 bg-gray-100">
         <div class=" container mx-auto lg:px-2">
             <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-10 lg:gap-8">
                 <div class=" sm:col-span-2">
@@ -16,7 +16,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/aboutus/'; ?>" class=" hover:underline">
+                                        <a href="{% url 'about' %}" class=" hover:underline">
                                             About us
                                         </a>
                                     </span>
@@ -28,7 +28,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/'; ?>" class=" hover:underline">
+                                        <a href="#" class=" hover:underline">
                                             Contact Us
                                         </a>
                                     </span>
@@ -40,7 +40,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/'; ?>" class=" hover:underline">
+                                        <a href="#" class=" hover:underline">
                                             Team
                                         </a>
                                     </span>
@@ -52,7 +52,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/marketplace/'; ?>" class=" hover:underline">
+                                        <a href="{% url 'marketplace' %}" class=" hover:underline">
                                             Partners
                                         </a>
                                     </span>
@@ -80,7 +80,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/'; ?>" class=" hover:underline">
+                                        <a href="#" class=" hover:underline">
                                             Case Study
                                         </a>
                                     </span>
@@ -92,7 +92,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/'; ?>" class=" hover:underline">
+                                        <a href="{% url 'research' %}" class=" hover:underline">
                                             Research Room
                                         </a>
                                     </span>
@@ -104,7 +104,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/'; ?>" class=" hover:underline">
+                                        <a href="{% url 'referral' %}" class=" hover:underline">
                                             Referral Program
                                         </a>
                                     </span>
@@ -129,7 +129,7 @@
                                         <polyline points="9 18 15 12 9 6" />
                                     </svg>
                                     <span>
-                                        <a href="<?php echo get_site_url().'/'; ?>" class=" hover:underline">
+                                        <a href="{% url 'gdpr' %}" class=" hover:underline">
                                             GDPR
                                         </a>
                                     </span>
@@ -331,7 +331,7 @@
 
                             </div>
                         </div>
-                        <div>
+                        <div class="hidden">
                             <div class=" grid grid-cols-1 lg:grid-cols-7 items-start  gap-3">
                                 <div>
                                     <img class=" mx-auto"
@@ -444,11 +444,15 @@
                 </div>
                 <div>
                     <h3 class="text-center font-normal">
-                        <a href="https://www.6storage.com/privacypolicy/" target="_blank">Privacy Policy</a> ||
-                        <a href="https://www.6storage.com/termsofservice/" target="_blank">Terms of Use</a>
+                        <a href="{% url 'privacy-policy' %}" target="_blank">Privacy Policy</a> ||
+                        <a href="{% url 'terms-of-conditions' %}" target="_blank">Terms of Use</a>
                     </h3>
                 </div>
             </div>
         </div>
     </section>
 </footer>
+
+
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>

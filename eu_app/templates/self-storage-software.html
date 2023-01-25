@@ -1,0 +1,443 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Self Storage Software Page design here -->
+<!-- Self storage software, built on your feedback design here -->
+<section class=" w-full py-10 md:py-14 bg-blue-50">
+	<div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+		<div class=" grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 items-center justify-center text-black">
+			<div>
+				<div>
+					<h1 class=" text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-blue-800">Self storage
+						software, built on your feedback</h1>
+				</div>
+				<div class=" py-5">
+					<p class=" text-base font-medium">One dashboard for all operations & few clicks to rent units online
+					</p>
+					<p class=" text-base py-5">6Storage – curated by a self storage owner, used by global storage
+						operators of 30+ countries</p>
+				</div>
+				<div class=" flex flex-row items-center md:items-start justify-center md:justify-start">
+					<a href="#"
+						class=" outline-none bg-blue-800 py-3 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 text-white rounded text-base font-bold my-3 md:my-0 mr-5 shadow-xl hover:shadow-inner">Free
+						signup</a><a href="#"
+						class=" outline-none bg-purple-200 py-3 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 text-blue-800 rounded text-base font-bold my-3 md:my-0 hover:bg-blue-800 hover:text-white">Live
+						demo</a>
+				</div>
+			</div>
+			<div class=" flex flex-col items-center justify-center">
+				<img class=" w-full py-4 px-3 md:py-5 md:px-4"
+					src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/9c63139a-0ca1-496f-b00a-3af8db66ec00/6Storage"
+					alt="Software-Homepage-Banner">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Choose which best describes your business Design here -->
+<section class=" w-full py-10 md:py-14 bg-white">
+	<div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+		<div class=" grid grid-cols-1 gap-1 text-center py-5">
+			<h2 class=" text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-700">Choose which best
+				describes your business</h2>
+			<hr class=" border-t-4 border-blue-800 mt-2 lg:mt-4 mx-auto w-2/12 md:w-1/12 rounded-md">
+		</div>
+		<div
+			class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-10 lg:gap-7 py-7 items-stretch justify-between">
+			<div
+				class=" rounded-md shadow-xl py-4 px-3 pt-5 transition-all hover:shadow-2xl hover:border hover:border-blue-700 hover:border-solid hover:-translate-y-3 transform flex flex-col justify-between items-center duration-500 delay-100">
+				<div class=" flex flex-col items-center justify-center">
+					<img class="w-auto mx-auto h-16 md:h-20 lg:h-24 xl:h-20 mb-3.5 py-1 px-3 md:px-4"
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/eaee5ce7-de75-4757-e68e-e26ea7020300/6Storage"
+						alt="Warehouse-Storage">
+					<h3 class=" text-lg text-black font-medium">Self storage</h3>
+				</div>
+				<div class=" text-center py-3 text-base">
+					<p class=" text-gray-800">Excel sheets are troublesome. Try our self storage software to manage
+						lease, set autopay and cut down labor costs.</p>
+				</div>
+				<div class=" text-center py-2 flex flex-row items-center justify-center text-base">
+					<a href="{% url 'self-storage' %}" target="_blank"
+						class=" text-blue-800 font-medium mr-2">Read more</a> <svg class="h-7 w-7 text-blue-800"
+						fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M14 5l7 7m0 0l-7 7m7-7H3" />
+					</svg>
+				</div>
+			</div>
+			<div
+				class=" rounded-md shadow-xl py-4 px-3 pt-5 transition-all hover:shadow-2xl hover:border hover:border-blue-700 hover:border-solid hover:-translate-y-3 transform flex flex-col justify-between items-center duration-500 delay-100">
+				<div class=" flex flex-col items-center justify-center">
+					<img class=" w-auto mx-auto h-16 md:h-20 lg:h-24 xl:h-20 mb-3.5 py-1 px-3 md:px-4"
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/f89a6374-6118-4a79-c69f-cdfa15c1b800/6Storage"
+						alt="Cranes-Storage">
+					<h3 class=" text-lg text-black font-medium">Container storage</h3>
+				</div>
+				<div class=" text-center py-3 text-base">
+					<p class=" text-gray-800">Manage transporting costs, invoicing & lease operations from one system
+						while you expand your container storage.</p>
+				</div>
+				<div class=" text-center py-2 flex flex-row items-center justify-center text-base">
+					<a href="{% url 'container' %}" target="_blank"
+						class=" text-blue-800 font-medium mr-2">Read more</a> <svg class="h-7 w-7 text-blue-800"
+						fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M14 5l7 7m0 0l-7 7m7-7H3" />
+					</svg>
+				</div>
+			</div>
+			<div
+				class=" rounded-md shadow-xl py-4 px-3 pt-5 transition-all hover:shadow-2xl hover:border hover:border-blue-700 hover:border-solid hover:-translate-y-3 transform flex flex-col justify-between items-center duration-500 delay-100">
+				<div class=" flex flex-col items-center justify-center">
+					<img class=" w-auto mx-auto h-16 md:h-20 lg:h-24 xl:h-20 mb-3.5 py-1 px-3 md:px-4"
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/049b0bcc-13ef-48a5-a3fa-2989fcf86600/6Storage"
+						alt="Pallet-Storage">
+					<h3 class=" text-lg text-black font-medium">Pallet storage</h3>
+				</div>
+				<div class=" text-center py-3 text-base">
+					<p class=" text-gray-800">You want an efficient system to run buffer/recall operations, and quickly
+						find any pallet box stored on racks.</p>
+				</div>
+				<div class=" text-center py-2 flex flex-row items-center justify-center text-base">
+					<a href="{% url 'pallet' %}" target="_blank" class=" text-blue-800 font-medium mr-2">Read
+						more</a> <svg class="h-7 w-7 text-blue-800" fill="none" viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M14 5l7 7m0 0l-7 7m7-7H3" />
+					</svg>
+				</div>
+			</div>
+			<div
+				class=" rounded-md shadow-xl py-4 px-3 pt-5 transition-all hover:shadow-2xl hover:border hover:border-blue-700 hover:border-solid hover:-translate-y-3 transform flex flex-col justify-between items-center duration-500 delay-100">
+				<div class=" flex flex-col items-center justify-center">
+					<img class=" w-auto mx-auto h-16 md:h-20 lg:h-24 xl:h-20 mb-3.5 py-1 px-3 md:px-4"
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/ae34ea1a-5467-4272-d3ea-25a0c9f16200/6Storage"
+						alt="RV-Boat-Storage">
+					<h3 class=" text-lg text-black font-medium">Rv boat storage</h3>
+				</div>
+				<div class=" text-center py-3 text-base">
+					<p class=" text-gray-800">Worried about tenants living in the unit? See how self storage software
+						and its management tools can free your time.</p>
+				</div>
+				<div class=" text-center py-2 flex flex-row items-center justify-center text-base">
+					<a href="{% url 'rv' %}" target="_blank" class=" text-blue-800 font-medium mr-2">Read
+						more</a> <svg class="h-7 w-7 text-blue-800" fill="none" viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M14 5l7 7m0 0l-7 7m7-7H3" />
+					</svg>
+				</div>
+			</div>
+			<div
+				class=" rounded-md shadow-xl py-4 px-3 pt-5 transition-all hover:shadow-2xl hover:border hover:border-blue-700 hover:border-solid hover:-translate-y-3 transform flex flex-col justify-between items-center duration-500 delay-100">
+				<div class=" flex flex-col items-center justify-center">
+					<img class=" w-auto mx-auto h-16 md:h-20 lg:h-24 xl:h-20 mb-3.5 py-1 px-3 md:px-4"
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/48df36ee-ff95-489b-82c3-e8043b17c900/6Storage"
+						alt="Trucks-Storage">
+					<h3 class=" text-lg text-black font-medium">Vehicle storage</h3>
+				</div>
+				<div class=" text-center py-3 text-base xl:mb-5">
+					<p class=" text-gray-800">Implement our software to automate your truck storage business while you
+						spend leisure time with family.</p>
+				</div>
+				<div class=" text-center py-2 flex flex-row items-center justify-center text-base">
+					<a href="{% url 'vehicle' %}" target="_blank" class=" text-blue-800 font-medium mr-2">Read
+						more</a> <svg class="h-7 w-7 text-blue-800" fill="none" viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M14 5l7 7m0 0l-7 7m7-7H3" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Self storage management - streamlined design here -->
+<section class=" w-full py-10 md:py-14 bg-blue-50">
+	<div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+		<div class=" grid grid-cols-1 gap-1 text-center py-2 lg:py-5">
+			<h2 class=" text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-700">Self storage management -
+				streamlined</h2>
+			<hr class=" border-t-4 border-blue-800 mt-2 lg:mt-4 mx-auto w-2/12 md:w-1/12 rounded-md">
+		</div>
+		<div class=" grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 items-start justify-center text-black py-5">
+			<div class=" order-last lg:order-none">
+				<div class=" flex flex-row items-start justify-center py-3">
+					<div
+						class=" bg-blue-800 rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-5 animate-pulse delay-75 duration-700 shadow-2xl">
+						1</div>
+					<div class=" flex-grow">
+						<h4 class=" text-lg font-semibold">Online move in</h4>
+						<p class=" text-base font-normal">6 clicks on the tenant portal makes move in process easier for
+							your tenants. Optimize move in with customizations: discounts, amenities, instant
+							e-signature and more.</p>
+					</div>
+				</div>
+				<div class=" flex flex-row items-start justify-center py-3">
+					<div
+						class=" bg-blue-800 rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-5 animate-pulse delay-75 duration-500 shadow-2xl">
+						2</div>
+					<div class=" flex-grow">
+						<h4 class=" text-lg font-semibold">Facility management & operations</h4>
+						<p class=" text-base font-normal">Let 6Storage work for you and deliver results with extensive
+							40+ reports and accounting platform integrations. Assign user roles to manage certain tasks
+							and handle each part of your business with ease.</p>
+					</div>
+				</div>
+				<div class=" flex flex-row items-start justify-center py-3">
+					<div
+						class=" bg-blue-800 rounded-full w-10 h-10 text-center font-medium text-white flex-none flex items-center justify-center mr-5 animate-pulse delay-100 duration-1000 shadow-2xl shadow-black">
+						3</div>
+					<div class=" flex-grow">
+						<h4 class=" text-lg font-semibold">Hassle free tenant communication</h4>
+						<p class=" text-base font-normal">First impression with your tenants brings you referrals: new
+							lead follow ups, auto emails/sms (even b’day emails) and auto payments/invoices. We got you
+							covered with delinquent tenants</p>
+					</div>
+				</div>
+			</div>
+			<div class=" flex flex-col items-center justify-center ">
+				<img class=" w-auto h-auto py-4 px-3 md:py-5 md:px-4 hover:-translate-y-3 transform duration-500 delay-200"
+					src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/2114e880-9447-4d5f-858e-920b486e7100/6Storage"
+					alt="Manager-Girl-Self-Storage-Home">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- The tailor made storage unit software design here -->
+<section class=" w-full py-10 md:py-14 bg-white">
+	<div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+		<div class=" grid grid-cols-1 gap-1 text-center py-2 lg:py-7 text-black">
+			<h3
+				class=" relative z-10 mx-auto text-8xl md:text-9xl lg:text-10xl xl:text-11xl font-bold w-32 h-32 text-center text-gray-200 left-0 right-0 opacity-50 -my-10 md:-my-12 lg:-my-14 xl:-my-20">
+				1</h3>
+			<h2 class=" text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-700 z-10">The tailor made
+				storage unit software, made for you</h2>
+			<hr class=" border-t-4 border-blue-800 mt-2 lg:mt-4 mx-auto w-2/12 md:w-1/12 rounded-md z-10">
+		</div>
+		<div class=" text-center text-black py-2 lg:py-5">
+			<p class=" text-base font-medium">Most requested features from our best customers to operate your self
+				storage facility</p>
+		</div>
+		<div
+			class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8 text-center text-black py-5 lg:py-10">
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/87154500-d906-416b-3d32-69823ad06500/6Storage"
+						alt="Sitemap">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Sitemap</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/86dff96e-fb9d-411a-6e94-abe4b4a0c900/6Storage"
+						alt="Move-in-out">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Move In/Out</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/d2cdefd8-f319-4555-9e21-a5b82080f600/6Storage"
+						alt="Autopay">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Autopay</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-12 h-auto mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/01e9257b-dad7-4b2c-10c4-1f4086fd2700/6Storage"
+						alt="40+ Reports">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">40+ Reports</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/073aad7e-5d29-46cf-1504-1de070e3b700/6Storage"
+						alt="Custom-Discount">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Custom Discounts</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/406aebf3-5151-440f-fc58-c4fcaf242500/6Storage"
+						alt="Tenant-Portal-API">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Tenant Portal API</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/975feb05-ff35-436e-f33e-a9f268071600/6Storage"
+						alt="Lead-Management">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Lead Management</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/42cb802e-cd73-4c80-a460-79c6532bba00/6Storage"
+						alt="Email-Reminder">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Email/Sms Reminders</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/9d5be0ef-6153-44ef-74d3-255cf7056e00/6Storage"
+						alt="Addtional_Services">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Create Additional Services</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-auto mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b8661014-2fdb-4a30-455f-1aa358053100/6Storage"
+						alt="Customize-Documents">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Customize Documents</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-auto mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/abc23f88-d9fc-4f66-aa75-904ff6925500/6Storage"
+						alt="User-Roles-Permissions">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">User Roles & Permissions</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-auto mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/98530630-3393-4656-d39e-020ffbbf5c00/6Storage"
+						alt="Invoicing-Payments">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Auto Invoicing</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-16 mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/a3c64b40-5a08-49c9-876e-2591dc20f400/6Storage"
+						alt="Movable-Immovable-Storages">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Permanent/ Movable</p>
+			</div>
+			<div class=" text-center">
+				<div
+					class=" inline-block relative w-20 h-auto rounded-md  hover:border-2 hover:border-solid hover:border-blue-700 transform hover:translate-y-1">
+					<img class=" w-16 h-auto mx-auto "
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/1dc9601f-32f6-4053-e051-2be038c78d00/6Storage"
+						alt="Multiple-Location">
+				</div>
+				<p class=" text-base lg:text-lg font-medium">Multiple Locations Management</p>
+			</div>
+		</div>
+		<div class=" text-center text-black py-2 lg:py-5">
+			<p class=" text-lg lg:text-xl font-medium">Explore features and all integrations in detail</p>
+			<div class=" flex flex-row items-center justify-center py-2 lg:py-4">
+				<a href="{% url 'feature' %}"
+					class=" outline-none bg-blue-800 py-3 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 text-white rounded text-base font-bold shadow-xl hover:shadow-inner">See
+					all features</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Our happy customers tell Design here -->
+<section class=" w-full py-10 md:py-14 bg-blue-50">
+	<div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+		<div class=" grid grid-cols-1 gap-1 text-center py-2 lg:py-7 text-black">
+			<h2 class=" text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-700 z-10">Our happy customers
+				tell a tale</h2>
+			<hr class=" border-t-4 border-blue-800 mt-2 lg:mt-4 mx-auto w-2/12 md:w-1/12 rounded-md z-10">
+		</div>
+		<div class=" text-center text-black py-1 lg:py-4">
+			<p class=" text-base font-medium">Seek and you shall find the winning strategies behind these two storage
+				operators</p>
+		</div>
+		<div class=" grid grid-cols-1 md:grid-cols-2 items-stretch gap-7 lg:gap-12 py-6">
+			<div>
+				<figure class="lg:flex lg:flex-row bg-gray-100 rounded-xl p-8 lg:p-0 shadow-xl">
+					<img class="w-36 h-36 lg:w-52 xl:w-56 lg:h-auto lg:rounded-none rounded-full mx-auto"
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/b787b6d5-36a4-44ef-0da7-fda29ad0a300/6Storage"
+						alt="Ponderosa">
+					<div class="pt-6 lg:p-8 text-center md:text-left space-y-4">
+						<blockquote>
+							<p class="text-base font-semibold">The Happy Couple And The Foundation Of Their Storage
+								Facility</p>
+						</blockquote>
+						<figcaption class="font-medium">
+							<div
+								class=" text-center py-2 flex flex-row items-center md:items-start justify-center md:justify-start lg:pt-8">
+								<a href="#!" class=" text-blue-800 font-medium mr-2">Read more</a> <svg
+									class="h-7 w-7 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M14 5l7 7m0 0l-7 7m7-7H3" />
+								</svg>
+							</div>
+						</figcaption>
+					</div>
+				</figure>
+			</div>
+			<div class=" flex">
+				<figure class="lg:flex lg:flex-row bg-gray-100 rounded-xl p-8 lg:p-0 shadow-xl">
+					<img class="w-36 h-36 lg:w-52 xl:w-56 lg:h-auto lg:rounded-none rounded-full mx-auto"
+						src="https://imagedelivery.net/BTS8dl3TllMHn3wEbB3joQ/394a5585-f124-4e3c-a61c-5f6fe3132a00/6Storage"
+						alt="MandZ">
+					<div class="pt-6 lg:p-8 text-center md:text-left space-y-4">
+						<blockquote>
+							<p class="text-base font-semibold">Rental Property Owners Finally found the right Storage
+								Management Solution</p>
+						</blockquote>
+						<figcaption class="font-medium">
+							<div
+								class=" text-center py-2 flex flex-row items-center md:items-start justify-center md:justify-start	">
+								<a href="#!" class=" text-blue-800 font-medium mr-2">Read more</a> <svg
+									class="h-7 w-7 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M14 5l7 7m0 0l-7 7m7-7H3" />
+								</svg>
+							</div>
+						</figcaption>
+					</div>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Start with free 14 day trial design here -->
+<section class=" w-full py-10 md:py-14 bg-white">
+	<div class=" container mx-auto px-7 lg:px-10 xl:px-8">
+		<div class=" grid grid-cols-1 gap-1 text-center py-2 lg:py-7 text-black">
+			<h2 class=" text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-700 z-10">Start with free 14
+				day trial, no credit card required</h2>
+			<hr class=" border-t-4 border-blue-800 mt-2 lg:mt-4 mx-auto w-2/12 md:w-1/12 rounded-md z-10">
+		</div>
+		<div class=" text-center text-black py-1 lg:py-3">
+			<p class=" text-base font-medium">Upgrade to premium membership and avail all the above features without
+				limitations</p>
+		</div>
+		<div class=" flex flex-col sm:flex-row items-center justify-center py-1 lg:py-4">
+			<a href="#"
+				class=" outline-none bg-blue-800 py-3 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 text-white rounded text-base font-bold my-3 md:my-0 sm:mr-5 shadow-xl hover:shadow-inner">Live
+				demo</a><a href="#"
+				class=" outline-none bg-purple-200 py-3 px-4 md:py-3 md:px-6 xl:py-4 xl:px-8 text-blue-800 rounded text-base font-bold my-3 md:my-0 hover:bg-blue-800 hover:text-white">Start
+				a free trial</a>
+		</div>
+	</div>
+</section>
+{% endblock %}
